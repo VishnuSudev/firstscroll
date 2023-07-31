@@ -1,28 +1,28 @@
 import React from "react";
-import Navbar from "../components/Layouts/Navbar";
-import MainBanner from "../components/HomePages/DefaultHome/MainBanner";
-import Services from "../components/HomePages/DefaultHome/Services";
-import About from "../components/HomePages/DefaultHome/About";
-import OurWorks from "../components/HomePages/DefaultHome/OurWorks";
-import WorkProcess from "../components/HomePages/DefaultHome/WorkProcess";
+import NavbarTwo from "../components/Layouts/NavbarTwo";
+import MainBanner from "../components/HomePages/BusinessAgency/MainBanner";
+import About from "../components/HomePages/BusinessAgency/About";
+import Services from "../components/HomePages/BusinessAgency/Services";
+import OurWorks from "../components/HomePages/BusinessAgency/OurWorks";
+import WorkProcess from "../components/HomePages/BusinessAgency/WorkProcess";
 import Feedback from "../components/Common/Feedback";
-import Team from "../components/Common/Team";
-import FunFacts from "../components/Common/FunFacts";
-import LatestNewsSlider from "../components/Common/LatestNewsSlider";
-import CtaArea from "../components/Common/CtaArea";
-import Partner from "../components/Common/Partner";
+import TeamStyleTwo from "../components/Common/TeamStyleTwo";
+import PricingStyleTwo from "../components/Pricing/PricingStyleTwo";
+import PartnerTwo from "../components/Common/PartnerTwo";
+import CtaAreaTwo from "../components/Common/CtaAreaTwo";
+import LatestNewsSlider from "../components/Common/LatestNewsSliderTwo";
 import Footer from "../components/Layouts/Footer";
 
-const Index = () => {
+const BusinessAgency = () => {
   return (
     <>
-      <Navbar />
+      <NavbarTwo />
 
       <MainBanner />
 
-      <Services />
-
       <About />
+
+      <Services />
 
       <OurWorks />
 
@@ -30,19 +30,19 @@ const Index = () => {
 
       <Feedback />
 
-      <Team />
+      <TeamStyleTwo />
 
-      <FunFacts />
+      <PricingStyleTwo />
+
+      <PartnerTwo />
+
+      <CtaAreaTwo />
 
       <LatestNewsSlider />
-
-      <CtaArea />
-
-      <Partner />
 
       <Footer />
     </>
   );
 };
 
-export default Index;
+export default BusinessAgency;
