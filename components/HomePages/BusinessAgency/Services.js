@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 const servicesData = [
   {
@@ -53,9 +55,11 @@ const servicesData = [
 ];
 
 const Services = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
-      <div className="pt-100 pb-70">
+      <div id="services" className="pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Our Services</h2>
@@ -80,11 +84,34 @@ const Services = () => {
                     <h3>
                       <Link href={value.viewDetails}>{value.title}</Link>
                     </h3>
-                    <p>{value.shortText}</p>
+                    <p
+                      style={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {value.shortText}
+                    </p>
+                    <button
+                      onClick={() => {
+                        setShowModal(true);
+                      }}
+                      className="btn"
+                    >
+                      Know More
+                    </button>
                   </div>
                 </div>
               ))}
           </div>
+          <Popup open={showModal} 
+          onClose={()=>{
+            setShowModal(false);
+          }}
+          position="right center">
+            <div>Popup content here !!</div>
+          </Popup>
         </div>
       </div>
     </>

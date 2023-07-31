@@ -10,7 +10,7 @@ const About = () => {
         sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
       />
 
-      <section className="about-area bg-fcfbfb ptb-100">
+      <section id="about" className="about-area bg-fcfbfb ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-md-12">

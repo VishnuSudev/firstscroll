@@ -5,7 +5,9 @@ import Link from 'next/link';
 const MainBanner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-		<>  
+		<div
+    id="main-banner"
+    >  
       <FsLightbox
         toggler={toggler}
         sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
@@ -159,7 +161,7 @@ const MainBanner = () => {
           </div>
         </div>
       </div>
-		</>
+		</div>
   );
 }
 

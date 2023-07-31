@@ -2,8 +2,8 @@ import React from "react";
 
 const teamMemberData = [
   {
-    image: "/images/team/prof1.jpeg",
-    name: "James White",
+    image: "/images/team/team9.jpg",
+    name: "Team memeber",
     designation: "CEO & Founder",
     aosDelay: "100",
 
@@ -31,8 +31,8 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/prof2.jpeg",
-    name: "Johnson Lee",
+    image: "/images/team/team10.jpg",
+    name: "Team memeber",
     designation: "Backend Specialist",
     aosDelay: "200",
 
@@ -60,8 +60,8 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/prof1.jpeg",
-    name: "Williams Smith",
+    image: "/images/team/team11.jpg",
+    name: "Team memeber",
     designation: "Front-end Specialist",
     aosDelay: "300",
 

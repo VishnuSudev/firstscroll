@@ -3,7 +3,9 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <>
-      <div className="contact-info-area pt-100 pb-70">
+      <div
+      id="contact"
+      className="contact-info-area pt-100 pb-70">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6">
@@ -39,7 +41,7 @@ const ContactInfo = () => {
                   <i className="pe-7s-call"></i>
                 </div>
                 <h3>Call Here</h3>
-                <p>
+                <p className="text-red-500">
                   <a href="tel:+1234567890">+123 456 7890</a>
                 </p>
                 <p>

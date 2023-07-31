@@ -55,7 +55,9 @@ const servicesData = [
 const Services = () => {
   return (
     <>
-      <div className="bg-fcfbfb pt-100 pb-70">
+      <div
+      id="services"
+      className="bg-fcfbfb pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Our Services</h2>

@@ -12,6 +12,8 @@ import PartnerTwo from "../components/Common/PartnerTwo";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import LatestNewsSlider from "../components/Common/LatestNewsSliderTwo";
 import Footer from "../components/Layouts/Footer";
+import ContactInfo from "../components/Contact/ContactInfo";
+import ContactForm from "../components/Contact/ContactForm";
 
 const BusinessAgency = () => {
   return (
@@ -24,7 +26,7 @@ const BusinessAgency = () => {
 
       <Services />
 
-      <OurWorks />
+      {/* <OurWorks /> */}
 
       <WorkProcess />
 
@@ -37,6 +39,10 @@ const BusinessAgency = () => {
       <PartnerTwo />
 
       <CtaAreaTwo />
+
+      <ContactInfo/>
+
+      <ContactForm/>
 
       <LatestNewsSlider />
 

@@ -66,3 +66,6 @@ build
 
 # dotenv environment variables file
 .env
+
+
+pnpm-lock.yaml
