@@ -40,9 +40,11 @@ const NavbarTwo = () => {
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container-fluid">
             <Link href="/" className="navbar-brand">
-              <img src="/images/logo.png" className="black-logo" alt="logo" />
+              <div>
+              <img src="/images/logo.png" className="black-logo " width='220' height='100' alt="logo" />
+              </div>
               <img
-                src="/images/logo-white.png"
+                src="/images/logo.png" width='220' height='100'
                 className="white-logo"
                 alt="logo"
               />
