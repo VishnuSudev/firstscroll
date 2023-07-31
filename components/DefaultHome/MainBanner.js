@@ -30,25 +30,23 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-delay="100"
                     >
-                      A Digital Agency
+                     Data Driven
                     </span>
 
-                    <h1
+                    {/* <h1
                       data-aos="fade-in"
                       data-aos-duration="1200"
                       data-aos-delay="200"
                     >
                       We're a full-range digital agency.
-                    </h1>
+                    </h1> */}
                     
                     <p
                       data-aos="fade-in"
                       data-aos-duration="1200"
                       data-aos-delay="300"
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
+                      Where Performance Takes the Lead
                     </p>
                     
                     <Link 

@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarTwo from "../components/Layouts/NavbarTwo";
-import MainBanner from "../components/HomePages/BusinessAgency/MainBanner";
+import MainBanner from "../components/DefaultHome/MainBanner";
 import About from "../components/HomePages/BusinessAgency/About";
 import Services from "../components/HomePages/BusinessAgency/Services";
 import OurWorks from "../components/HomePages/BusinessAgency/OurWorks";
