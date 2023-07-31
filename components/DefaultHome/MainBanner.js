@@ -25,21 +25,21 @@ const MainBanner = () => {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="main-banner-content">
-                    <span
+                    {/* <span
                       data-aos="fade-in"
                       data-aos-duration="1200"
                       data-aos-delay="100"
                     >
                      Data Driven
-                    </span>
+                    </span> */}
 
-                    {/* <h1
+                    <h1
                       data-aos="fade-in"
                       data-aos-duration="1200"
                       data-aos-delay="200"
                     >
-                      We're a full-range digital agency.
-                    </h1> */}
+                      Data Driven.
+                    </h1>
                     
                     <p
                       data-aos="fade-in"
