@@ -47,19 +47,14 @@ const About = () => {
                 <div className="section-title">
                   <h2>About Us</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, con se ctetur adipiscing elit.
-                    In sagittis eg esta ante, sed viverra nunc tinci dunt nec
-                    elei fend et tiram.
+                  First Scroll, where marketing meets mischief! We're the oddball performance marketing wizards, concocting ROI-driven spells that mesmerize audiences. From quirky campaigns to data-driven delights, we've got the magic formula for success, we steer your success story, one scroll at a time.
                   </p>
                 </div>
 
                 <div className="about-text">
                   <h4>Who We Are</h4>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo.
+                  For over 9 years, our digitally obsessed marketing specialists have formed a diverse team, drove high-impact campaigns while delivering exceptional client service. With a passion for all things digital, we embrace innovation to ensure your success in the ever-evolving marketing landscape.
                   </p>
                 </div>
 

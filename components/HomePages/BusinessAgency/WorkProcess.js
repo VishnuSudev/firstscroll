@@ -4,44 +4,44 @@ const workProcessData = [
   {
     title: "Our Work Process",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "",
     image: "/images/man-with-mobile.png",
     circleImage: "/images/circle.png",
 
     list: [
       {
         iconName: "pe-7s-display1",
-        title: "Surface",
+        title: "Define your goals \n and objectives",
         text: "Visual Design",
         aosDelay: "100",
       },
       {
         iconName: "pe-7s-display2",
-        title: "Skeleton",
+        title: "Determine \n your channels",
         text: "Wireframes",
         aosDelay: "200",
       },
       {
         iconName: "pe-7s-airplay",
-        title: "Structure",
+        title: "Create a \n campaign with \n messaging",
         text: "Screen Flow",
         aosDelay: "300",
       },
       {
         iconName: "pe-7s-note2",
-        title: "Scope",
+        title: "Execute your \n campaign",
         text: "Requirements",
         aosDelay: "400",
       },
       {
         iconName: "pe-7s-light",
-        title: "User Research",
+        title: "Gather and \n analyze data",
         text: "User Research",
         aosDelay: "500",
       },
       {
         iconName: "pe-7s-sun",
-        title: "Implement",
+        title: "Optimize, rinse \n and repeat",
         text: "Lunch/Analyse",
         aosDelay: "600",
       },
@@ -82,8 +82,8 @@ const WorkProcess = () => {
                       <div className="icon">
                         <i className={value.iconName}></i>
                       </div>
-                      <h3>{value.title}</h3>
-                      <span>{value.text}</span>
+                      <h6 style={{ whiteSpace: 'pre-line' }}>{value.title}</h6>
+                      {/* <span>{value.text}</span> */}
                     </div>
                   ))}
                 </div>

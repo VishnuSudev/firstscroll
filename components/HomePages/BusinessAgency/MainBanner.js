@@ -45,7 +45,7 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Business Agency
+                          Data Driven
                         </h1>
 
                         <p
@@ -55,9 +55,7 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          Where Performance Takes the Lead
                         </p>
 
                         <div
@@ -107,7 +105,9 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Grow Your Business
+                          {/* Grow Your Business
+                           */}
+                           Data Driven
                         </h1>
 
                         <p
@@ -117,9 +117,10 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          {/* Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          dolore magna aliqua. */}
+                           Where Performance Takes the Lead
                         </p>
 
                         <div
@@ -169,7 +170,9 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Start Your Business
+                          {/* Start Your Business? 
+                          */}
+                          Data Driven
                         </h1>
 
                         <p
@@ -179,9 +182,7 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                           Where Performance Takes the Lead
                         </p>
 
                         <div

@@ -2,7 +2,7 @@ import React from "react";
 
 const teamMemberData = [
   {
-    image: "/images/team/team9.jpg",
+    image: "/images/team/prof1.jpeg",
     name: "James White",
     designation: "CEO & Founder",
     aosDelay: "100",
@@ -31,7 +31,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/team10.jpg",
+    image: "/images/team/prof2.jpeg",
     name: "Johnson Lee",
     designation: "Backend Specialist",
     aosDelay: "200",
@@ -60,7 +60,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/team11.jpg",
+    image: "/images/team/prof1.jpeg",
     name: "Williams Smith",
     designation: "Front-end Specialist",
     aosDelay: "300",
