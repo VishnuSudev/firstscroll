@@ -65,16 +65,17 @@ const NavbarTwo = () => {
             </button>
 
             <div className={classOne} id="navbarSupportedContent">
-            <ul className="navbar-nav">
+              <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link
                     href="/"
-                    className={`nav-link ${currentPath == "/" && "active"}`}
+                    // className={`nav-link ${currentPath == "/" && "active"}`}
                   >
-                    Home <i className="fa-solid fa-angle-down"></i>
+                    Home
+                    {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
 
-                  <ul className="dropdown-menu mega-dropdown-menu">
+                  {/* <ul className="dropdown-menu mega-dropdown-menu">
                     <li className="nav-item">
                       <Link
                         href="/"
@@ -292,7 +293,7 @@ const NavbarTwo = () => {
                         Cyber Security Agency <span className="new">New</span>
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
 
                 <li className="nav-item">
@@ -301,11 +302,18 @@ const NavbarTwo = () => {
                     className={`nav-link ${
                       currentPath == "/services/" && "active"
                     }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("services")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
-                    Services <i className="fa-solid fa-angle-down"></i>
+                    Services
+                    {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
 
-                  <ul className="dropdown-menu">
+                  {/* <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
                         href="/services/"
@@ -360,7 +368,7 @@ const NavbarTwo = () => {
                         Service Details
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
 
                 <li className="nav-item">
@@ -369,12 +377,18 @@ const NavbarTwo = () => {
                     className={`nav-link ${
                       currentPath == "/about/" && "active"
                     }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("about")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
                     About us
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="/portfolio/"
                     className={`nav-link ${
@@ -418,9 +432,9 @@ const NavbarTwo = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="#"
                     className="nav-link"
@@ -551,19 +565,20 @@ const NavbarTwo = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Link
-                    href="/blog/"
+                    href=""
                     className={`nav-link ${
                       currentPath == "/blog/" && "active"
                     }`}
                   >
-                    Blog <i className="fa-solid fa-angle-down"></i>
+                    Blog
+                    {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
 
-                  <ul className="dropdown-menu">
+                  {/* <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
                         href="/blog/"
@@ -607,10 +622,10 @@ const NavbarTwo = () => {
                         Blog Details
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="/contact/"
                     className={`nav-link ${
@@ -619,12 +634,19 @@ const NavbarTwo = () => {
                   >
                     Contact Us
                   </Link>
-                </li>
+                </li> */}
               </ul>
 
               <div className="others-options">
-                <Link href="/contact/" className="btn btn-primary">
-                  Get Started
+                <Link
+                 onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+                href="/contact/" className="btn btn-primary">
+                  Contact Us
                 </Link>
               </div>
             </div>

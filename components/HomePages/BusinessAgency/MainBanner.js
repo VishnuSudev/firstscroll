@@ -67,7 +67,14 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          <Link href="/contact" className="btn btn-primary">
+                          <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("contact")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
                             Contact Us
                           </Link>
 
