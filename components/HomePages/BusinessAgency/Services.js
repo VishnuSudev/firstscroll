@@ -38,7 +38,7 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-mail-open-file bg-00d280",
-    title: "Performance Monitoring",
+    title: "Performance Monitoring ",
     shortText:
       "Constantly monitoring campaign performance, adjusting strategies, and optimizing ad placements, keywords, and targeting to achieve the best possible ROI for clients.",
     viewDetails: "/service-details",
@@ -54,11 +54,11 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-users bg-ff612f",
-    title: "Omni-channel      retail",
+    title: "Omni-channel retail",
     shortText:
       "Omnichannel retail strategies that empower your brand to thrive in today's competitive market. By synchronizing messaging and promotions across platforms like social media, email, website, and mobile apps, we ensure a consistent and captivating customer experience.",
     viewDetails: "/service-details",
-    aosDelay: "700",
+    aosDelay: "600",
   },
 ];
 
@@ -80,9 +80,9 @@ const Services = () => {
 
           <div className="row justify-content-center">
             {servicesData &&
-              servicesData.slice(0, 7).map((value, i) => (
+              servicesData.slice(0, 6).map((value, i) => (
                 <div
-                  className="col-lg-3 col-sm-6"
+                  className="col-lg-4 col-sm-6"
                   key={i}
                   data-aos="fade-in"
                   data-aos-duration="1200"
