@@ -388,17 +388,24 @@ const NavbarTwo = () => {
                   </Link>
                 </li>
 
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link
                     href="/portfolio/"
                     className={`nav-link ${
                       currentPath == "/portfolio/" && "active"
                     }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("clients")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
-                    Portfolio <i className="fa-solid fa-angle-down"></i>
+                    Clients 
+                    {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
 
-                  <ul className="dropdown-menu">
+                  {/* <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
                         href="/portfolio/"
@@ -431,8 +438,8 @@ const NavbarTwo = () => {
                         Portfolio Details 2
                       </Link>
                     </li>
-                  </ul>
-                </li> */}
+                  </ul> */}
+                </li>
 
                 {/* <li className="nav-item">
                   <Link

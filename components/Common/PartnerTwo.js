@@ -66,7 +66,9 @@ const partnersData = [
 const PartnerTwo = () => {
   return (
     <>
-      <div className="partner-area pt-100 pb-70">
+      <div
+      id="clients"
+      className="partner-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Our Loving Clients</h2>

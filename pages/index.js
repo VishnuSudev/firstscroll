@@ -34,7 +34,7 @@ const BusinessAgency = () => {
 
       <TeamStyleTwo />
 
-      <PricingStyleTwo />
+      {/* <PricingStyleTwo /> */}
 
       <PartnerTwo />
 
