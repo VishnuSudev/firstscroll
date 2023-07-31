@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1200" 
+                data-aos="fade-in"
+                data-aos-duration="1200"
                 data-aos-delay="100"
               >
                 <div className="logo">
@@ -53,107 +53,126 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3 col-md-6 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget ml-4 pl-5"
-                data-aos="fade-in" 
-                data-aos-duration="1200" 
+                data-aos="fade-in"
+                data-aos-duration="1200"
                 data-aos-delay="200"
               >
                 <h3>Explore</h3>
 
                 <ul className="list">
                   <li>
-                    <Link href="/">
-                      Home
-                    </Link>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="/about/">
-                      About
-                    </Link>
+                    <Link 
+                     onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("about")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                    href="">About</Link>
                   </li>
                   <li>
-                    <Link href="/services/">
-                      Services
-                    </Link>
+                    <Link
+                     onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("services")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                    href="">Services</Link>
                   </li>
                   <li>
-                    <Link href="/portfolio/">
-                      Portfolio
-                    </Link>
+                    <Link 
+                     onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("clients")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                    href="/portfolio/">Clients</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/team/">
                       Team
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget ml-4"
-                data-aos="fade-in" 
-                data-aos-duration="1200" 
+                data-aos="fade-in"
+                data-aos-duration="1200"
                 data-aos-delay="300"
               >
                 <h3>Quick Links</h3>
 
                 <ul className="list">
                   <li>
-                    <Link href="/contact/">
-                      Contact Us
-                    </Link>
+                    <Link 
+                     onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("contact")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                    href="/contact/">Contact Us</Link>
                   </li>
-                  <li>
+                  {/*  <li>
                     <Link href="/pricing/">
                       Pricing
                     </Link>
+                  </li> */}
+                  <li>
+                    <Link 
+                     onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("blogs")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
+                    href="">Blogs</Link>
                   </li>
                   <li>
-                    <Link href="/faq/">
-                      Faq
-                    </Link>
+                    <Link href="#">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link href="/privacy-policy/">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/terms-conditions/">
-                      Terms & Conditions
-                    </Link>
+                    <Link href="#">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1200" 
+                data-aos="fade-in"
+                data-aos-duration="1200"
                 data-aos-delay="400"
               >
                 <h3>Get in Touch</h3>
 
                 <ul className="get-in-touch">
                   <li>
-                    <i className="fa-solid fa-location-dot"></i> 2750 Quadra Street
-                    Victoria, Canada.
+                    <i className="fa-solid fa-location-dot"></i>{" "}
+                    Bangalore,Karnataka,India
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+324-9442-515">+324-9442-515</a> 
+                    <a href="tel:+324-9442-515">+91 00000 00000</a>
                     <br />
-                    <a href="tel:+324-9442-515">+324-9442-999</a>
+                    <a href="tel:+324-9442-515">+91 00000 00000</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>
-                    <a href="mailto:hello@pungent.com">hello@pungent.com</a>
-                    <a href="mailto:support@pungent.com">support@pungent.com</a>
+                    <a href="mailto:hello@pungent.com">hello@freescroll.com</a>
+                    <a href="mailto:support@freescroll.com">support@freescroll.com</a>
                   </li>
                 </ul>
               </div>
@@ -164,9 +183,9 @@ const Footer = () => {
         <div className="copyright-area">
           <div className="container">
             <p>
-              Copyright &copy; {currentYear} Pungent. All Rights Reserved By{" "}
-              <a href="https://envytheme.com" target="_blank">
-                EnvyTheme
+              Copyright &copy; {currentYear} Freescroll. All Rights Reserved By{" "}
+              <a href="#">
+                Web Constructions
               </a>
             </p>
           </div>

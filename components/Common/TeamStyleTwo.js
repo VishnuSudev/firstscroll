@@ -2,7 +2,7 @@ import React from "react";
 
 const teamMemberData = [
   {
-    image: "/images/team/team9.jpg",
+    image: "https://place-hold.it/296*319",
     name: "Team memeber",
     designation: "CEO & Founder",
     aosDelay: "100",
@@ -31,7 +31,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/team10.jpg",
+    image: "https://place-hold.it/296*319",
     name: "Team memeber",
     designation: "Backend Specialist",
     aosDelay: "200",
@@ -60,7 +60,7 @@ const teamMemberData = [
     ],
   },
   {
-    image: "/images/team/team11.jpg",
+    image: "https://place-hold.it/296*319",
     name: "Team memeber",
     designation: "Front-end Specialist",
     aosDelay: "300",
@@ -114,7 +114,7 @@ const TeamStyleTwo = () => {
                     data-aos-delay={value.aosDelay}
                   >
                     <div className="team-img">
-                      <img src={value.image} alt="Image" />
+                      <img src="https://place-hold.it/296x319" alt="Image" />
 
                       <div className="social-links">
                         <div className="d-table">

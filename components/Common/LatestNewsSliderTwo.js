@@ -6,7 +6,7 @@ import { Autoplay, Pagination } from "swiper";
 const latestNewsData = [
   {
     image: "/images/blog/blog7.jpg",
-    title: "The Most Popular New top Business Apps",
+    title: "Blog 1",
     date: "Feb 15, 2023",
     category: "Technology",
     shortText:
@@ -15,7 +15,7 @@ const latestNewsData = [
   },
   {
     image: "/images/blog/blog8.jpg",
-    title: "The Best Marketing top use Management Tools",
+    title: "Blog 2",
     date: "Feb 16, 2023",
     category: "Agency",
     shortText:
@@ -24,7 +24,7 @@ const latestNewsData = [
   },
   {
     image: "/images/blog/blog9.jpg",
-    title: "3 WooCommerce Plugins to Boost Sales",
+    title: "Blog 3",
     date: "Feb 17, 2023",
     category: "IT Agency",
     shortText:
@@ -33,7 +33,7 @@ const latestNewsData = [
   },
   {
     image: "/images/blog/blog10.jpg",
-    title: "Top 21 Must-Read Blogs For Creative Agencies",
+    title: "Blog 4",
     date: "Feb 18, 2023",
     category: "Development",
     shortText:
@@ -45,7 +45,9 @@ const latestNewsData = [
 const LatestNewsSliderTwo = () => {
   return (
     <>
-      <div className="blog-area ptb-100">
+      <div 
+      id="blogs"
+      className="blog-area ptb-100">
         <div className="container">
           <div className="section-title">
             <h2>Blogs</h2>
@@ -100,7 +102,7 @@ const LatestNewsSliderTwo = () => {
                       </h3>
 
                       <p>{value.shortText}</p>
-                      <Link href={value.readMoreLink} className="read-more-btn">
+                      <Link href="#" className="read-more-btn">
                         Read More
                         <i className="fa-solid fa-angles-right"></i>
                       </Link>
