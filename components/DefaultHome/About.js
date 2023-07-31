@@ -4,7 +4,7 @@ import FsLightbox from "fslightbox-react";
 const About = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <>
+    <div id="about">
       <FsLightbox
         toggler={toggler}
         sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
@@ -87,7 +87,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
