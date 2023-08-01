@@ -22,9 +22,9 @@ const BusinessAgency = () => {
 
       <MainBanner />
 
-      <About />
-
       <Services />
+
+      <About />
 
       {/* <OurWorks /> */}
 

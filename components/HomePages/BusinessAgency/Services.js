@@ -13,7 +13,7 @@ const servicesData = [
     aosDelay: "100",
   },
   {
-    iconName: "pe-7s-diamond bg-6610f2",
+    iconName: "pe-7s-filter bg-6610f2",
     title: "Conversion Rate Optimization",
     shortText:
       "Analyzing user behavior, optimizing landing pages, and implementing A/B testing to increase the percentage of website visitors who take desired actions, resulting in improved ROI",
@@ -25,7 +25,7 @@ const servicesData = [
     title: "Search Engine Optimization",
     shortText:
       "Implementing strategic SEO techniques to improve organic search rankings, increase website visibility, and drive qualified traffic, ultimately boosting ROI over time",
-      viewDetails: "/service-details",
+    viewDetails: "/service-details",
     aosDelay: "300",
   },
   {
@@ -37,7 +37,7 @@ const servicesData = [
     aosDelay: "400",
   },
   {
-    iconName: "pe-7s-mail-open-file bg-00d280",
+    iconName: "pe-7s-helm bg-00d280",
     title: "Performance Monitoring ",
     shortText:
       "Constantly monitoring campaign performance, adjusting strategies, and optimizing ad placements, keywords, and targeting to achieve the best possible ROI for clients.",
@@ -45,7 +45,7 @@ const servicesData = [
     aosDelay: "500",
   },
   {
-    iconName: "pe-7s-users bg-ff612f",
+    iconName: "pe-7s-graph3 bg-ff612f",
     title: "Marketing CRM development",
     shortText:
       "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
@@ -105,7 +105,7 @@ const Services = () => {
                     <button
                       onClick={() => {
                         setShowModal(true);
-                        setData(value.shortText)
+                        setData(value);
                       }}
                       className="btn"
                     >
@@ -115,12 +115,53 @@ const Services = () => {
                 </div>
               ))}
           </div>
-          <Popup open={showModal} 
-          onClose={()=>{
-            setShowModal(false);
-          }}
-          position="right center">
-            <div>{data}</div>
+          <Popup
+            open={showModal}
+            onClose={() => {
+              setShowModal(false);
+            }}
+            contentStyle={{
+              borderRadius: "10px",
+              height: "25%",
+            }}
+            position="right center"
+          >
+            <div
+              style={{
+                padding: "20px",
+                borderRadius: 10,
+              }}
+            >
+              <div 
+              onClick={()=>{
+                setShowModal(false);
+              }}
+              style={{
+                position:"absolute",
+                right:"10px",
+                top:"10px",
+                fontSize:"20px",
+                cursor:"pointer"
+              }}>
+               &#10006;
+              </div>
+              <div>
+                <p
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    fontcolor: "black",
+                    textAlign: "center",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  {data.title}
+                </p>
+              </div>
+              <div style={{
+                paddingTop:"15px"
+              }}>{data.shortText}</div>
+            </div>
           </Popup>
         </div>
       </div>

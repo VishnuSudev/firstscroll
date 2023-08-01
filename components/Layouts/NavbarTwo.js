@@ -582,6 +582,12 @@ const NavbarTwo = () => {
                     className={`nav-link ${
                       currentPath == "/blog/" && "active"
                     }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("blogs")
+                        .scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
                     Blog
                     {/* <i className="fa-solid fa-angle-down"></i> */}
