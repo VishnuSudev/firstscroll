@@ -73,11 +73,11 @@ const About = () => {
                           It is a long established fact that a reader will be
                           distracted by the readable.
                         </li>
-                        <li>
+                        {/* <li>
                           <i className="fa-solid fa-circle-check"></i>
                           Contrary to popular belief, Lorem Ipsum is not simply
                           random text.
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -96,11 +96,11 @@ const About = () => {
                           It is a long established fact that a reader will be
                           distracted by the readable.
                         </li>
-                        <li>
+                        {/* <li>
                           <i className="fa-solid fa-circle-check"></i>
                           Contrary to popular belief, Lorem Ipsum is not simply
                           random text.
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
