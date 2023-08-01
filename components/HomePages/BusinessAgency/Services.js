@@ -91,7 +91,7 @@ const Services = () => {
                   <div className="service-card-one bg-fcfbfb text-center">
                     <i className={value.iconName}></i>
                     <h3>
-                      <Link href={value.viewDetails}>{value.title}</Link>
+                      <Link href="#">{value.title}</Link>
                     </h3>
                     <p
                       style={{

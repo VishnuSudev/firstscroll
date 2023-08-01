@@ -86,7 +86,7 @@ const LatestNewsSliderTwo = () => {
                 <SwiperSlide key={i}>
                   <div className="single-blog-item">
                     <div className="blog-image">
-                      <Link href={value.readMoreLink}>
+                      <Link href="#">
                         <img src={value.image} alt="image" />
                       </Link>
 
@@ -98,7 +98,7 @@ const LatestNewsSliderTwo = () => {
                     <div className="blog-post-content">
                       <span className="date">{value.date}</span>
                       <h3>
-                        <Link href={value.readMoreLink}>{value.title}</Link>
+                        <Link href="#">{value.title}</Link>
                       </h3>
 
                       <p>{value.shortText}</p>

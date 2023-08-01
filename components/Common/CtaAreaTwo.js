@@ -29,9 +29,16 @@ const CtaAreaTwo = () => {
             data-aos-duration="1200"
             data-aos-delay="300"
           >
-            <Link href="/contact" className="custom-btn">
-              Contact Us
-            </Link>
+             <Link
+                 onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+                href="/contact/" className="custom-btn">
+                  Contact Us
+                </Link>
           </div>
         </div>
       </div>
