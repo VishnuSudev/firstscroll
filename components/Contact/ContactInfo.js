@@ -15,10 +15,10 @@ const ContactInfo = () => {
                 </div>
                 <h3>Mail Here</h3>
                 <p>
-                  <a href="mailto:admin@freescroll.com">admin@freescroll.com</a>
+                  <a href="mailto:admin@freescroll.com">admin@firstscroll.com</a>
                 </p>
                 <p>
-                  <a href="mailto:info@freescroll.com">info@freescroll.com</a>
+                  <a href="mailto:info@freescroll.com">info@firstscroll.com</a>
                 </p>
               </div>
             </div>

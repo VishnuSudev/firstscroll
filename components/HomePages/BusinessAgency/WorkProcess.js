@@ -12,37 +12,37 @@ const workProcessData = [
       {
         iconName: "pe-7s-display1",
         title: "Define your goals \n and objectives",
-        text: "Visual Design",
+        text: "1.",
         aosDelay: "100",
       },
       {
         iconName: "pe-7s-display2",
         title: "Determine \n your channels",
-        text: "Wireframes",
+        text: "2.",
         aosDelay: "200",
       },
       {
         iconName: "pe-7s-airplay",
         title: "Create a \n campaign with \n messaging",
-        text: "Screen Flow",
+        text: "3.",
         aosDelay: "300",
       },
       {
         iconName: "pe-7s-note2",
         title: "Execute your \n campaign",
-        text: "Requirements",
+        text: "4.",
         aosDelay: "400",
       },
       {
         iconName: "pe-7s-light",
         title: "Gather and \n analyze data",
-        text: "User Research",
+        text: "5.",
         aosDelay: "500",
       },
       {
         iconName: "pe-7s-sun",
         title: "Optimize, rinse \n and repeat",
-        text: "Lunch/Analyse",
+        text: "6.",
         aosDelay: "600",
       },
     ],
@@ -54,7 +54,7 @@ const WorkProcess = () => {
     <>
       {workProcessData &&
         workProcessData.map((value, i) => (
-          <section className="work-process-area ptb-100" key={i}>
+          <section id="process" className="work-process-area ptb-100" key={i}>
             <div className="container">
               <div className="section-title">
                 <h2>{value.title}</h2>
@@ -82,8 +82,8 @@ const WorkProcess = () => {
                       <div className="icon">
                         <i className={value.iconName}></i>
                       </div>
-                      <h6 style={{ whiteSpace: 'pre-line' }}>{value.title}</h6>
-                      {/* <span>{value.text}</span> */}
+                      <h6 >{value.text}</h6>
+                      <span style={{ whiteSpace: 'pre-line' }}>{value.title}</span>
                     </div>
                   ))}
                 </div>

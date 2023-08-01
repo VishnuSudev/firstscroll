@@ -10,7 +10,7 @@ const latestNewsData = [
     date: "Feb 15, 2023",
     category: "Technology",
     shortText:
-      "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
     readMoreLink: "/blog-details",
   },
   {
@@ -19,7 +19,7 @@ const latestNewsData = [
     date: "Feb 16, 2023",
     category: "Agency",
     shortText:
-      "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
     readMoreLink: "/blog-details",
   },
   {
@@ -28,7 +28,7 @@ const latestNewsData = [
     date: "Feb 17, 2023",
     category: "IT Agency",
     shortText:
-      "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
     readMoreLink: "/blog-details",
   },
   {
@@ -37,7 +37,7 @@ const latestNewsData = [
     date: "Feb 18, 2023",
     category: "Development",
     shortText:
-      "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
     readMoreLink: "/blog-details",
   },
 ];

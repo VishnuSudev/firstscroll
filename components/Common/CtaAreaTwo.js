@@ -14,13 +14,13 @@ const CtaAreaTwo = () => {
             >
               So What is Next?
             </span>
-            <h3
+            <h5 style={{color:'white',fontSize:30}}
               data-aos="fade-in"
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              Are You Ready? Let's get to work!
-            </h3>
+              Excited to explore what the future holds? Connect with us to collaborate on your next project
+            </h5>
           </div>
 
           <div

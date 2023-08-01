@@ -17,7 +17,7 @@ const Footer = () => {
               >
                 <div className="logo">
                   <Link href="/">
-                    <img src="/images/logo.png" alt="Logo" />
+                    <img src="/logo1.png" width='140' height='25' alt="Logo" />
                   </Link>
                 </div>
 
@@ -171,8 +171,8 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>
-                    <a href="mailto:hello@pungent.com">hello@freescroll.com</a>
-                    <a href="mailto:support@freescroll.com">support@freescroll.com</a>
+                    <a href="mailto:hello@pungent.com">hello@firstscroll.com</a>
+                    <a href="mailto:support@freescroll.com">support@firstscroll.com</a>
                   </li>
                 </ul>
               </div>
@@ -184,7 +184,7 @@ const Footer = () => {
           <div className="container">
             <p>
               Copyright &copy; {currentYear} Freescroll. All Rights Reserved By{" "}
-              <a href="#">
+              <a href="https://webconstruction.co.in/">
                 Web Constructions
               </a>
             </p>

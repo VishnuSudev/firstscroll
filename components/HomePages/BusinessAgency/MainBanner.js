@@ -76,12 +76,16 @@ const MainBanner = () => {
                             Contact Us
                           </Link>
 
-                          <button
-                            onClick={() => setToggler(!toggler)}
-                            className="btn btn-secondary"
-                          >
-                            <i className="fa-solid fa-play me-1"></i> How it works
-                          </button>
+                          <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("process")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
+                            How it works
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -137,16 +141,27 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          <Link href="/contact" className="btn btn-primary">
+                         <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("contact")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
                             Contact Us
                           </Link>
 
-                          <button
-                            onClick={() => setToggler(!toggler)}
-                            className="btn btn-secondary"
-                          >
-                            <i className="fa-solid fa-play me-1"></i> How it works
-                          </button>
+                          <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("process")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
+                            How it works
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -199,16 +214,27 @@ const MainBanner = () => {
                               : "opacityZero"
                           }
                         >
-                          <Link href="/contact" className="btn btn-primary">
+                          <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("contact")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
                             Contact Us
                           </Link>
 
-                          <button
-                            onClick={() => setToggler(!toggler)}
-                            className="btn btn-secondary"
-                          >
-                            <i className="fa-solid fa-play me-1"></i> How it works
-                          </button>
+                          <Link 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document
+                              .getElementById("process")
+                              .scrollIntoView({ behavior: "smooth" });
+                          }}
+                          href="/contact" className="btn btn-primary">
+                            How it works
+                          </Link>
                         </div>
                       </div>
                     )}

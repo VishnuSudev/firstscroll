@@ -21,19 +21,19 @@ const About = () => {
                 data-aos-delay="200"
               >
                 <img
-                  src="/images/about-img5.jpg"
+                  src="/images/logo5.jpg"
                   alt="image"
                   className="rounded-10"
                 />
 
-                <div className="video-box">
+                {/* <div className="video-box">
                   <div
                     className="video-btn"
-                    onClick={() => setToggler(!toggler)}
+                    // onClick={() => setToggler(!toggler)}
                   >
                     <i className="fa-solid fa-play"></i>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -47,16 +47,16 @@ const About = () => {
                 <div className="section-title">
                   <h2>About Us</h2>
                   <p>
-                  First Scroll, where marketing meets mischief! We're the oddball performance marketing wizards, concocting ROI-driven spells that mesmerize audiences. From quirky campaigns to data-driven delights, we've got the magic formula for success, we steer your success story, one scroll at a time.
+                  First Scroll, where marketing meets mischief! We're the oddball performance marketing wizards, concocting ROI-driven spells that mesmerize audiences. From quirky campaigns to data-driven delights, we've got the magic formula for success, we steer your success story, one scroll at a time.For over 9 years, our digitally obsessed marketing specialists have formed a diverse team, drove high-impact campaigns while delivering exceptional client service. With a passion for all things digital, we embrace innovation to ensure your success in the ever-evolving marketing landscape.
                   </p>
                 </div>
 
-                <div className="about-text">
+                {/* <div className="about-text">
                   <h4>Who We Are</h4>
                   <p>
                   For over 9 years, our digitally obsessed marketing specialists have formed a diverse team, drove high-impact campaigns while delivering exceptional client service. With a passion for all things digital, we embrace innovation to ensure your success in the ever-evolving marketing landscape.
                   </p>
-                </div>
+                </div> */}
 
                 <div className="row">
                   <div className="col-lg-6">
@@ -70,8 +70,8 @@ const About = () => {
                         </li>
                         <li>
                           <i className="fa-solid fa-circle-check"></i>
-                          It is a long established fact that a reader will be
-                          distracted by the readable.
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
                         </li>
                         {/* <li>
                           <i className="fa-solid fa-circle-check"></i>
@@ -93,8 +93,8 @@ const About = () => {
                         </li>
                         <li>
                           <i className="fa-solid fa-circle-check"></i>
-                          It is a long established fact that a reader will be
-                          distracted by the readable.
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
                         </li>
                         {/* <li>
                           <i className="fa-solid fa-circle-check"></i>

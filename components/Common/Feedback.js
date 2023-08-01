@@ -4,20 +4,20 @@ import { Autoplay, Pagination } from "swiper";
 
 const feedbacskData = [
   {
-    name: "John Smith",
-    designation: "CEO & Founder, Envato",
+    name: "Testimonial Name",
+    designation: "Designation,Company",
     feedbacskText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
   },
   {
-    name: "Oliver Smith",
-    designation: "React JS Specialist",
+    name: "Testimonial Name",
+    designation: "Designation,Company",
     feedbacskText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
   },
   {
-    name: "Thomas John",
-    designation: "Angular JS Specialist",
+    name: "Testimonial Name",
+    designation: "Designation,Company",
     feedbacskText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
   },

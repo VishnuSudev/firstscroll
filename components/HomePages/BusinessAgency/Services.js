@@ -71,7 +71,7 @@ const Services = () => {
       <div id="services" className="pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Our Services</h2>
+            <h2>Services Offered</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna.

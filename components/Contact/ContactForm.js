@@ -80,7 +80,7 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Company"
                       className="form-control"
                       value={contact.email}
                       onChange={handleChange}
@@ -93,7 +93,7 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="number"
-                      placeholder="Phone number"
+                      placeholder="Email Id"
                       className="form-control"
                       value={contact.number}
                       onChange={handleChange}
@@ -106,7 +106,7 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="subject"
-                      placeholder="Subject"
+                      placeholder="Phone"
                       className="form-control"
                       value={contact.subject}
                       onChange={handleChange}
