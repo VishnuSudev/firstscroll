@@ -2,62 +2,62 @@ import React from "react";
 
 const partnersData = [
   {
-    image: "/images/partners/partner1.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "100",
   },
   {
-    image: "/images/partners/partner2.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "200",
   },
   {
-    image: "/images/partners/partner3.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "300",
   },
   {
-    image: "/images/partners/partner4.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "400",
   },
   {
-    image: "/images/partners/partner5.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "500",
   },
   {
-    image: "/images/partners/partner6.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "600",
   },
   {
-    image: "/images/partners/partner7.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "700",
   },
   {
-    image: "/images/partners/partner8.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "800",
   },
   {
-    image: "/images/partners/partner9.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "900",
   },
   {
-    image: "/images/partners/partner10.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "1000",
   },
   {
-    image: "/images/partners/partner11.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "1100",
   },
   {
-    image: "/images/partners/partner12.png",
+    image: "https://place-hold.it/194x128",
     link: "#",
     aosDelay: "1200",
   },
