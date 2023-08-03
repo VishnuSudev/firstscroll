@@ -1,250 +1,60 @@
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import VisibilitySensor from "react-visibility-sensor";
 
 const MainBanner = () => {
-  const [toggler, setToggler] = useState(false);
+  
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="hero-slider"
-      >
-        <SwiperSlide>
-          <div 
-            className="hero-banner overly"
-            style={{ 
-              backgroundImage: `url(/images/hero-banner11.jpg)` 
-            }}
-          >
-            <div className="d-table">
-              <div className="d-table-cell">
-                <div className="container">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <div className="main-banner-content left">
-                        <h1
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          Data Driven
-                        </h1>
-
-                        <p
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          Where Performance Takes the Lead
-                        </p>
-
-                        <div
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("contact")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            Contact Us
-                          </Link>
-
-                          <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("process")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            How it works
-                          </Link>
-                        </div>
-                      </div>
-                    )}
-                  </VisibilitySensor>
+      <div className="app-main-banner">
+        <div className="container">
+          <div className="app-main-banner-inner"  style={{paddingTop:80}}>
+            <div className="row">
+              <div className="col-lg-6 col-md-12">
+                <div className="content">
+                  <span className="sub-title">
+                    Performance First
+                  </span>
+                  <h1>
+                  Data Driven: Where Performance Takes the Lead
+                  </h1>
+                  {/* <p>
+                  We excel in impactful campaigns for Health & Beauty, Food & Beverage, and FMCG sectors, E-commerce, and others. From global brand activations to local challenger brands, our focus remains on thoughtful, performance-led social executions.</p> */}
+                  <Link href="#" className="app-banner-btn">
+                    Contact Us {" "}
+                    <i className="fa-solid fa-arrow-right-long"></i>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12">
+                <div
+                  className="image"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <img src="/images/app/mobile-app.png" alt="banner-img" />
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div 
-            className="hero-banner overly"
-            style={{ 
-              backgroundImage: `url(/images/hero-banner12.jpg)` 
-            }}
-          >
-            <div className="d-table">
-              <div className="d-table-cell">
-                <div className="container">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <div className="main-banner-content left">
-                        <h1
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          {/* Grow Your Business
-                           */}
-                           Data Driven
-                        </h1>
-
-                        <p
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          {/* Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. */}
-                           Where Performance Takes the Lead
-                        </p>
-
-                        <div
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                         <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("contact")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            Contact Us
-                          </Link>
-
-                          <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("process")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            How it works
-                          </Link>
-                        </div>
-                      </div>
-                    )}
-                  </VisibilitySensor>
-                </div>
-              </div>
+            {/* Shape Images */}
+            <div className="app-banner-shape1">
+              <img src="/images/app/shape1.png" alt="image" />
+            </div>
+            <div className="app-banner-shape2">
+              <img src="/images/app/shape2.png" alt="image" />
+            </div>
+            <div className="app-banner-shape3">
+              <img src="/images/app/shape2.png" alt="image" />
+            </div>
+            <div className="app-banner-shape4">
+              <img src="/images/app/shape3.png" alt="image" />
+            </div>
+            <div className="app-banner-shape5">
+              <img src="/images/app/shape4.png" alt="image" />
             </div>
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div 
-            className="hero-banner overly"
-            style={{ 
-              backgroundImage: `url(/images/hero-banner13.jpg)` 
-            }}
-          >
-            <div className="d-table">
-              <div className="d-table-cell">
-                <div className="container">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <div className="main-banner-content left">
-                        <h1
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          {/* Start Your Business? 
-                          */}
-                          Data Driven
-                        </h1>
-
-                        <p
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                           Where Performance Takes the Lead
-                        </p>
-
-                        <div
-                          className={
-                            isVisible
-                              ? "animated fadeInUp opacityOne"
-                              : "opacityZero"
-                          }
-                        >
-                          <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("contact")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            Contact Us
-                          </Link>
-
-                          <Link 
-                          onClick={(e) => {
-                            e.preventDefault();
-                            document
-                              .getElementById("process")
-                              .scrollIntoView({ behavior: "smooth" });
-                          }}
-                          href="/contact" className="btn btn-primary">
-                            How it works
-                          </Link>
-                        </div>
-                      </div>
-                    )}
-                  </VisibilitySensor>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      </div>
     </>
   );
 };

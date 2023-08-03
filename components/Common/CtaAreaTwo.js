@@ -12,14 +12,14 @@ const CtaAreaTwo = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              So What is Next?
+              Contact Us
             </span>
             <h5 style={{color:'white',fontSize:30}}
               data-aos="fade-in"
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              Excited to explore what the future holds? Connect with us to collaborate on your next project
+              Have a question or an idea?  Please let me know
             </h5>
           </div>
 
@@ -29,16 +29,7 @@ const CtaAreaTwo = () => {
             data-aos-duration="1200"
             data-aos-delay="300"
           >
-             <Link
-                 onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-                href="/contact/" className="custom-btn">
-                  Contact Us
-                </Link>
+             <a href="mailto:hello@firstscroll.com" className="custom-btn"> <i class="fa-solid fa-envelope-circle-check"></i>hello@firstscroll.com</a>
           </div>
         </div>
       </div>

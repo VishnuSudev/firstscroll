@@ -38,7 +38,7 @@ const NavbarTwo = () => {
     <>
       <div id="navbar" className="navbar-area navbar-style-2">
         <nav className="navbar navbar-expand-md navbar-light">
-          <div className="container-fluid">
+          <div className="container">
             <Link href="/" className="navbar-brand">
               <div>
               <img src="/logo1.png" className="black-logo " width='120' height='20' alt="logo" />

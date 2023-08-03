@@ -1,53 +1,40 @@
 import React from "react";
 import NavbarTwo from "../components/Layouts/NavbarTwo";
 import MainBanner from "../components/HomePages/BusinessAgency/MainBanner";
-import About from "../components/HomePages/BusinessAgency/About";
 import Services from "../components/HomePages/BusinessAgency/Services";
-import OurWorks from "../components/HomePages/BusinessAgency/OurWorks";
-import WorkProcess from "../components/HomePages/BusinessAgency/WorkProcess";
-import Feedback from "../components/Common/Feedback";
-import TeamStyleTwo from "../components/Common/TeamStyleTwo";
-import PricingStyleTwo from "../components/Pricing/PricingStyleTwo";
-import PartnerTwo from "../components/Common/PartnerTwo";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
-import LatestNewsSlider from "../components/Common/LatestNewsSliderTwo";
-import Footer from "../components/Layouts/Footer";
-import ContactInfo from "../components/Contact/ContactInfo";
-import ContactForm from "../components/Contact/ContactForm";
+import Funfacts from "../components/HomePages/BusinessConsulting/Funfacts";
+import Features from "../components/HomePages/BusinessConsulting/Features";
+import AboutUsContent from "../components/HomePages/AppShowcase/AboutUsContent";
+import CallToAction from "../components/HomePages/BusinessConsulting/CallToAction";
+import ClientFeedback from "../components/HomePages/AppShowcase/ClientFeedback";
+import FooterDark from "../components/Layouts/FooterDark";
+import Partners from "../components/HomePages/AppShowcase/Partners";
 
 const BusinessAgency = () => {
-  //check
   return (
     <>
       <NavbarTwo />
 
       <MainBanner />
 
+      <Features />
+
+      <Partners />
+
       <Services />
 
-      <About />
+      <Funfacts />
 
-      {/* <OurWorks /> */}
+      <AboutUsContent />
 
-      <WorkProcess />
+      <CallToAction />
 
-      <Feedback />
-
-      <TeamStyleTwo />
-
-      {/* <PricingStyleTwo /> */}
-
-      <PartnerTwo />
+      <ClientFeedback />
 
       <CtaAreaTwo />
 
-      <ContactInfo/>
-
-      <ContactForm/>
-
-      <LatestNewsSlider />
-
-      <Footer />
+      <FooterDark />
     </>
   );
 };

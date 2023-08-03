@@ -4,7 +4,7 @@ import PageBanner from "../components/Common/PageBanner";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactForm from "../components/Contact/ContactForm";
 import Newsletter from "../components/Common/Newsletter";
-import Footer from "../components/Layouts/Footer";
+import FooterDark from "../components/Layouts/FooterDark";
 
 const Contact = () => {
   return (
@@ -20,8 +20,7 @@ const Contact = () => {
       <div className="ptb-100">
         <Newsletter />
       </div>
-
-      <Footer />
+    <FooterDark />
     </>
   );
 };

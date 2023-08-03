@@ -47,15 +47,9 @@ const LatestNewsSliderTwo = () => {
     <>
       <div 
       id="blogs"
-      className="blog-area ptb-100">
+      className="blog-area">
         <div className="container">
-          <div className="section-title">
-            <h2>Blogs</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
+          
 
           <Swiper
             pagination={{
@@ -91,7 +85,7 @@ const LatestNewsSliderTwo = () => {
                       </Link>
 
                       <div className="post-tag">
-                        <Link href={value.readMoreLink}>{value.category}</Link>
+                        <Link href="#">{value.category}</Link>
                       </div>
                     </div>
 
