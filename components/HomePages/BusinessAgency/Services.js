@@ -30,7 +30,7 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-target bg-fc3549",
-    title: "Data Analytics and Report",
+    title: "Data Analytics and Reports",
     shortText:
       "Utilizing advanced analytics tools to track and measure campaign performance, user engagement, and conversions, providing clients with actionable insights to optimize ROI-driven strategies.",
     viewDetails: "/service-details",
@@ -53,10 +53,18 @@ const servicesData = [
     aosDelay: "600",
   },
   {
-    iconName: "pe-7s-users bg-ff612f",
-    title: "Omni-channel retail",
+    iconName: "pe-7s-graph3 bg-ff612f",
+    title: "Marketing CRM development",
     shortText:
-      "Omnichannel retail strategies that empower your brand to thrive in today's competitive market. By synchronizing messaging and promotions across platforms like social media, email, website, and mobile apps, we ensure a consistent and captivating customer experience.",
+      "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
+    viewDetails: "/service-details",
+    aosDelay: "600",
+  },
+  {
+    iconName: "pe-7s-graph3 bg-ff612f",
+    title: "Marketing CRM development",
+    shortText:
+      "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
     viewDetails: "/service-details",
     aosDelay: "600",
   },
@@ -80,17 +88,20 @@ const Services = () => {
 
           <div className="row justify-content-center">
             {servicesData &&
-              servicesData.slice(0, 6).map((value, i) => (
+              servicesData.map((value, i) => (
                 <div
-                  className="col-lg-4 col-sm-6"
+                  className="col-lg-3 col-sm-6"
                   key={i}
                   data-aos="fade-in"
                   data-aos-duration="1200"
                   data-aos-delay={value.aosDelay}
                 >
-                  <div className="service-card-one bg-fcfbfb text-center">
+                  <div 
+                  className="service-card-one bg-fcfbfb text-center">
                     <i className={value.iconName}></i>
-                    <h3>
+                    <h3 style={{
+                      fontSize:"20px",
+                    }}>
                       <Link href="#">{value.title}</Link>
                     </h3>
                     <p
@@ -122,7 +133,9 @@ const Services = () => {
             }}
             contentStyle={{
               borderRadius: "10px",
-              height: "25%",
+              minHeight: "25%",
+              minWidth: "75%",
+              padding:"20px"
             }}
             position="right center"
           >

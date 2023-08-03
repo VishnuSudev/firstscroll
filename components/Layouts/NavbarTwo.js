@@ -389,7 +389,7 @@ const NavbarTwo = () => {
                         .scrollIntoView({ behavior: "smooth" });
                     }}
                   >
-                    About us
+                    Who we are
                   </Link>
                 </li>
 

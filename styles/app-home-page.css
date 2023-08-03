@@ -1,10 +1,10 @@
 /* Global Variables */
 :root {
   --transition: .5s;
-  --mainColor: #ED2775;
+  --mainColor: #1F4462;
   --whiteColor: #ffffff;
   --blackColor: #262A37;
-  --gradientColor: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+  --gradientColor: linear-gradient(44.44deg, #1C518E 7.79%, #1B57A4 94.18%);
 }
 
 p, ul, ol {
@@ -31,7 +31,7 @@ p, ul, ol {
   display: inline-block;
   color: var(--whiteColor);
   transition: var(--transition);
-  box-shadow: 0px 12px 35px rgba(237, 39, 117, 0.25);
+  box-shadow: 0px 12px 35px rgba(119, 119, 204, 0.25);
   font-size: 15px;
   font-weight: 600;
 }

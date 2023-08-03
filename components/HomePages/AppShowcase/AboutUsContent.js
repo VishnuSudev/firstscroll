@@ -22,7 +22,7 @@ const AboutUsContent = () => {
 
             <div className="col-lg-6 col-md-12"   style={{paddingTop:100, paddingBottom:50}}>
               <div className="app-about-content">
-                <span className="app-sub-title">ABOUT US</span>
+                <span className="app-sub-title">Who We Are</span>
                 <h2>Providing Marketing services for growing brands</h2>
                 <p>
                 Where mischief meets marketing magic! Our oddball wizards concoct ROI-driven spells, mesmerizing audiences with quirky campaigns and data-driven delights. For 10+ years, our digitally obsessed team delivers exceptional client service and ensures success in the ever-evolving marketing landscape.
