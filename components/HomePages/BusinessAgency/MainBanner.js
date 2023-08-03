@@ -5,7 +5,7 @@ import ContactForm from "../../Contact/ContactForm";
 
 const MainBanner = () => {
   const [showModal, setShowModal] = useState(false);
-  const slidingText = ["Websites", "SEO", "Social Media", "Paid Search"];
+  const slidingText = [ "SEO", "Social Media", "Paid Search"];
   const [slidingName, setSlidingName] = useState(slidingText[0]);
 
   const changeName = () => {

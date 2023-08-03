@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-light bg-ffb700",
-    title: "Search Engine Optimization",
+    title: "E-commerce Strategy",
     shortText:
       "Implementing strategic SEO techniques to improve organic search rankings, increase website visibility, and drive qualified traffic, ultimately boosting ROI over time",
     viewDetails: "/service-details",
@@ -30,7 +30,7 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-target bg-fc3549",
-    title: "Data Analytics and Reports",
+    title: "Brand Strateg",
     shortText:
       "Utilizing advanced analytics tools to track and measure campaign performance, user engagement, and conversions, providing clients with actionable insights to optimize ROI-driven strategies.",
     viewDetails: "/service-details",
@@ -38,7 +38,7 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-helm bg-00d280",
-    title: "Performance Monitoring ",
+    title: "Search Engine Optimization ",
     shortText:
       "Constantly monitoring campaign performance, adjusting strategies, and optimizing ad placements, keywords, and targeting to achieve the best possible ROI for clients.",
     viewDetails: "/service-details",
@@ -46,23 +46,23 @@ const servicesData = [
   },
   {
     iconName: "pe-7s-graph3 bg-ff612f",
-    title: "Marketing CRM development",
+    title: "Product Marketing & Strategy",
     shortText:
       "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
     viewDetails: "/service-details",
     aosDelay: "600",
   },
   {
-    iconName: "pe-7s-graph3 bg-ff612f",
-    title: "Marketing CRM development",
+    iconName: "pe-7s-users bg-7C73C0",
+    title: "Social Media Marketing",
     shortText:
       "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
     viewDetails: "/service-details",
     aosDelay: "600",
   },
   {
-    iconName: "pe-7s-graph3 bg-ff612f",
-    title: "Marketing CRM development",
+    iconName: "pe-7s-science bg-B5C99A",
+    title: "Web & App development",
     shortText:
       "User-centric and visually stunning apps, optimized for seamless user experiences. Leveraging data-driven insights, we create apps that engage users, drive conversions, and boost your brand's ROI",
     viewDetails: "/service-details",
@@ -100,7 +100,7 @@ const Services = () => {
                   className="service-card-one bg-fcfbfb text-center">
                     <i className={value.iconName}></i>
                     <h3 style={{
-                      fontSize:"20px",
+                      fontSize:"18px",
                     }}>
                       <Link href="#">{value.title}</Link>
                     </h3>
