@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Popup from "reactjs-popup";
+import ContactForm from "../Contact/ContactForm";
 
 const NavbarTwo = () => {
   // Add active class
   const [currentPath, setCurrentPath] = useState("");
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
   // console.log(router.asPath)
 
   useEffect(() => {
@@ -382,7 +385,7 @@ const NavbarTwo = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       document
-                        .getElementById("about")
+                        .getElementById("aboutus")
                         .scrollIntoView({ behavior: "smooth" });
                     }}
                   >
@@ -390,22 +393,7 @@ const NavbarTwo = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item">
-                  <Link
-                    href="/portfolio/"
-                    className={`nav-link ${
-                      currentPath == "/portfolio/" && "active"
-                    }`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("clients")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                  >
-                    Clients 
-                    {/* <i className="fa-solid fa-angle-down"></i> */}
-                  </Link>
+                
 
                   {/* <ul className="dropdown-menu">
                     <li className="nav-item">
@@ -441,7 +429,7 @@ const NavbarTwo = () => {
                       </Link>
                     </li>
                   </ul> */}
-                </li>
+              
 
                 {/* <li className="nav-item">
                   <Link
@@ -654,19 +642,53 @@ const NavbarTwo = () => {
 
               <div className="others-options">
                 <Link
-                 onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
+                 onClick={() => {
+                  setShowModal(true)
                 }}
-                href="/contact/" className="btn btn-primary">
-                  Contact Us
+                href="#" className="btn btn-primary">
+                  Let's talk
                 </Link>
               </div>
             </div>
           </div>
         </nav>
+        <Popup
+            open={showModal}
+            onClose={() => {
+              setShowModal(false);
+            }}
+            contentStyle={{
+              borderRadius: "10px",
+              minHeight:"55%",
+              minWidth:"75%"
+            }}
+            position="right center"
+          >
+            <div
+              style={{
+                padding: "20px",
+                borderRadius: 10,
+              }}
+            >
+              <div 
+              onClick={()=>{
+                setShowModal(false);
+              }}
+              style={{
+                position:"absolute",
+                right:"10px",
+                top:"10px",
+                fontSize:"20px",
+                cursor:"pointer"
+              }}>
+               &#10006;
+              </div>
+              
+              <div style={{
+            
+              }}><ContactForm/></div>
+            </div>
+          </Popup>
       </div>
     </>
   );

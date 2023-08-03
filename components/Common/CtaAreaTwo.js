@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const CtaAreaTwo = () => {
+  
   return (
     <>
       <div className="cta-area-two ptb-100">
@@ -11,6 +12,8 @@ const CtaAreaTwo = () => {
               data-aos="fade-in"
               data-aos-duration="1200"
               data-aos-delay="100"
+              // style={containerStyles}
+
             >
               Contact Us
             </span>
@@ -29,7 +32,7 @@ const CtaAreaTwo = () => {
             data-aos-duration="1200"
             data-aos-delay="300"
           >
-             <a href="mailto:hello@firstscroll.com" className="custom-btn"> <i class="fa-solid fa-envelope-circle-check"></i>hello@firstscroll.com</a>
+             <a style={{ textTransform: 'lowercase' }} href="mailto:hello@firstscroll.com" className="custom-btn"> <i class="fa-solid fa-envelope-circle-check" style={{marginRight:15}}></i>hello@firstscroll.com</a>
           </div>
         </div>
       </div>
