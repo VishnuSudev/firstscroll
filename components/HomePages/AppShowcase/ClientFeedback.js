@@ -4,7 +4,7 @@ import { Autoplay, Pagination } from "swiper";
 
 const clientFeedbackData = [
   {
-    image: "/images/app/user1.jpg",
+    image: "/images/testimonials/04.jpg",
     name: "Daniel",
     designation: "Yoga Cult",
     feedbackText:
@@ -30,7 +30,7 @@ const clientFeedbackData = [
     ],
   },
   {
-    image: "/images/app/user2.jpg",
+    image: "/images/testimonials/01.jpg",
     name: "Ben",
     designation: "Massaggi",
     feedbackText:
@@ -56,7 +56,7 @@ const clientFeedbackData = [
     ],
   },
   {
-    image: "/images/app/user3.jpg",
+    image: "/images/testimonials/03.jpg",
     name: "Shankar",
     designation: "Cam Craft",
     feedbackText:
@@ -82,7 +82,7 @@ const clientFeedbackData = [
     ],
   },
   {
-    image: "/images/app/user4.jpg",
+    image: "/images/testimonials/02.jpg",
     name: "Arifa",
     designation: "CHIC by Sisters",
     feedbackText:

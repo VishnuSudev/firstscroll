@@ -42,10 +42,11 @@ This files table contents are outlined below >>>>>
 ** - Go Top CSS
 */
 /* Default CSS */
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #646464;
 }
@@ -3252,7 +3253,7 @@ CTA CSS
 }
 
 .cta-area-two {
-  background-image: url("/images/cta-bg.jpg");
+  /* background-image: url("/images/cta-bg.jpg"); */
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -3260,7 +3261,7 @@ CTA CSS
   background-attachment: fixed;
 }
 .cta-area-two::before {
-  background: linear-gradient(to left top, #1F4462, #1E4A78, #1C518E, #1B57A4, #195DBA);
+  background: linear-gradient(to left top, #1F4462, #1F4462, #1F4462, #1F4462, #1F4462);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -5424,5 +5425,46 @@ span.new {
   color: #179AD6;
   font-size: 26px;
 }
+h6::before, .app-sub-title::before{
+  display: inline-block;
+    content: "";
+    border-top: solid #f4ae28;
+    width: 4rem;
+    margin: 0 0.5rem 0 0;
+    transform: translateY(-0.3rem);
+}
+h6{
+  color: #f4ae28;
+}
+.app-banner-btn{
+  background-color: #f4ae28 !important ;
+}
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  10% {
+    top: 0;
+  }
+  45% {
+    top: -1.2em;
+  }
+  85% {
+    top: -2.4em;
+  }
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

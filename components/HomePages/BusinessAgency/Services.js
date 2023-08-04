@@ -76,7 +76,7 @@ const Services = () => {
 
   return (
     <>
-      <div id="services" className="pt-100 pb-70">
+      <div  className="pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Services Offered</h2>

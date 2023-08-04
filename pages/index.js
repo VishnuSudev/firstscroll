@@ -10,6 +10,10 @@ import CallToAction from "../components/HomePages/BusinessConsulting/CallToActio
 import ClientFeedback from "../components/HomePages/AppShowcase/ClientFeedback";
 import FooterDark from "../components/Layouts/FooterDark";
 import Partners from "../components/HomePages/AppShowcase/Partners";
+import BestServices from "../components/HomePages/StartupAgencyTwo/BestServices";
+// import './components/HomePages/BusinessAgency/scrolling.scss'
+
+
 
 const BusinessAgency = () => {
   return (
@@ -18,11 +22,13 @@ const BusinessAgency = () => {
 
       <MainBanner />
 
-      <Features />
+      {/* <Features /> */}
 
-      <Partners />
+      {/* <Partners /> */}
 
-      <Services />
+      {/* <Services /> */}
+
+      <BestServices />
 
       <Funfacts />
 

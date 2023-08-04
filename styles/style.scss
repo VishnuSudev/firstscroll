@@ -46,9 +46,9 @@ This files table contents are outlined below >>>>>
 // Global Variable
 
 $main-color: #1F4462;
-$gradient-color: linear-gradient(to left top, #1F4462, #1E4A78, #1C518E, #1B57A4, #195DBA);
-$main-font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Saira', sans-serif;
+$gradient-color: linear-gradient(to left top, #1F4462, #1F4462, #1F4462, #1F4462, #1F4462);
+$main-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
 $font-size: 15px;
 $black-color: #18181b;
 $paragraph-color: #646464;
@@ -58,23 +58,38 @@ $transition: all 0.5s ease;
 body {
     padding: 0;
     margin: 0;
+
     font: {
         family: $main-font-family;
         size: $font-size;
     }
+
     color: $paragraph-color;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $heading-font-family;
     color: $black-color;
     font-weight: bold;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-weight: bold;
 }
-h4, h5, h6 {
+
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
+
 p {
     line-height: 1.8;
     font-size: $font-size;
@@ -85,9 +100,11 @@ p {
         margin-bottom: 0;
     }
 }
+
 a {
     transition: $transition;
 }
+
 .d-table {
     width: 100%;
     height: 100%;
@@ -96,84 +113,105 @@ a {
         vertical-align: middle;
     }
 }
+
 img {
     max-width: 100%;
 }
+
 button {
     outline: 0 !important;
 }
+
 .border {
     border-color: #eee !important;
 }
+
 .radius-10 {
     border-radius: 10px;
 }
+
 .ptb-100 {
     padding: {
         top: 100px;
         bottom: 100px;
     }
 }
+
 .pt-100 {
     padding: {
         top: 100px;
     }
 }
+
 .pb-100 {
     padding: {
         bottom: 100px;
     }
 }
+
 .pb-70 {
     padding: {
         bottom: 70px;
     }
 }
+
 .pb-60 {
     padding: {
         bottom: 60px;
     }
 }
+
 .pl-0 {
     padding-left: 0 !important;
 }
+
 .bg-fixed {
     background-attachment: fixed;
 }
+
 .bg-fcfbfb {
     background-color: #f6f3f3;
 }
+
 .bg-f9f6f6 {
     background-color: #f9f6f6;
 }
+
 .bg-f9f9f9 {
     background-color: #f9f9f9;
 }
+
 .mb-30 {
     margin-bottom: 30px !important;
 }
+
 .mw-1920 {
     max-width: 1920px;
     margin: auto;
 }
+
 .pl-20 {
     padding-left: 20px;
 }
+
 .pr-20 {
     padding-right: 20px;
 }
+
 a {
     display: inline-block;
     transition: $transition;
     text-decoration: none;
     transition: $transition;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         outline: 0 !important;
         color: $main-color;
         text-decoration: none;
     }
 }
+
 .rounded-10 {
     border-radius: 10px;
 }
@@ -187,14 +225,18 @@ a {
     position: relative;
     text-transform: capitalize;
     z-index: 1;
+
     font: {
         weight: 600;
         size: 15px;
     }
-    &.disabled, &:disabled {
+
+    &.disabled,
+    &:disabled {
         opacity: 1;
     }
 }
+
 .btn-primary {
     color: $white-color;
     background-color: $white-color;
@@ -214,18 +256,25 @@ a {
         z-index: -1;
         transition: $transition;
     }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show>&.dropdown-toggle:focus {
         color: $main-color;
         box-shadow: unset;
         background-color: transparent;
         border-color: $main-color;
     }
-    &.disabled, &:disabled {
+
+    &.disabled,
+    &:disabled {
         color: $white-color;
         background-color: $white-color;
         border: 1px solid $main-color;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         color: $main-color;
         box-shadow: unset;
         background-color: transparent;
@@ -236,6 +285,7 @@ a {
         }
     }
 }
+
 .btn-secondary {
     color: $main-color;
     background-color: transparent;
@@ -255,18 +305,25 @@ a {
         z-index: -1;
         transition: $transition;
     }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show>&.dropdown-toggle:focus {
         color: $white-color;
         box-shadow: unset;
         background-color: $white-color;
         border-color: transparent;
     }
-    &.disabled, &:disabled {
+
+    &.disabled,
+    &:disabled {
         color: $main-color;
         background-color: transparent;
         border: 1px solid $main-color;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         color: $white-color;
         box-shadow: unset;
         background-color: $white-color;
@@ -289,13 +346,15 @@ a {
     font-weight: 600;
     font-size: 15px;
     transition: $transition;
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         border: 2px solid #000;
         background: #000;
         color: #fff;
     }
 }
- 
+
 /* section-title */
 .section-title {
     text-align: center;
@@ -304,23 +363,29 @@ a {
 
     h2 {
         margin-bottom: 15px;
+
         font: {
             size: 50px;
         }
     }
+
     p {
         margin-bottom: 0;
         margin: 0 auto;
         max-width: 650px;
     }
+
     .sub-title {
         display: block;
         margin-bottom: 12px;
         font-size: 17px;
         font-weight: 600;
     }
+
     &.white-color {
-        .sub-title, h2 {
+
+        .sub-title,
+        h2 {
             color: $white-color;
         }
     }
@@ -329,24 +394,32 @@ a {
         display: block;
         margin-bottom: 10px;
         color: $main-color;
+
         font: {
             weight: 600;
             size: 14px;
-        };
+        }
+
+        ;
     }
 }
+
 /* form control */
 .form-group {
     margin-bottom: 25px;
 }
+
 label {
     color: $black-color;
+
     font: {
         size: 15px;
         weight: 600;
     }
+
     margin-bottom: 10px;
 }
+
 .form-control {
     height: 55px;
     padding: 15px 20px;
@@ -384,35 +457,42 @@ Navbar CSS
             margin: 0;
             list-style-type: none;
         }
+
         .navbar-brand {
             font-weight: bold;
             font-size: 28px;
         }
+
         .navbar-nav {
             margin-left: auto;
- 
+
             .nav-item {
                 position: relative;
+
                 padding: {
                     left: 12px;
                     right: 12px;
                     top: 15px;
                     bottom: 15px;
                 }
+
                 a {
                     color: $black-color;
                     text-transform: capitalize;
                     position: relative;
+
                     font: {
                         weight: 500;
                         size: 15px;
                     }
+
                     padding: {
                         left: 0;
                         right: 0;
                         top: 0;
                         bottom: 0;
                     }
+
                     &::before {
                         bottom: -5px;
                         width: 0;
@@ -423,9 +503,12 @@ Navbar CSS
                         content: '';
                         position: absolute;
                     }
-                    &:hover, &:focus, &.active {
+
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: $black-color;
-    
+
                         &::before {
                             width: 60%;
                         }
@@ -439,6 +522,7 @@ Navbar CSS
                         margin-left: 2px;
                     }
                 }
+
                 .dropdown-menu {
                     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
                     background: $white-color;
@@ -453,12 +537,14 @@ Navbar CSS
                     border-radius: 5px;
                     visibility: hidden;
                     transition: all 0.3s ease-in-out;
+
                     padding: {
                         top: 20px;
                         left: 5px;
                         right: 5px;
                         bottom: 20px;
                     }
+
                     li {
                         position: relative;
                         padding: 7px 15px;
@@ -468,13 +554,18 @@ Navbar CSS
                             font-size: 14px;
                             color: $black-color;
                             font-weight: 500;
+
                             &::before {
                                 display: none;
                             }
-                            &:hover, &:focus, &.active {
+
+                            &:hover,
+                            &:focus,
+                            &.active {
                                 color: $main-color;
                             }
                         }
+
                         .dropdown-menu {
                             position: absolute;
                             left: 220px;
@@ -486,12 +577,15 @@ Navbar CSS
                                 a {
                                     color: $black-color;
 
-                                    &:hover, &:focus, &.active {
+                                    &:hover,
+                                    &:focus,
+                                    &.active {
                                         color: $main-color;
                                     }
                                 }
                             }
                         }
+
                         &:hover {
                             .dropdown-menu {
                                 opacity: 1 !important;
@@ -501,6 +595,7 @@ Navbar CSS
                         }
                     }
                 }
+
                 &:hover {
                     ul {
                         opacity: 1;
@@ -513,9 +608,11 @@ Navbar CSS
                 .mega-dropdown-menu {
                     width: 500px;
                     padding: 0 10px 5px;
+
                     .nav-item {
                         width: 50%;
                         float: left;
+
                         a {
                             padding-left: 0;
                             padding-right: 0;
@@ -532,58 +629,66 @@ Navbar CSS
                 }
             }
         }
+
         .others-options {
             padding: 0;
             margin: 0 0 0 10px;
             list-style-type: none;
-    
+
             .btn {
                 border-radius: 50px;
                 padding: 11px 20px;
                 font-size: 14px;
-    
+
                 &::before {
                     border-radius: 50px;
                 }
             }
         }
     }
+
     &.navbar-style-two {
         padding: {
             left: 55px;
             right: 55px;
         }
+
         nav {
             .navbar-nav {
                 margin-left: 150px;
                 transition: $transition;
             }
+
             .others-options {
                 margin: 0 0 0 0;
-        
+
                 .btn {
                     color: $white-color;
                     border-color: $white-color;
-        
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         border-color: $main-color;
                         background: transparent;
                     }
                 }
             }
         }
+
         &.is-sticky {
             .others-options {
                 .btn {
                     color: $main-color;
                     border-color: $main-color;
-        
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         border-color: $main-color;
                         color: $white-color;
                     }
                 }
             }
+
             nav {
                 .navbar-nav {
                     margin: {
@@ -594,66 +699,81 @@ Navbar CSS
             }
         }
     }
+
     &.navbar-style-three {
         position: relative;
+
         padding: {
             left: 55px;
             right: 55px;
             bottom: 15px;
         }
+
         nav {
             .navbar-nav {
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .others-options {
                 margin: 0 0 0 0;
             }
         }
     }
+
     &.navbar-style-four {
         position: relative;
+
         padding: {
             bottom: 15px;
         }
+
         nav {
             .navbar-nav {
                 margin-left: auto;
             }
         }
     }
+
     &.is-sticky {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+
         padding: {
             bottom: 2px;
             top: 2px;
         }
+
         z-index: 999;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
         background-color: $white-color !important;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     }
+
     &.navbar-style-2 {
         nav {
             .navbar-brand {
                 color: $white-color;
+
                 .black-logo {
                     display: none;
                 }
             }
+
             .navbar-nav {
                 .nav-item {
                     padding-left: 15px;
                     padding-right: 15px;
+
                     a {
                         color: $white-color;
                     }
                 }
             }
         }
+
         &.is-sticky {
             .navbar-brand {
                 color: $black-color;
@@ -661,46 +781,57 @@ Navbar CSS
                 .black-logo {
                     display: block;
                 }
+
                 .white-logo {
                     display: none;
                 }
             }
-            .navbar-nav > {
+
+            .navbar-nav> {
                 .nav-item {
-                    > a {
+                    >a {
                         color: $black-color;
                     }
                 }
             }
         }
     }
+
     &.navbar-style-3 {
         .container {
             max-width: 1365px;
         }
     }
+
     &.bg-white {
         padding: 10px 0;
     }
+
     .container-fluid {
         max-width: 1920px;
         padding-left: 30px;
         padding-right: 30px;
     }
+
     &.dark-navbar {
         background: #000;
         padding-top: 10px;
         padding-bottom: 10px;
+
         .navbar-nav {
             .nav-item {
                 a {
                     color: #fff;
-                    &:hover, &:focus, &.active {
+
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: #fff;
                     }
                 }
             }
         }
+
         &.is-sticky {
             padding-bottom: 2px;
             padding-top: 2px;
@@ -727,30 +858,36 @@ Navbar CSS
         height: 2px;
         display: block;
     }
+
     .top-bar {
         transform: rotate(45deg);
         transform-origin: 10% 10%;
         left: 4px;
         position: relative;
     }
+
     .middle-bar {
         opacity: 0;
         margin: 6px 0;
     }
+
     .bottom-bar {
         transform: rotate(-45deg);
         transform-origin: 10% 90%;
         left: 4px;
         position: relative;
     }
+
     &.collapsed {
         .top-bar {
-            transform: rotate(0);      
+            transform: rotate(0);
             left: 0;
         }
+
         .middle-bar {
             opacity: 1;
         }
+
         .bottom-bar {
             transform: rotate(0);
             left: 0;
@@ -758,7 +895,7 @@ Navbar CSS
     }
 }
 
-  
+
 /*================================================
 Main Banner CSS
 =================================================*/
@@ -766,12 +903,15 @@ Main Banner CSS
     position: relative;
     z-index: 1;
     height: 800px;
+
     background: {
         position: bottom center;
         size: cover;
         repeat: no-repeat;
     }
+
     overflow: hidden;
+
     &.gradient-banner {
         height: 800px;
 
@@ -786,6 +926,7 @@ Main Banner CSS
             z-index: -1;
             opacity: .70;
         }
+
         .main-banner-content {
             text-align: center;
             max-width: 690px;
@@ -794,32 +935,40 @@ Main Banner CSS
             span {
                 color: $white-color;
             }
+
             h1 {
                 color: $white-color;
             }
+
             p {
                 color: $white-color;
                 opacity: .90;
                 max-width: 557px;
                 margin: 0 auto 30px;
             }
+
             .btn-primary {
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     color: $white-color;
                     border-color: $white-color;
                 }
             }
+
             .btn-secondary {
                 border-color: $white-color;
                 color: $white-color;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     border-color: $main-color;
                     background: transparent;
                 }
             }
         }
     }
+
     &.startup-agency {
         .container {
             max-width: 1365px;
@@ -829,6 +978,7 @@ Main Banner CSS
             h1 {
                 font-size: 50px;
             }
+
             p {
                 margin-bottom: 30px;
             }
@@ -839,6 +989,7 @@ Main Banner CSS
         background-color: #fbfbfb;
     }
 }
+
 .main-banner-boxes {
     .container-fluid {
         padding: {
@@ -846,13 +997,15 @@ Main Banner CSS
             right: 85px;
         }
     }
-    .main-banner { 
+
+    .main-banner {
         .container-fluid {
             padding: {
                 right: 55px;
                 left: 55px;
             }
         }
+
         .main-banner-content {
             p {
                 max-width: 520px;
@@ -866,6 +1019,7 @@ Main Banner CSS
         margin-top: 50px;
     }
 }
+
 .banner-animation-image2 {
     text-align: center;
 }
@@ -874,6 +1028,7 @@ Main Banner CSS
 .hero-banner {
     position: relative;
     height: 100vh;
+
     background: {
         position: center center;
         size: cover;
@@ -892,6 +1047,7 @@ Main Banner CSS
             width: 100%;
         }
     }
+
     &.overly-6 {
         &::before {
             content: "";
@@ -915,6 +1071,7 @@ Main Banner CSS
             margin-left: auto;
             margin-right: auto;
         }
+
         &.left {
             max-width: 800px;
         }
@@ -922,33 +1079,41 @@ Main Banner CSS
         span {
             color: $main-color;
         }
+
         h1 {
             color: $white-color;
             font-size: 80px;
         }
+
         p {
             color: $white-color;
             margin-bottom: 30px;
             font-size: 19px;
         }
+
         .btn {
             margin-top: 15px;
         }
+
         .btn-primary {
             font-size: 16px;
             padding: 15px 40px;
-            &:hover, &:focus {
+
+            &:hover,
+            &:focus {
                 color: $white-color;
                 border-color: $white-color;
             }
         }
+
         .btn-secondary {
             border-color: $white-color;
             color: $white-color;
             font-size: 16px;
             padding: 15px 30px;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 border-color: $main-color;
                 background: transparent;
             }
@@ -959,6 +1124,7 @@ Main Banner CSS
         margin-top: 50px;
     }
 }
+
 #particles-js {
     canvas {
         width: 100%;
@@ -974,10 +1140,12 @@ Main Banner CSS
     bottom: 0;
     left: 0;
     width: 100%;
+
     img {
         width: 100%;
     }
 }
+
 /* Animate banner image */
 .animate-banner-image {
     position: relative;
@@ -989,67 +1157,88 @@ Main Banner CSS
         margin: auto;
     }
 }
- 
+
 @-webkit-keyframes border-transform {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
     }
+
     14% {
         border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
     }
 }
-  
+
 @keyframes border-transform {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
     }
+
     14% {
         border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
     }
 }
+
 @keyframes opacitychange {
     0% {
         opacity: 0;
     }
+
     25% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -1063,12 +1252,14 @@ Main Banner CSS
         height: 50px;
         line-height: 50px;
         border-radius: 100px;
+
         &::after {
             color: #18181b;
             font-size: 20px;
             padding-right: 3px;
         }
     }
+
     .swiper-button-next {
         right: 30px;
         background: #e5e5e5;
@@ -1076,26 +1267,33 @@ Main Banner CSS
         height: 50px;
         line-height: 50px;
         border-radius: 100px;
+
         &::after {
             color: #18181b;
             font-size: 20px;
             padding-left: 3px;
         }
     }
-    .swiper-button-prev:hover, .swiper-button-next:hover {
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
         background-color: $main-color;
+
         &::after {
             color: #fff;
         }
     }
+
     .swiper-pagination {
         bottom: 30px;
+
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             background: #D6D6D6;
             border: 1px solid #b7b7b7;
             opacity: 1;
+
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
                 border: 1px solid #ff2c9c;
@@ -1109,118 +1307,138 @@ Main Banner CSS
         image: url(/images/main-banner1.jpg);
     }
 }
+
 .item-bg3 {
     background: {
         image: url(/images/main-banner2.jpg);
     }
 }
+
 .item-bg4 {
     background: {
         image: url(/images/main-banner4.jpg);
     }
 }
+
 .item-bg5 {
     background: {
         position: right top;
         image: url(/images/main-banner-shape2.jpg);
     }
 }
+
 .item-bg6 {
     background: {
         position: right top;
         image: url(/images/main-banner5.jpg);
     }
 }
+
 .item-bg7 {
     background: {
         position: right top;
         image: url(/images/main-banner6.jpg);
     }
 }
+
 .hero-bg1 {
     background: {
         position: center center;
         image: url(/images/hero-banner1.jpg);
     }
 }
+
 .hero-bg2 {
     background: {
         position: center center;
         image: url(/images/hero-banner2.jpg);
     }
 }
+
 .hero-bg3 {
     background: {
         position: center center;
         image: url(/images/hero-banner3.jpg);
     }
 }
+
 .hero-bg4 {
     background: {
         position: center center;
         image: url(/images/hero-banner4.jpg);
     }
 }
+
 .hero-bg5 {
     background: {
         position: center center;
         image: url(/images/hero-banner5.jpg);
     }
 }
+
 .hero-bg6 {
     background: {
         position: center center;
         image: url(/images/hero-banner6.jpg);
     }
 }
+
 .hero-bg7 {
     background: {
         position: center center;
         image: url(/images/hero-banner7.jpg);
     }
 }
+
 .hero-bg8 {
     background: {
         position: center center;
         image: url(/images/hero-banner8.jpg);
     }
 }
+
 .hero-bg9 {
     background: {
         position: center center;
         image: url(/images/hero-banner9.jpg);
     }
 }
+
 .hero-bg10 {
     background: {
         position: center center;
         image: url(/images/hero-banner10.jpg);
     }
 }
+
 .hero-bg11 {
     background: {
         position: center center;
         image: url(/images/hero-banner11.jpg);
     }
 }
+
 .hero-bg12 {
     background: {
         position: center center;
         image: url(/images/hero-banner12.jpg);
     }
 }
+
 .hero-bg13 {
     background: {
         position: center center;
         image: url(/images/hero-banner13.jpg);
     }
 }
+
 .hero-bg14 {
     background: {
         position: center center;
         image: url(/images/hero-banner14.jpg);
     }
 }
+
 .hero-bg15 {
     background: {
         position: center center;
@@ -1236,30 +1454,37 @@ Main Banner CSS
 .main-banner-content {
     margin-top: 30px;
     padding-right: 30px;
+
     span {
         color: $main-color;
         display: block;
         font-weight: 600;
     }
+
     h1 {
         font: {
             size: 62px;
             weight: 800;
         }
+
         margin: 12px 0 30px;
         text-transform: capitalize;
     }
+
     p {
         margin-bottom: 30px;
         font-size: 16px;
     }
+
     .btn-primary {
         margin-right: 20px;
     }
 }
+
 .banner-image {
     text-align: center;
 }
+
 .banner-form {
     background: $white-color;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
@@ -1270,6 +1495,7 @@ Main Banner CSS
         .form-control {
             padding-left: 15px;
         }
+
         .btn {
             display: block;
             width: 100%;
@@ -1278,6 +1504,7 @@ Main Banner CSS
         }
     }
 }
+
 .banner-animation-image {
     position: relative;
     width: 100%;
@@ -1293,11 +1520,13 @@ Main Banner CSS
             top: -72px;
             z-index: 2;
         }
+
         &:nth-child(2) {
             left: 170px;
             bottom: -130px;
             z-index: 2;
         }
+
         &:nth-child(3) {
             left: 0;
             bottom: 110px;
@@ -1305,6 +1534,7 @@ Main Banner CSS
             margin: 0 auto;
             z-index: 2;
         }
+
         &:nth-child(4) {
             left: 38px;
             right: 0;
@@ -1312,6 +1542,7 @@ Main Banner CSS
             z-index: 1;
             top: -67px;
         }
+
         &:nth-child(5) {
             left: 0;
             bottom: -15px;
@@ -1319,46 +1550,55 @@ Main Banner CSS
             margin: 0 auto;
             z-index: 2;
         }
+
         &:nth-child(6) {
             left: 170px;
             bottom: 0;
             z-index: 1;
         }
+
         &:nth-child(7) {
             left: 73px;
             bottom: -15px;
         }
+
         &:nth-child(8) {
             left: -15px;
             top: -40px;
         }
+
         &:nth-child(9) {
             left: 0;
             right: -160px;
             margin: 0 auto;
             top: -115px;
         }
+
         &:nth-child(10) {
             right: 4px;
             bottom: 0;
             z-index: -1;
         }
+
         &:nth-child(11) {
             right: -70px;
             top: -44px;
             z-index: -2;
         }
+
         &:nth-child(12) {
             right: -75px;
             bottom: -100px;
             z-index: -1;
         }
+
         &.main-pic {
             display: none;
             position: relative;
         }
     }
 }
+
 .slider-area {
     ul {
         li {
@@ -1377,46 +1617,60 @@ Main Banner CSS
                 z-index: 1;
                 visibility: visible;
             }
-            .tp-caption.NotGeneric-Title, .NotGeneric-Title {
+
+            .tp-caption.NotGeneric-Title,
+            .NotGeneric-Title {
                 font: {
                     family: $heading-font-family !important;
                 }
             }
-            .tp-caption.NotGeneric-SubTitle, .NotGeneric-SubTitle {
+
+            .tp-caption.NotGeneric-SubTitle,
+            .NotGeneric-SubTitle {
                 font: {
                     family: $main-font-family !important;
                     size: 15px !important;
                     weight: 500 !important;
                 }
+
                 letter-spacing: 0 !important;
                 line-height: 1.8 !important;
             }
-            .tp-caption.NotGeneric-SubTitle-paragraph, .NotGeneric-SubTitle-paragraph {
+
+            .tp-caption.NotGeneric-SubTitle-paragraph,
+            .NotGeneric-SubTitle-paragraph {
                 color: $main-color !important;
                 font-size: 18px !important;
             }
-            .tp-caption.NotGeneric-btn, .NotGeneric-btn {
+
+            .tp-caption.NotGeneric-btn,
+            .NotGeneric-btn {
                 .btn {
                     margin: 0 4px;
                     transition: $transition !important;
                 }
+
                 .btn-primary {
                     background-color: $white-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         border-color: $white-color;
                     }
                 }
+
                 .btn-secondary {
                     border-color: $white-color;
                     color: $white-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         border-color: $main-color;
                         background: transparent;
                     }
                 }
             }
+
             .slotholder {
                 filter: unset !important;
             }
@@ -1430,6 +1684,7 @@ Main Banner CSS
 
     .video-box {
         position: relative;
+
         .video-btn {
             background-color: $main-color;
             color: $white-color;
@@ -1438,16 +1693,21 @@ Main Banner CSS
             height: 100px;
             cursor: pointer;
 
-            &::after, &::before {
+            &::after,
+            &::before {
                 border: 1px solid $main-color;
             }
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background-color: $white-color;
                 color: $main-color;
             }
-    
-            &:hover::after, &:hover::before, &:focus::after, &:focus::before {
+
+            &:hover::after,
+            &:hover::before,
+            &:focus::after,
+            &:focus::before {
                 border-color: $white-color;
             }
         }
@@ -1460,7 +1720,7 @@ Main Banner CSS
         overflow: hidden;
         left: 0;
         top: 0;
-    
+
         video {
             position: absolute;
             left: 0;
@@ -1485,7 +1745,7 @@ Main Banner CSS
                 font-size: 70px;
             }
         }
-   
+
         .video-box {
             .video-btn {
                 position: relative;
@@ -1503,18 +1763,22 @@ Featured Services CSS
 .featured-services-area {
     position: relative;
     z-index: 1;
+
     margin: {
         top: -85px;
         bottom: -30px;
     }
+
     .featured-services-box {
         margin-top: 30px;
     }
+
     &.boxes-style-two {
         margin-top: 0;
         padding-top: 80px;
     }
 }
+
 .featured-services-box {
     position: relative;
     z-index: 1;
@@ -1528,24 +1792,29 @@ Featured Services CSS
         color: $main-color;
         transition: $transition;
     }
+
     h3 {
         font: {
             size: 24px;
         }
+
         margin: 15px 0 15px;
         transition: $transition;
 
         a {
             color: $black-color;
+
             &:hover {
                 color: $white-color;
             }
         }
     }
+
     p {
         margin-bottom: 25px;
         transition: $transition;
     }
+
     &::before {
         content: '';
         position: absolute;
@@ -1559,6 +1828,7 @@ Featured Services CSS
         visibility: hidden;
         transition: $transition;
     }
+
     .back-text {
         font-size: 200px;
         position: absolute;
@@ -1574,43 +1844,56 @@ Featured Services CSS
         text-transform: uppercase;
         transition: $transition;
     }
-    &:hover, &:focus, &.active {
+
+    &:hover,
+    &:focus,
+    &.active {
         &::before {
             opacity: 1;
             visibility: visible;
         }
+
         .icon {
             color: $white-color;
         }
+
         p {
             color: $white-color;
         }
+
         h3 {
             color: $white-color;
+
             a {
                 color: $white-color;
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
         }
+
         .read-more-btn {
             color: $white-color;
         }
+
         .back-text {
             opacity: .1;
         }
     }
 }
+
 .read-more-btn {
     color: $black-color;
     display: inline-block;
     position: relative;
     z-index: 1;
+
     font: {
         size: 15px;
         weight: 600;
     }
+
     &::before {
         content: '';
         position: absolute;
@@ -1625,48 +1908,60 @@ Featured Services CSS
         visibility: hidden;
         transition: $transition;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         &::before {
             opacity: 1;
             visibility: visible;
             left: 40px;
         }
     }
+
     i {
         padding-left: 5px;
     }
 }
+
 .featured-services-slides {
     .swiper-button-prev {
-        left: 0;
-        top: 30px;
-        background: #e5e5e5;
+        left: 480px;
+        top: 25px;
+        background: #f4ae28;
         width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 100px;
+        height: 20px;
+        line-height: 30px;
+        border-radius: 50px;
+
         &::after {
             color: #18181b;
-            font-size: 18px;
+            font-size: 12px;
+            font-weight: 800;
             padding-right: 3px;
         }
     }
+
     .swiper-button-next {
         right: 0;
-        top: 30px;
-        background: #e5e5e5;
+        top: 25px;
+        background: #f4ae28;
         width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 100px;
+        height: 20px;
+        line-height: 30px;
+        border-radius: 50px;
+
         &::after {
             color: #18181b;
-            font-size: 18px;
+            font-size: 12px;
+            font-weight: 800;
             padding-left: 3px;
         }
     }
-    .swiper-button-prev:hover, .swiper-button-next:hover {
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
         background-color: $main-color;
+
         &::after {
             color: #fff;
         }
@@ -1681,33 +1976,41 @@ About CSS
         text-align: left;
         margin-bottom: 18px;
         max-width: 100%;
+
         p {
             margin: 0;
         }
     }
 }
+
 .about-inner-area {
     margin-top: 60px;
 
     .about-text {
         h3 {
             margin-bottom: 12px;
+
             font: {
                 size: 22px;
             }
         }
     }
 }
+
 .about-image {
     position: relative;
+
     img {
         width: 100%;
     }
 }
+
 .about-content-two {
     padding-left: 30px;
+
     .about-text {
         margin-bottom: 30px;
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -1720,15 +2023,18 @@ About CSS
             list-style-type: none;
             padding: 0;
             margin: 10px 0 0;
+
             li {
                 margin-bottom: 10px;
                 position: relative;
                 padding-left: 25px;
                 line-height: 1.8;
                 font-weight: 600;
+
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 i {
                     position: absolute;
                     left: 0;
@@ -1740,10 +2046,12 @@ About CSS
         }
     }
 }
+
 .video-box {
     text-align: center;
+
     .video-btn {
-        box-shadow: 0 20px 30px rgba(0,0,0,.2);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .2);
         position: absolute;
         left: 0;
         right: 0;
@@ -1761,7 +2069,8 @@ About CSS
         margin-right: auto;
         cursor: pointer;
 
-        &::after, &::before {
+        &::after,
+        &::before {
             content: '';
             display: block;
             position: absolute;
@@ -1789,34 +2098,41 @@ About CSS
 
         &::before {
             -webkit-animation: ripple 2s linear infinite;
-                    animation: ripple 2s linear infinite;
-        }
-        &::after {
-            -webkit-animation: ripple 2s linear 1s infinite;
-                    animation: ripple 2s linear 1s infinite;
+            animation: ripple 2s linear infinite;
         }
 
-        &:hover, &:focus {
+        &::after {
+            -webkit-animation: ripple 2s linear 1s infinite;
+            animation: ripple 2s linear 1s infinite;
+        }
+
+        &:hover,
+        &:focus {
             background-color: $main-color;
             color: #ffffff;
         }
 
-        &:hover::after, &:hover::before, &:focus::after, &:focus::before {
+        &:hover::after,
+        &:hover::before,
+        &:focus::after,
+        &:focus::before {
             border-color: $main-color;
         }
     }
 }
-  
+
 @-webkit-keyframes ripple {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+
     75% {
         -webkit-transform: scale(1.75);
         transform: scale(1.75);
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(2);
         transform: scale(2);
@@ -1829,22 +2145,26 @@ About CSS
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+
     75% {
         -webkit-transform: scale(1.75);
         transform: scale(1.75);
         opacity: 1;
     }
+
     100% {
-    -webkit-transform: scale(2);
+        -webkit-transform: scale(2);
         transform: scale(2);
         opacity: 0;
     }
 }
+
 @-webkit-keyframes rotateMe {
     from {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -1859,23 +2179,27 @@ Case Studies CSS
         text-align: center;
         margin-top: 20px;
     }
+
     .container-fluid {
         padding-left: 30px;
         padding-right: 30px;
         max-width: 1920px;
     }
 }
+
 .single-case-studies {
     margin-bottom: 30px;
     border-radius: 5px;
     position: relative;
     z-index: 1;
     min-height: 450px;
+
     background: {
         position: center center;
         size: cover;
         repeat: no-repeat;
     }
+
     .content {
         position: absolute;
         top: 0;
@@ -1886,40 +2210,49 @@ Case Studies CSS
 
         span {
             display: block;
+
             font: {
                 size: 14px;
                 weight: 600;
             }
+
             a {
                 color: $white-color;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $white-color;
                 }
             }
         }
+
         h3 {
             font: {
                 size: 25px;
             }
+
             line-height: 1.3;
             margin: 10px 0 0;
             color: $white-color;
             font-weight: 600;
+
             a {
                 color: $white-color;
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
         }
     }
+
     .btn {
         position: absolute;
         left: 30px;
         bottom: 30px;
         z-index: 2;
     }
+
     .shape {
         transition: $transition;
         position: absolute;
@@ -1930,6 +2263,7 @@ Case Studies CSS
         top: 50%;
         transform: translateY(-50%);
     }
+
     .btn-primary {
         border-color: $white-color;
         color: $black-color;
@@ -1938,13 +2272,19 @@ Case Studies CSS
         &::before {
             background: $white-color;
         }
-        &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        .show>&.dropdown-toggle:focus {
             color: $white-color;
         }
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             color: $white-color;
         }
     }
+
     &:hover {
         .shape {
             top: 55%;
@@ -1958,18 +2298,27 @@ Case Studies CSS
         }
     }
 }
+
 .mt-40 {
-    &:nth-child(1), &:nth-child(3) {
+
+    &:nth-child(1),
+    &:nth-child(3) {
         .single-case-studies {
             margin-top: 40px;
         }
     }
-    &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
+
+    &:nth-child(5),
+    &:nth-child(8),
+    &:nth-child(11),
+    &:nth-child(14),
+    &:nth-child(17) {
         .single-case-studies {
             margin-top: -40px;
         }
     }
 }
+
 .case-studies-tabs {
     .react-tabs {
         .react-tabs__tab-list {
@@ -1982,16 +2331,20 @@ Case Studies CSS
                 display: inline-block;
                 transition: $transition;
                 position: relative;
+
                 margin: {
                     left: 20px;
                     right: 20px;
                 }
+
                 color: $paragraph-color;
                 cursor: pointer;
+
                 font: {
                     size: 16px;
                     weight: 600;
                 }
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -2002,7 +2355,10 @@ Case Studies CSS
                     height: 2px;
                     background: $gradient-color;
                 }
-                &:hover, &:focus, &:focus-visible {
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
                     color: $main-color;
                     outline: 0;
 
@@ -2010,7 +2366,7 @@ Case Studies CSS
                         width: 100%;
                     }
                 }
-                
+
                 &.react-tabs__tab--selected {
                     color: $main-color;
 
@@ -2018,9 +2374,11 @@ Case Studies CSS
                         width: 100%;
                     }
                 }
+
                 &:first-child {
                     margin-left: 0;
                 }
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -2040,7 +2398,7 @@ Case Studies CSS
         width: 100%;
         height: 100%;
         left: 0;
-        top:0;
+        top: 0;
         position: absolute;
         border-radius: 8px;
         transition: $transition;
@@ -2065,19 +2423,22 @@ Case Studies CSS
         padding: 30px;
         transition: $transition;
         z-index: 5;
-        
+
         span {
             display: block;
             margin-bottom: 10px;
+
             a {
                 color: #c6c9d8;
                 font-weight: 600;
             }
         }
+
         h3 {
             font-size: 24px;
             line-height: 1.4;
         }
+
         .custom-btn {
             margin-top: 20px;
         }
@@ -2093,17 +2454,20 @@ Case Studies CSS
         }
     }
 }
+
 .custom-btn {
     background-color: #fff;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 6px;
     color: $main-color !important;
+
     &:hover {
         background-color: $main-color;
         color: $white-color !important;
     }
 }
+
 .work-slides {
     .swiper-button-prev {
         top: 30px;
@@ -2113,12 +2477,14 @@ Case Studies CSS
         height: 40px;
         line-height: 40px;
         border-radius: 100px;
+
         &::after {
             color: #18181b;
             font-size: 20px;
             padding-right: 3px;
         }
     }
+
     .swiper-button-next {
         top: 30px;
         right: 10px;
@@ -2127,14 +2493,18 @@ Case Studies CSS
         height: 40px;
         line-height: 40px;
         border-radius: 100px;
+
         &::after {
             color: #18181b;
             font-size: 20px;
             padding-left: 3px;
         }
     }
-    .swiper-button-prev:hover, .swiper-button-next:hover {
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
         background-color: $main-color;
+
         &::after {
             color: #fff;
         }
@@ -2142,12 +2512,14 @@ Case Studies CSS
 
     .swiper-pagination {
         position: initial;
+
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             background: #D6D6D6;
             border: 1px solid #b7b7b7;
             opacity: 1;
+
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
                 border: 1px solid #ff2c9c;
@@ -2165,6 +2537,7 @@ Quotes CSS
         bottom: 80px;
     }
 }
+
 .quotes-content {
     text-align: center;
 
@@ -2174,38 +2547,46 @@ Quotes CSS
         max-width: 755px;
         line-height: 45px;
         position: relative;
+
         font: {
             size: 32px;
             weight: 700;
             family: $heading-font-family;
         }
+
         &::before {
             content: '';
             width: 211px;
             height: 154px;
             display: inline-block;
             position: absolute;
+
             background: {
                 position: center center;
                 size: cover;
                 repeat: no-repeat;
                 image: url(/images/left-quote.png);
             }
+
             left: -150px;
             top: 0;
         }
     }
+
     h3 {
         font: {
             size: 18px;
             weight: 600;
         }
+
         margin: {
             bottom: 5px;
             top: 25px;
         }
+
         color: $main-color;
     }
+
     span {
         display: block;
         color: $paragraph-color;
@@ -2223,12 +2604,14 @@ Services CSS
             left: 0;
         }
     }
+
     &.services-section {
         padding-bottom: 80px;
     }
 }
+
 .services-inner {
-    background: $gradient-color;
+    background: #ffffff;
     padding-top: 110px;
     width: 100%;
     height: 100%;
@@ -2242,10 +2625,12 @@ Services CSS
         h2 {
             margin-bottom: 0;
             color: $white-color;
+
             font: {
                 size: 36px;
             }
         }
+
         .bar {
             position: relative;
             width: 55px;
@@ -2254,6 +2639,7 @@ Services CSS
             margin-top: 20px;
             margin-bottom: 20px;
         }
+
         p {
             color: $white-color;
             opacity: .95;
@@ -2261,36 +2647,44 @@ Services CSS
         }
     }
 }
+
 .services-slides {
     .swiper-button-next {
         right: 0;
     }
+
     .swiper-button-prev {
         left: 0;
     }
-    .swiper-button-next, .swiper-button-prev {
+
+    .swiper-button-next,
+    .swiper-button-prev {
         &:after {
             color: $main-color;
             font-size: 30px;
         }
     }
 }
+
 .services-list {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
+
     padding: {
         top: 100px;
         bottom: 100px;
         right: 70px;
     }
+
     background: {
         image: url(/images/services-bg.jpg);
         position: center center;
         size: cover;
         repeat: no-repeat;
     }
+
     &::before {
         left: 0;
         width: 100%;
@@ -2302,10 +2696,12 @@ Services CSS
         z-index: -1;
         content: '';
     }
+
     .single-services {
         margin-bottom: 0;
     }
 }
+
 .single-services {
     position: relative;
     margin-bottom: 30px;
@@ -2327,6 +2723,7 @@ Services CSS
     &:hover::before {
         opacity: .90;
     }
+
     .content {
         position: absolute;
         bottom: -145px;
@@ -2366,16 +2763,20 @@ Services CSS
                 transition: $transition;
             }
         }
+
         h3 {
             font: {
                 size: 24px;
             }
+
             margin: {
                 top: 25px;
                 bottom: 15px;
             }
+
             color: $white-color;
         }
+
         p {
             color: $white-color;
             opacity: .95;
@@ -2384,17 +2785,21 @@ Services CSS
             opacity: 0;
             transition: $transition;
         }
+
         .read-more-btn {
             color: $white-color;
             visibility: hidden;
             opacity: 0;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: $main-color;
             }
         }
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         .content {
             bottom: 0;
 
@@ -2404,10 +2809,12 @@ Services CSS
                     height: 100%;
                 }
             }
+
             p {
                 opacity: 1;
                 visibility: visible;
             }
+
             a {
                 opacity: 1;
                 visibility: visible;
@@ -2419,25 +2826,32 @@ Services CSS
 .bg-13c4a1 {
     background-color: #13c4a1;
 }
+
 .bg-6610f2 {
     background-color: #6610f2;
 }
+
 .bg-ffb700 {
     background-color: #ffb700;
 }
+
 .bg-fc3549 {
     background-color: #fc3549;
 }
+
 .bg-00d280 {
     background-color: #00d280;
 }
+
 .bg-ff612f {
     background-color: #ff612f;
 }
+
 /* Service card one */
 .service-card-one {
     margin-bottom: 30px;
     transition: $transition;
+
     i {
         width: 70px;
         height: 70px;
@@ -2450,17 +2864,21 @@ Services CSS
         display: inline-block;
         transition: $transition;
     }
+
     h3 {
         font-size: 24px;
         margin-bottom: 10px;
         font-weight: 600;
+
         a {
             color: $black-color;
+
             &:hover {
                 color: $main-color;
             }
         }
     }
+
     p {
         margin: 0;
     }
@@ -2482,13 +2900,16 @@ Services CSS
 
             h3 {
                 color: $white-color;
+
                 a {
                     color: $white-color;
+
                     &:hover {
                         text-decoration: underline;
                     }
                 }
             }
+
             p {
                 color: $white-color;
             }
@@ -2518,7 +2939,7 @@ Services CSS
     &.border.text-center {
         border-radius: 10px;
     }
-} 
+}
 
 /* Service style two */
 .service-style-two {
@@ -2526,25 +2947,31 @@ Services CSS
         max-width: 1400px;
         width: 100%;
     }
+
     .service-info {
         &.pr-50 {
             padding-right: 50px;
         }
+
         &.pl-50 {
             padding-left: 50px;
         }
+
         .info-head {
             margin-bottom: 30px;
         }
+
         .title {
             font-size: 40px;
             margin-bottom: 15px;
         }
+
         .btn {
             margin-top: 10px;
         }
     }
 }
+
 .feature-list {
     background-color: #ffffff;
     margin-bottom: 30px;
@@ -2565,10 +2992,12 @@ Services CSS
         color: $main-color;
         font-size: 20px;
     }
+
     &:hover {
         background-color: $main-color;
         color: $white-color;
         margin-left: 2px;
+
         i {
             color: $white-color;
         }
@@ -2580,8 +3009,9 @@ Portfolio Details CSS
 =================================================*/
 .services-details-image {
     position: relative;
-  
+
 }
+
 .services-details-desc {
     margin-top: 50px;
 
@@ -2589,39 +3019,49 @@ Portfolio Details CSS
         font: {
             size: 30px;
         }
+
         margin-bottom: 15px;
     }
+
     h2 {
         font: {
             size: 26px;
         }
+
         margin-bottom: 15px;
     }
+
     h3 {
         font: {
             size: 24px;
         }
+
         margin-bottom: 15px;
     }
+
     h4 {
         font: {
             size: 20px;
         }
+
         margin-bottom: 15px;
     }
 
-    ul, ol {
+    ul,
+    ol {
         padding-left: 17px;
 
         li {
             line-height: 1.8;
             margin-bottom: 8px;
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
 }
+
 .services-details-info {
     margin-top: 50px;
 
@@ -2629,8 +3069,10 @@ Portfolio Details CSS
         font: {
             size: 26px;
         }
+
         margin-bottom: 15px;
     }
+
     ul {
         padding: 0;
         list-style-type: none;
@@ -2667,7 +3109,9 @@ Partner CSS
     img {
         transition: $transition;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         img {
             opacity: .50;
         }
@@ -2684,6 +3128,7 @@ Feedback CSS
 =================================================*/
 .feedback-area {
     position: relative;
+
     background: {
         position: center center;
         size: cover;
@@ -2696,12 +3141,16 @@ Feedback CSS
         background-image: none;
 
         .single-feedback {
-            p, h3, span {
+
+            p,
+            h3,
+            span {
                 color: #fff;
             }
         }
     }
 }
+
 .feedback-list {
     text-align: center;
 
@@ -2720,6 +3169,7 @@ Feedback CSS
         }
     }
 }
+
 .single-feedback {
     text-align: center;
     max-width: 755px;
@@ -2728,12 +3178,14 @@ Feedback CSS
     p {
         margin: 0;
         color: $black-color;
+
         font: {
             size: 25px;
             weight: 600;
             style: italic;
         }
     }
+
     .bar {
         position: relative;
         margin: 20px auto;
@@ -2741,14 +3193,17 @@ Feedback CSS
         width: 2px;
         background: $gradient-color;
     }
+
     h3 {
         font: {
             size: 20px;
         }
+
         margin: {
             bottom: 5px;
         }
     }
+
     span {
         display: block;
         color: $paragraph-color;
@@ -2757,6 +3212,7 @@ Feedback CSS
 
     .rating {
         margin-bottom: 15px;
+
         i {
             font-size: 25px;
             margin: 0 3px;
@@ -2764,16 +3220,19 @@ Feedback CSS
         }
     }
 }
+
 .feedback-slides {
     .swiper-pagination {
         position: initial;
         margin-top: 20px;
+
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             background: #D6D6D6;
             border: 1px solid #b7b7b7;
             opacity: 1;
+
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
                 border: 1px solid #ff2c9c;
@@ -2781,6 +3240,7 @@ Feedback CSS
         }
     }
 }
+
 .client-image-box {
     img {
         position: absolute;
@@ -2789,30 +3249,37 @@ Feedback CSS
             bottom: 0;
             right: 20%;
         }
+
         &:nth-child(2) {
             left: 25px;
             top: 25px;
         }
+
         &:nth-child(3) {
             left: 17%;
             top: 3%;
         }
+
         &:nth-child(4) {
             right: 18%;
             top: 8%;
         }
+
         &:nth-child(5) {
             right: 0;
             top: 0;
         }
+
         &:nth-child(6) {
             bottom: 3%;
             left: 8%;
         }
+
         &:nth-child(7) {
             bottom: 5%;
             left: 25%;
         }
+
         &:nth-child(8) {
             right: 4%;
             bottom: 13%;
@@ -2838,6 +3305,7 @@ Portfolio CSS
         visibility: hidden;
         transition: $transition;
     }
+
     .portfolio-content {
         position: absolute;
         left: 0;
@@ -2857,6 +3325,7 @@ Portfolio CSS
             font: {
                 size: 24px;
             }
+
             color: $white-color;
             margin: 0;
             position: absolute;
@@ -2868,33 +3337,42 @@ Portfolio CSS
 
             a {
                 color: $white-color;
+
                 &:hover {
                     color: $main-color;
                 }
             }
         }
-        .link-btn, .popup-btn {
+
+        .link-btn,
+        .popup-btn {
             color: $white-color;
             font-size: 20px;
             position: absolute;
             bottom: 15px;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: $main-color;
             }
         }
+
         .link-btn {
             left: 0;
         }
+
         .popup-btn {
             right: 0;
         }
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         &::before {
             opacity: .71;
             visibility: visible;
         }
+
         .portfolio-content {
             opacity: 1;
             visibility: visible;
@@ -2902,9 +3380,11 @@ Portfolio CSS
             h3 {
                 top: 50%;
             }
+
             .link-btn {
                 left: 15px;
             }
+
             .popup-btn {
                 right: 15px;
             }
@@ -2928,6 +3408,7 @@ Team CSS
         width: 100%;
         height: 30%;
         z-index: -1;
+
         background: {
             position: center center;
             size: cover;
@@ -2936,6 +3417,7 @@ Team CSS
         }
     }
 }
+
 .single-team {
     margin-bottom: 30px;
 
@@ -2955,9 +3437,11 @@ Team CSS
             visibility: hidden;
             transition: $transition;
         }
+
         img {
             width: 100%;
         }
+
         .overlay {
             position: absolute;
             top: 60%;
@@ -2969,21 +3453,26 @@ Team CSS
             opacity: 0;
             visibility: hidden;
             transition: $transition;
+
             padding: {
                 left: 15px;
                 right: 15px;
             }
+
             p {
                 color: $white-color;
                 margin-bottom: 15px;
+
                 font: {
                     size: 14px;
                     weight: 600;
                 }
+
                 span {
                     display: block;
                 }
             }
+
             ul {
                 padding: 0;
                 margin: 0;
@@ -2991,10 +3480,12 @@ Team CSS
 
                 li {
                     display: inline-block;
+
                     margin: {
                         left: 3px;
                         right: 3px;
                     }
+
                     a {
                         width: 35px;
                         height: 35px;
@@ -3019,7 +3510,9 @@ Team CSS
                             z-index: -1;
                             transition: $transition;
                         }
-                        &:hover, &:focus {
+
+                        &:hover,
+                        &:focus {
                             border-color: transparent;
 
                             &::before {
@@ -3032,6 +3525,7 @@ Team CSS
             }
         }
     }
+
     .team-content {
         background: $gradient-color;
         padding: 25px 30px;
@@ -3040,21 +3534,26 @@ Team CSS
             font: {
                 size: 21px;
             }
+
             color: $white-color;
             margin-bottom: 6px;
         }
+
         span {
             color: $white-color;
             opacity: .90;
             font-size: 14px;
         }
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         .team-img {
             &::before {
                 opacity: .77;
                 visibility: visible;
             }
+
             .overlay {
                 top: 50%;
                 opacity: 1;
@@ -3067,26 +3566,33 @@ Team CSS
 .team-card {
     margin-bottom: 30px;
     transition: $transition;
+
     img {
         width: 100%;
     }
+
     .team-caption {
         margin-top: 25px;
+
         h3 {
             font-size: 24px;
             font-weight: 600;
         }
+
         p {
             margin: 0;
             font-size: 15px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
             margin: 15px 0 0;
+
             li {
                 display: inline-block;
                 margin: 0 3px;
+
                 i {
                     background-color: #f1f1f1;
                     height: 30px;
@@ -3107,6 +3613,7 @@ Team CSS
             }
         }
     }
+
     .team-img {
         position: relative;
 
@@ -3126,9 +3633,11 @@ Team CSS
             list-style-type: none;
             padding: 0;
             margin: 15px 0 0;
+
             li {
                 display: inline-block;
                 margin: 0 3px;
+
                 i {
                     background-color: #f1f1f1;
                     height: 30px;
@@ -3150,7 +3659,7 @@ Team CSS
         }
     }
 
-    &:hover {   
+    &:hover {
         .team-img {
             .social-links {
                 height: 100%;
@@ -3167,18 +3676,21 @@ Team CSS
         height: 40px;
         line-height: 40px;
         border-radius: 100px;
+
         &::after {
             color: #fff;
             font-size: 20px;
             padding-right: 3px;
         }
     }
+
     .swiper-button-next {
         background-color: #18181b;
         width: 40px;
         height: 40px;
         line-height: 40px;
         border-radius: 100px;
+
         &::after {
             color: #fff;
             font-size: 20px;
@@ -3195,12 +3707,13 @@ Pricing CSS
     position: relative;
     z-index: 1;
 }
+
 .pricing-table {
-	text-align: center;
-	background: $white-color;
-	box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
-	border-radius: 5px;
-	padding-bottom: 35px;
+    text-align: center;
+    background: $white-color;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding-bottom: 35px;
     transition: $transition;
 
     .pricing-header {
@@ -3210,10 +3723,12 @@ Pricing CSS
         transition: $transition;
         margin-bottom: 30px;
         z-index: 1;
+
         border: {
             radius: 5px 5px 0 0;
             bottom: 1px solid #eeeeee;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -3228,29 +3743,35 @@ Pricing CSS
             transition: $transition;
             z-index: -1;
         }
+
         h3 {
             font: {
                 size: 20px;
             }
+
             text-transform: uppercase;
             transition: $transition;
             margin-bottom: 0;
         }
     }
+
     .price {
         margin-bottom: 20px;
         font-weight: bold;
 
         span {
             color: $main-color;
+
             font: {
                 size: 40px;
             }
+
             sup {
                 font: {
                     weight: 500;
                 }
             }
+
             span {
                 font: {
                     size: 14px;
@@ -3259,6 +3780,7 @@ Pricing CSS
             }
         }
     }
+
     .pricing-features {
         ul {
             padding: 0;
@@ -3267,11 +3789,12 @@ Pricing CSS
 
             li {
                 font-size: 16px;
-                margin-bottom: 12px; 
+                margin-bottom: 12px;
 
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 &.active {
                     color: $paragraph-color;
                     text-decoration: none;
@@ -3279,6 +3802,7 @@ Pricing CSS
             }
         }
     }
+
     &:hover {
         transform: translateY(-10px);
 
@@ -3287,23 +3811,29 @@ Pricing CSS
                 opacity: 1;
                 visibility: visible;
             }
+
             h3 {
                 color: $white-color;
             }
         }
     }
+
     &.active-plan {
         .pricing-header {
             &::before {
                 opacity: 1;
                 visibility: visible;
             }
+
             h3 {
                 color: $white-color;
             }
         }
+
         .btn-primary {
-            &::after, &::before {
+
+            &::after,
+            &::before {
                 background: $main-color;
             }
         }
@@ -3323,11 +3853,13 @@ Pricing Area CSS
 
     .pricing-header {
         padding: 20px 40px;
+
         h3 {
             margin-bottom: 0;
             font-size: 22px;
         }
     }
+
     .price {
         color: $black-color;
         transition: $transition;
@@ -3350,15 +3882,17 @@ Pricing Area CSS
             font-size: 14px;
             font-weight: 500;
         }
+
         .info-text {
             font-weight: normal;
         }
     }
-    
+
     .pricing-features {
         margin: 0;
         padding: 30px 40px;
         list-style-type: none;
+
         li {
             margin-bottom: 10px;
             position: relative;
@@ -3369,12 +3903,14 @@ Pricing Area CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             i {
                 color: $main-color;
                 position: absolute;
                 left: 0;
                 top: 3px;
             }
+
             span {
                 display: inline-block;
                 color: #b7bad2;
@@ -3385,14 +3921,17 @@ Pricing Area CSS
             }
         }
     }
+
     .btn-box {
         padding: 0 40px;
     }
+
     &:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
         transform: translateY(-10px);
     }
 }
+
 .pricing-list-tab {
     .react-tabs {
         .react-tabs__tab-list {
@@ -3401,9 +3940,10 @@ Pricing Area CSS
             margin-bottom: 40px;
             border: none;
             text-align: center;
+
             li {
                 display: inline-block;
-                background-color: #ffffff; 
+                background-color: #ffffff;
                 color: #8d8fb4;
                 padding: 10px 30px 10px 53px;
                 position: relative;
@@ -3413,6 +3953,7 @@ Pricing Area CSS
                 font-size: 16px;
                 font-weight: 500;
                 cursor: pointer;
+
                 i {
                     color: $main-color;
                     margin-right: 2px;
@@ -3422,18 +3963,24 @@ Pricing Area CSS
                     transform: translateY(-48%);
                     left: 30px;
                 }
-                &.react-tabs__tab--selected, &:focus, &:focus-visible  {
+
+                &.react-tabs__tab--selected,
+                &:focus,
+                &:focus-visible {
                     color: #ffffff;
                     background-color: $main-color;
                     outline: 0;
+
                     i {
                         color: $white-color;
                     }
                 }
-                &:nth-child(1)  {
+
+                &:nth-child(1) {
                     border-radius: 30px 0 0 30px;
                 }
-                &:nth-child(2)  {
+
+                &:nth-child(2) {
                     border-radius: 0 30px 30px 0;
                 }
             }
@@ -3463,6 +4010,7 @@ Our Work Process CSS
         margin-bottom: 70px;
     }
 }
+
 .work-process {
     text-align: center;
     position: relative;
@@ -3481,6 +4029,7 @@ Our Work Process CSS
         }
     }
 }
+
 .work-process-list {
     .single-work-process {
         position: absolute;
@@ -3491,6 +4040,7 @@ Our Work Process CSS
             left: 10%;
             top: 20px;
         }
+
         &:nth-child(2) {
             left: auto;
             right: 10%;
@@ -3499,12 +4049,13 @@ Our Work Process CSS
             .icon {
                 background: transparent;
                 color: #07ee7f;
-        
+
                 &::before {
                     background: #07ee7f;
                 }
             }
         }
+
         &:nth-child(3) {
             right: 0;
             left: auto;
@@ -3514,12 +4065,13 @@ Our Work Process CSS
             .icon {
                 background: transparent;
                 color: #ff650b;
-        
+
                 &::before {
                     background: #ff650b;
                 }
             }
         }
+
         &:nth-child(4) {
             left: auto;
             right: 10%;
@@ -3529,12 +4081,13 @@ Our Work Process CSS
             .icon {
                 background: transparent;
                 color: #9333ff;
-        
+
                 &::before {
                     background: #9333ff;
                 }
             }
         }
+
         &:nth-child(5) {
             left: 10%;
             top: auto;
@@ -3543,12 +4096,13 @@ Our Work Process CSS
             .icon {
                 background: transparent;
                 color: #fcaf1c;
-        
+
                 &::before {
                     background: #fcaf1c;
                 }
             }
         }
+
         &:nth-child(6) {
             left: 0;
             top: 50%;
@@ -3557,7 +4111,7 @@ Our Work Process CSS
             .icon {
                 background: transparent;
                 color: #fc23d1;
-        
+
                 &::before {
                     background: #fc23d1;
                 }
@@ -3565,6 +4119,7 @@ Our Work Process CSS
         }
     }
 }
+
 .single-work-process {
     .icon {
         background: transparent;
@@ -3591,33 +4146,40 @@ Our Work Process CSS
             opacity: .18;
         }
     }
+
     h3 {
         font: {
             size: 20px;
             weight: 600;
         }
+
         text-transform: uppercase;
+
         margin: {
             top: 20px;
             bottom: 5px;
         }
     }
+
     span {
         display: block;
         color: $paragraph-color;
         font-size: 14px;
     }
 }
+
 .rotateme {
     animation-name: rotateme;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes rotateme {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -3630,16 +4192,19 @@ CTA CSS
     overflow: hidden;
     position: relative;
     z-index: 1;
+
     padding: {
         top: 80px;
         bottom: 80px;
     }
+
     background: {
         position: center center;
         size: cover;
         repeat: no-repeat;
         image: url(/images/feedback-bg.jpg);
     }
+
     &.bg-gradient {
         background: $gradient-color !important;
 
@@ -3647,11 +4212,13 @@ CTA CSS
             h3 {
                 color: $white-color;
             }
+
             p {
                 color: $white-color;
                 opacity: .90;
             }
         }
+
         .cta-btn-box {
             .btn-primary {
                 color: $main-color;
@@ -3661,7 +4228,9 @@ CTA CSS
                 &::before {
                     background: $white-color;
                 }
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     color: $white-color;
                     border-color: $white-color;
                 }
@@ -3669,19 +4238,23 @@ CTA CSS
         }
     }
 }
+
 .cta-content {
     h3 {
         margin-bottom: 5px;
+
         font: {
             size: 50px;
             weight: 800;
         }
     }
+
     p {
         font-size: 18px;
         margin: 0;
     }
 }
+
 .cta-btn-box {
     text-align: right;
 }
@@ -3718,15 +4291,18 @@ CTA CSS
             display: block;
             margin-bottom: 5px;
         }
+
         h3 {
             color: $white-color;
             font-size: 70px;
             text-transform: capitalize;
         }
+
         p {
             color: $white-color;
         }
     }
+
     .cta-btn-box {
         text-align: center;
         margin-top: 40px;
@@ -3743,6 +4319,7 @@ CTA CSS
             }
         }
     }
+
     &.dark-style {
         &::before {
             background: #000;
@@ -3754,9 +4331,11 @@ CTA CSS
             content: '';
             opacity: .95;
         }
+
         .cta-btn-box {
             margin-top: 30px;
         }
+
         .default-btn-two {
             &:hover {
                 border: 2px solid #c90f48;
@@ -3765,7 +4344,7 @@ CTA CSS
         }
     }
 }
- 
+
 /*================================================
 Fun Facts CSS
 =================================================*/
@@ -3783,6 +4362,7 @@ Fun Facts CSS
         margin: 0 auto;
     }
 }
+
 .funfact {
     text-align: center;
     background-color: #ffffff;
@@ -3810,6 +4390,7 @@ Fun Facts CSS
         font: {
             size: 40px;
         }
+
         font-weight: bold;
         margin-bottom: 6px;
     }
@@ -3818,6 +4399,7 @@ Fun Facts CSS
         margin-top: -5px;
     }
 }
+
 .contact-cta-box {
     margin: 70px auto 0;
     max-width: 800px;
@@ -3832,11 +4414,14 @@ Fun Facts CSS
             size: 20px;
             weight: 600;
         }
+
         margin-bottom: 6px;
     }
+
     p {
         margin-bottom: 0;
     }
+
     .btn {
         position: absolute;
         right: 30px;
@@ -3844,9 +4429,11 @@ Fun Facts CSS
         transform: translateY(-50%);
     }
 }
+
 .funfact-card {
     margin-bottom: 30px;
     text-align: center;
+
     i {
         font-size: 60px;
         line-height: 1;
@@ -3854,17 +4441,20 @@ Fun Facts CSS
         display: inline-block;
         color: $main-color;
     }
+
     h3 {
         font-size: 50px;
         line-height: 1;
         font-weight: bold;
         margin-bottom: 15px;
+
         span {
             position: absolute;
             font-size: 35px;
             margin-left: 3px;
         }
     }
+
     p {
         margin: 0;
     }
@@ -3875,6 +4465,7 @@ Subscribe CSS
 =================================================*/
 .subscribe-area {
     text-align: center;
+
     background: {
         position: center;
         size: contain;
@@ -3883,20 +4474,25 @@ Subscribe CSS
         image: url(/images/feedback-bg.jpg);
     }
 }
+
 .newsletter {
-	max-width: 750px;
+    max-width: 750px;
     border-radius: 5px;
+
     margin: {
         left: auto;
         right: auto;
     }
+
     h4 {
         text-transform: capitalize;
         margin-bottom: 35px;
+
         font: {
             size: 35px;
         }
     }
+
     form {
         position: relative;
 
@@ -3909,6 +4505,7 @@ Subscribe CSS
             font-size: 16px;
             background-color: $white-color;
         }
+
         .btn {
             position: absolute;
             right: 7px;
@@ -3921,15 +4518,18 @@ Subscribe CSS
                 border-radius: 30px;
             }
         }
+
         .validation-danger {
             margin-top: 20px;
             color: red;
         }
+
         .validation-success {
             margin-top: 20px;
         }
     }
 }
+
 .newsletter-inner-area {
     background-size: cover;
     background-position: center center;
@@ -3953,12 +4553,14 @@ Subscribe CSS
         position: relative;
         max-width: 660px;
         margin: auto;
+
         .sub-title {
             text-transform: uppercase;
             color: #ffffff;
             display: block;
             margin-bottom: 10px;
         }
+
         h2 {
             color: $white-color;
             font-size: 40px;
@@ -3967,12 +4569,14 @@ Subscribe CSS
         .newsletter-form {
             position: relative;
             margin-top: 30px;
+
             .form-control {
                 background-color: #ffffff;
                 height: 60px;
                 border-radius: 30px;
                 padding: 10px 25px;
             }
+
             button {
                 position: absolute;
                 background: $gradient-color;
@@ -4010,7 +4614,9 @@ Blog CSS
             transition: $transition;
             width: 100%;
         }
-        &::before, &::after {
+
+        &::before,
+        &::after {
             content: "";
             background: $white-color;
             height: 0;
@@ -4021,6 +4627,7 @@ Blog CSS
             position: absolute;
             transition-duration: 1.3s;
         }
+
         &::after {
             bottom: 0;
             right: auto;
@@ -4029,6 +4636,7 @@ Blog CSS
             left: 0;
         }
     }
+
     .post-content {
         padding: 30px 25px;
 
@@ -4049,10 +4657,12 @@ Blog CSS
                     display: inline-block;
                     color: $main-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                     }
                 }
+
                 i {
                     margin-right: 4px;
                     position: absolute;
@@ -4060,6 +4670,7 @@ Blog CSS
                     top: 50%;
                     transform: translateY(-50%);
                 }
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -4070,9 +4681,11 @@ Blog CSS
                     background: $paragraph-color;
                     transform: translateY(-50%);
                 }
+
                 &:first-child {
                     padding-left: 25px;
                 }
+
                 &:last-child {
                     margin-right: 0;
 
@@ -4082,31 +4695,40 @@ Blog CSS
                 }
             }
         }
+
         h3 {
             margin: {
                 top: 15px;
                 bottom: 15px;
             }
+
             line-height: 36px;
+
             font: {
                 size: 24px;
                 weight: 600;
             }
+
             a {
                 color: $black-color;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $main-color;
                 }
             }
         }
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         .post-image {
             img {
                 transform: scale(1.3);
             }
-            &::after, &::before {
+
+            &::after,
+            &::before {
                 height: 100%;
                 opacity: 0;
                 width: 100%;
@@ -4114,29 +4736,33 @@ Blog CSS
         }
     }
 }
+
 .blog-item-box {
     .blog-item {
         margin-bottom: 21px;
         background-color: #f5f6f5;
-        
+
         .row {
             margin: {
                 left: -10px;
                 right: -10px;
             }
-            .col-lg-4, .col-lg-8 {
+
+            .col-lg-4,
+            .col-lg-8 {
                 padding: {
                     left: 10px;
                     right: 10px;
                 }
             }
         }
+
         .post-content {
             .post-meta {
                 padding: 0;
                 margin: 0;
                 list-style-type: none;
-    
+
                 li {
                     display: inline-block;
                     margin-right: 18px;
@@ -4144,14 +4770,17 @@ Blog CSS
                     color: $main-color;
                     padding-left: 20px;
                     font-size: 14px;
+
                     a {
                         display: inline-block;
                         color: $main-color;
-    
-                        &:hover, &:focus {
+
+                        &:hover,
+                        &:focus {
                             color: $main-color;
                         }
                     }
+
                     i {
                         margin-right: 4px;
                         position: absolute;
@@ -4159,6 +4788,7 @@ Blog CSS
                         top: 50%;
                         transform: translateY(-50%);
                     }
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -4169,42 +4799,51 @@ Blog CSS
                         background: $paragraph-color;
                         transform: translateY(-50%);
                     }
+
                     &:last-child {
                         margin-right: 0;
-    
+
                         &::before {
                             display: none;
                         }
                     }
                 }
             }
+
             h3 {
                 margin: {
                     top: 10px;
                     bottom: 0;
                 }
+
                 line-height: 32px;
+
                 font: {
                     size: 20px;
                     weight: 600;
                 }
+
                 a {
                     color: $black-color;
-    
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                     }
                 }
             }
         }
+
         .post-image {
             overflow: hidden;
             position: relative;
-    
+
             img {
                 transition: $transition;
             }
-            &::before, &::after {
+
+            &::before,
+            &::after {
                 content: "";
                 background: $white-color;
                 height: 0;
@@ -4215,6 +4854,7 @@ Blog CSS
                 position: absolute;
                 transition-duration: 1.3s;
             }
+
             &::after {
                 bottom: 0;
                 right: auto;
@@ -4223,23 +4863,29 @@ Blog CSS
                 left: 0;
             }
         }
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             .post-image {
                 img {
                     transform: scale(1.3);
                 }
-                &::after, &::before {
+
+                &::after,
+                &::before {
                     height: 100%;
                     opacity: 0;
                     width: 100%;
                 }
             }
         }
+
         &:last-child {
             margin-bottom: 0;
         }
     }
 }
+
 /* Blog style two */
 .single-blog-item {
     margin-bottom: 30px;
@@ -4258,6 +4904,7 @@ Blog CSS
                 width: 100%;
             }
         }
+
         .post-tag {
             position: absolute;
             left: 0;
@@ -4271,6 +4918,7 @@ Blog CSS
             }
         }
     }
+
     .blog-post-content {
         padding: 30px;
 
@@ -4278,42 +4926,53 @@ Blog CSS
             color: $main-color;
             display: block;
             text-transform: uppercase;
+
             font: {
                 size: 14px;
             }
+
             transition: $transition;
             margin-bottom: 10px;
         }
+
         h3 {
             margin: {
                 bottom: 10px;
             }
+
             line-height: 1.4;
+
             font: {
                 size: 24px;
             }
+
             a {
                 color: $black-color;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $main-color;
                 }
             }
         }
+
         p {
             margin-bottom: 15px;
         }
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         .blog-image {
             a {
                 img {
                     transform: scale(1.2);
                 }
             }
+
             .post-tag {
                 top: 50px;
-    
+
                 a {
                     background: $main-color;
                     color: $white-color;
@@ -4322,16 +4981,18 @@ Blog CSS
         }
     }
 }
+
 .blog-slides {
     .swiper-pagination {
         position: initial;
-  
+
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             background: #D6D6D6;
             border: 1px solid #b7b7b7;
             opacity: 1;
+
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
                 border: 1px solid #ff2c9c;
@@ -4349,6 +5010,7 @@ Blog Details CSS
             width: 100%;
         }
     }
+
     .article-content {
         padding: 30px 30px 35px;
         border: 1px solid #eeeeee;
@@ -4362,16 +5024,20 @@ Blog Details CSS
                 display: inline-block;
                 color: $paragraph-color;
                 margin-right: 15px;
+
                 font: {
                     size: 14px;
                 }
+
                 i {
                     color: $main-color;
                     margin-right: 6px;
                 }
+
                 &:last-child {
                     margin-right: 0;
                 }
+
                 a {
                     display: inline-block;
                     color: $paragraph-color;
@@ -4382,6 +5048,7 @@ Blog Details CSS
                 }
             }
         }
+
         .category {
             padding: 0;
             margin: 30px 0 0;
@@ -4394,6 +5061,7 @@ Blog Details CSS
                 span {
                     font-weight: 600;
                 }
+
                 a {
                     border: 1px solid $main-color;
                     border-radius: 5px;
@@ -4419,7 +5087,9 @@ Blog Details CSS
                         visibility: hidden;
                         transition: $transition;
                     }
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         color: $white-color;
 
                         &::before {
@@ -4432,6 +5102,7 @@ Blog Details CSS
         }
     }
 }
+
 blockquote {
     background-color: #fafafa;
     padding: 30px 30px 30px 70px !important;
@@ -4441,25 +5112,29 @@ blockquote {
     margin: 20px 0;
 
     &::before {
-        font-family: "Font Awesome 5 Free"; 
+        font-family: "Font Awesome 5 Free";
         content: "\f10d";
-        position: absolute; 
+        position: absolute;
         left: 30px;
         top: 35px;
         color: $main-color;
         font-size: 30px;
         font-weight: 900;
     }
+
     p {
         font-weight: 600;
     }
+
     cite {
         position: relative;
         padding-left: 17px;
+
         font: {
             family: $heading-font-family;
             weight: 600;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -4472,21 +5147,26 @@ blockquote {
         }
     }
 }
+
 .post-controls-buttons {
     overflow: hidden;
     padding: 30px;
     border: 1px solid #eeeeee;
+
     margin: {
         top: 30px;
         bottom: 30px;
     }
+
     div {
         &:first-child {
             float: left;
         }
+
         &:last-child {
             float: right;
         }
+
         a {
             display: inline-block;
             border: 1px solid #eeeeee;
@@ -4495,9 +5175,11 @@ blockquote {
             color: $black-color;
             position: relative;
             z-index: 1;
+
             font: {
                 weight: 600;
             }
+
             &::before {
                 position: absolute;
                 content: '';
@@ -4513,7 +5195,9 @@ blockquote {
                 visibility: hidden;
                 transition: $transition;
             }
-            &:hover, &:focus {
+
+            &:hover,
+            &:focus {
                 border-color: $main-color;
                 color: $white-color;
 
@@ -4525,30 +5209,37 @@ blockquote {
         }
     }
 }
+
 .comments-area {
     .comments-title {
         font: {
             size: 24px;
             weight: 700;
         }
+
         margin: {
             bottom: 25px;
             top: 30px;
         }
     }
-    ol, ul {
+
+    ol,
+    ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
+
     .comment-list {
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
+
     .children {
         margin-left: 65px;
     }
+
     .comment-body {
         border-bottom: 1px solid #eeeeee;
         margin-left: 65px;
@@ -4584,6 +5275,7 @@ blockquote {
                     border-radius: 30px;
                     z-index: -1;
                 }
+
                 &:hover {
                     color: $white-color;
 
@@ -4595,9 +5287,11 @@ blockquote {
             }
         }
     }
+
     .comment-meta {
         margin-bottom: 1em;
     }
+
     .comment-author {
         font-size: 15px;
         margin-bottom: 0.4em;
@@ -4610,24 +5304,29 @@ blockquote {
             position: absolute;
             width: 50px;
         }
+
         .fn {
             font: {
                 weight: 600;
                 family: $heading-font-family;
             }
         }
+
         .says {
             display: none;
         }
     }
+
     .comment-metadata {
         color: $paragraph-color;
         letter-spacing: 0.1818em;
         text-transform: uppercase;
+
         font: {
             size: 11px;
             weight: 600;
         }
+
         a {
             color: $paragraph-color;
 
@@ -4636,11 +5335,13 @@ blockquote {
             }
         }
     }
+
     .comment-content {
         p {
             font-size: 14px;
         }
     }
+
     .comment-respond {
         background: #fafafa;
         padding: 30px 25px;
@@ -4652,37 +5353,57 @@ blockquote {
                 top: 0;
                 bottom: 0;
             }
+
             font: {
                 size: 20px;
                 weight: 700;
             }
+
             #cancel-comment-reply-link {
                 font-size: 15px;
                 display: inline-block;
             }
         }
+
         .comment-notes {
             font-size: 15px;
+
             margin: {
                 bottom: 0;
                 top: 10px;
             }
+
             .required {
                 color: red;
             }
         }
+
         .comment-form-comment {
             margin-top: 15px;
             float: left;
             width: 100%;
         }
+
         label {
             display: block;
             margin-bottom: 10px;
             font-weight: 600;
             color: $black-color;
         }
-        input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
+
+        input[type="date"],
+        input[type="time"],
+        input[type="datetime-local"],
+        input[type="week"],
+        input[type="month"],
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
             display: block;
             width: 100%;
             background-color: $white-color;
@@ -4695,23 +5416,27 @@ blockquote {
                 border-color: $main-color;
             }
         }
+
         .comment-form-author {
             float: left;
             width: 50%;
             padding-right: 10px;
             margin-bottom: 20px;
         }
+
         .comment-form-email {
             float: left;
             width: 50%;
             padding-left: 12px;
             margin-bottom: 20px;
         }
+
         .comment-form-url {
             float: left;
             width: 100%;
             margin-bottom: 20px;
         }
+
         .comment-form-cookies-consent {
             width: 100%;
             float: left;
@@ -4722,6 +5447,7 @@ blockquote {
                 position: relative;
                 top: 1px;
             }
+
             label {
                 display: inline-block;
                 margin: 0;
@@ -4729,6 +5455,7 @@ blockquote {
                 font-weight: normal;
             }
         }
+
         .form-submit {
             float: left;
             width: 100%;
@@ -4746,11 +5473,14 @@ blockquote {
                 transition: $transition;
                 position: relative;
                 z-index: 1;
+
                 font: {
                     weight: 600;
                     size: 14px;
                 }
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     opacity: .50;
                 }
             }
@@ -4759,15 +5489,24 @@ blockquote {
 }
 
 .text-container {
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-bottom: 15px;
     }
 
-    ul, ol {
+    ul,
+    ol {
         padding-left: 17px;
+
         li {
             line-height: 1.8;
             margin-bottom: 8px;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -4782,15 +5521,18 @@ Page Title CSS
     position: relative;
     background-size: cover;
     background-position: center center;
+
     padding: {
         top: 230px;
         bottom: 160px;
     }
+
     text-align: center;
 
     h2 {
         margin: 0;
         color: $white-color;
+
         font: {
             size: 50px;
         }
@@ -4806,10 +5548,12 @@ Page Title CSS
         height: 100%;
         opacity: .80;
     }
+
     .container {
         position: relative;
     }
 }
+
 .shape1 {
     position: absolute;
     top: 20%;
@@ -4818,12 +5562,14 @@ Page Title CSS
     animation: rotate3d 4s linear infinite;
     opacity: .4;
 }
+
 .shape2 {
     position: absolute;
     z-index: -1;
     top: 60%;
     left: 15%;
 }
+
 .shape3 {
     position: absolute;
     left: 25%;
@@ -4831,6 +5577,7 @@ Page Title CSS
     z-index: -1;
     animation: animationFramesOne 15s infinite linear;
 }
+
 .shape4 {
     position: absolute;
     right: 25%;
@@ -4838,6 +5585,7 @@ Page Title CSS
     z-index: -1;
     animation: animationFramesOne 20s infinite linear;
 }
+
 .shape5 {
     position: absolute;
     right: 5%;
@@ -4846,12 +5594,14 @@ Page Title CSS
     animation: movebounce 5s linear infinite;
     opacity: .2;
 }
+
 .shape6 {
     position: absolute;
     z-index: -1;
     top: 40%;
     right: 10%;
 }
+
 .shape7 {
     position: absolute;
     left: 25%;
@@ -4859,62 +5609,77 @@ Page Title CSS
     z-index: -1;
     animation: animationFramesOne 20s infinite linear;
 }
+
 .shape8 {
     position: absolute;
     z-index: -1;
     top: 15%;
     right: 10%;
 }
+
 @keyframes movebounce {
     0% {
-        transform: translateY(0px); 
+        transform: translateY(0px);
     }
+
     50% {
-        transform: translateY(20px); 
+        transform: translateY(20px);
     }
+
     100% {
-        transform: translateY(0px); 
-    } 
+        transform: translateY(0px);
+    }
 }
+
 @keyframes moveleftbounce {
     0% {
-        transform: translateX(0px); 
+        transform: translateX(0px);
     }
+
     50% {
-        transform: translateX(20px); 
+        transform: translateX(20px);
     }
+
     100% {
-        transform: translateX(0px); 
-    } 
+        transform: translateX(0px);
+    }
 }
+
 @keyframes rotate3d {
     0% {
         -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
+
     100% {
         -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg);
     }
 }
+
 @keyframes animationFramesOne {
     0% {
-        transform:  translate(0px,0px)  rotate(0deg) ;
+        transform: translate(0px, 0px) rotate(0deg);
     }
+
     20% {
-        transform:  translate(73px,-1px)  rotate(36deg) ;
+        transform: translate(73px, -1px) rotate(36deg);
     }
+
     40% {
-        transform:  translate(141px,72px)  rotate(72deg) ;
+        transform: translate(141px, 72px) rotate(72deg);
     }
+
     60% {
-        transform:  translate(83px,122px)  rotate(108deg) ;
+        transform: translate(83px, 122px) rotate(108deg);
     }
+
     80% {
-        transform:  translate(-40px,72px)  rotate(144deg) ;
+        transform: translate(-40px, 72px) rotate(144deg);
     }
+
     100% {
-        transform:  translate(0px,0px)  rotate(0deg) ;
+        transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
@@ -4928,7 +5693,7 @@ Contact CSS
     padding: 30px 30px 30px 120px;
     margin-bottom: 30px;
     position: relative;
-    
+
     .icon {
         display: inline-block;
         width: 65px;
@@ -4943,12 +5708,15 @@ Contact CSS
         left: 30px;
         text-align: center;
     }
+
     h3 {
         font: {
             size: 20px;
         }
+
         margin: 0 0 10px;
     }
+
     p {
         margin-bottom: 0;
         color: $paragraph-color;
@@ -4961,6 +5729,7 @@ Contact CSS
             }
         }
     }
+
     &:hover {
         transform: translateY(-10px);
 
@@ -4970,24 +5739,29 @@ Contact CSS
         }
     }
 }
+
 .contact-area {
     .section-title {
         text-align: left;
+
         margin: {
             left: 0;
             right: 0;
         }
+
         p {
             margin: {
                 left: 0;
                 right: 0;
             }
         }
+
         h2 {
             margin-bottom: 12px;
         }
     }
 }
+
 .contact-form {
     background-color: $white-color;
     text-align: center;
@@ -5002,17 +5776,21 @@ Contact CSS
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+
         h2 {
             font: {
                 size: 36px;
             }
+
             margin-bottom: 15px;
         }
     }
 }
+
 textarea.form-control {
     height: auto !important;
 }
+
 .contact-sidebar {
     .contact-item {
         position: relative;
@@ -5022,6 +5800,7 @@ textarea.form-control {
         &:last-child {
             margin-bottom: 0;
         }
+
         .icon {
             font-size: 35px;
             color: $main-color;
@@ -5029,15 +5808,18 @@ textarea.form-control {
             left: 0;
             top: 0;
         }
+
         span {
             font: {
                 size: 18px;
                 family: $heading-font-family;
                 weight: 600;
             }
+
             display: block;
             margin-bottom: 10px
         }
+
         p {
             margin-bottom: 0;
 
@@ -5059,7 +5841,7 @@ textarea.form-control {
     margin: 0 auto;
     max-width: 650px;
     text-align: center;
-    
+
     .search-form {
         position: relative;
         margin-top: 45px;
@@ -5075,6 +5857,7 @@ textarea.form-control {
             font-weight: 600;
             border: 1px solid #eeeeee;
         }
+
         .search-submit {
             position: absolute;
             right: 0;
@@ -5089,15 +5872,18 @@ textarea.form-control {
             font-weight: 600;
             transition: $transition;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background-color: $black-color;
                 color: $white-color;
             }
         }
     }
+
     h3 {
         margin-top: 30px;
     }
+
     .back-btn {
         text-align: center;
         margin-top: 20px;
@@ -5120,11 +5906,15 @@ Pagination CSS
         line-height: 40px;
         color: $black-color;
         box-shadow: 0 2px 10px 0 #d8dde6;
+
         font: {
             size: 17px;
             weight: 600;
         }
-        &.current, &:hover, &:focus {
+
+        &.current,
+        &:hover,
+        &:focus {
             background: $main-color;
             color: $white-color;
             box-shadow: unset;
@@ -5142,16 +5932,19 @@ Sidebar CSS
         &:first-child {
             margin-top: 0;
         }
+
         .widget-title {
             font: {
                 weight: 700;
                 size: 21px;
             }
+
             border-bottom: 1px solid #eeeeee;
             padding-bottom: 10px;
             margin-bottom: 20px;
             text-transform: capitalize;
         }
+
         ul {
             padding: 0;
             margin: 0;
@@ -5168,6 +5961,7 @@ Sidebar CSS
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 &::before {
                     background: $gradient-color;
                     height: 7px;
@@ -5177,16 +5971,19 @@ Sidebar CSS
                     top: 8px;
                     position: absolute;
                 }
+
                 a {
                     color: $paragraph-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                     }
                 }
             }
         }
     }
+
     .widget_search {
         form {
             position: relative;
@@ -5194,9 +5991,11 @@ Sidebar CSS
             label {
                 display: block;
             }
+
             .screen-reader-text {
                 display: none;
             }
+
             .search-field {
                 background-color: #f8f8f8;
                 height: 50px;
@@ -5207,6 +6006,7 @@ Sidebar CSS
                 outline: 0;
                 transition: $transition;
             }
+
             .search-submit {
                 position: absolute;
                 cursor: pointer;
@@ -5219,10 +6019,12 @@ Sidebar CSS
                 height: 50px;
                 padding: 0 20px;
                 transition: $transition;
+
                 font: {
                     weight: 600;
                     size: 15px;
                 }
+
                 &:hover {
                     background: $black-color;
                     color: $white-color;
@@ -5234,7 +6036,7 @@ Sidebar CSS
     .widget_posts_thumb {
         position: relative;
         overflow: hidden;
-        
+
         .item {
             overflow: hidden;
             margin-bottom: 15px;
@@ -5242,6 +6044,7 @@ Sidebar CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             .thumb {
                 float: left;
                 height: 80px;
@@ -5254,44 +6057,55 @@ Sidebar CSS
                     width: 80px;
                     height: 80px;
                     display: inline-block;
+
                     background: {
                         size: cover !important;
                         repeat: no-repeat;
                         position: center center !important;
                     }
+
                     &.bg1 {
                         background-image: url(/images/blog/blog1.jpg);
                     }
+
                     &.bg2 {
                         background-image: url(/images/blog/blog2.jpg);
                     }
+
                     &.bg3 {
                         background-image: url(/images/blog/blog3.jpg);
                     }
                 }
             }
+
             .info {
                 overflow: hidden;
 
                 time {
                     display: block;
                     color: $paragraph-color;
+
                     margin: {
                         top: 5px;
                         bottom: 3px;
                     }
+
                     font: {
                         size: 12px;
                     }
                 }
+
                 .title {
                     margin-bottom: 0;
                     line-height: 1.5;
+
                     font: {
                         size: 16px;
                     }
+
                     a {
                         color: $black-color;
+
                         &:hover {
                             color: $main-color;
                         }
@@ -5300,21 +6114,26 @@ Sidebar CSS
             }
         }
     }
-    
+
     .widget_recent_entries {
         ul {
             li {
                 font-size: 16px;
+
                 a {
                     font-size: 16px;
+
                     font: {
                         weight: 600;
                     }
+
                     color: $black-color;
+
                     &:hover {
                         color: $main-color;
                     }
                 }
+
                 .post-date {
                     display: block;
                     font-size: 13px;
@@ -5324,20 +6143,24 @@ Sidebar CSS
             }
         }
     }
+
     .widget_recent_comments {
         ul {
             li {
                 color: $paragraph-color;
-                
+
                 span {
                     display: inline-block;
                 }
+
                 a {
                     display: inline-block;
                     color: $black-color;
+
                     &:hover {
                         color: $main-color;
                     }
+
                     font: {
                         weight: 600;
                     }
@@ -5345,6 +6168,7 @@ Sidebar CSS
             }
         }
     }
+
     .widget_archive {
         ul {
             li {
@@ -5356,15 +6180,18 @@ Sidebar CSS
             }
         }
     }
+
     .widget_categories {
         ul {
             li {
                 a {
                     display: block;
+
                     font: {
                         weight: 600;
                     }
                 }
+
                 .post-count {
                     float: right;
                     font-size: 14px;
@@ -5372,6 +6199,7 @@ Sidebar CSS
             }
         }
     }
+
     .widget_meta {
         ul {
             li {
@@ -5383,24 +6211,30 @@ Sidebar CSS
             }
         }
     }
+
     .tagcloud {
         a {
             display: inline-block;
+
             font: {
                 size: 14px;
             }
+
             position: relative;
             z-index: 1;
             padding: 7px 10px;
             color: $paragraph-color;
             border: 1px solid #eeeeee;
+
             margin: {
                 top: 8px;
                 right: 10px;
             }
+
             font-weight: 600;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: $white-color;
                 background-color: $main-color;
             }
@@ -5418,6 +6252,7 @@ Case Studies Details CSS
     img {
         transition: $transition;
     }
+
     a {
         position: absolute;
         top: 0;
@@ -5425,12 +6260,15 @@ Case Studies Details CSS
         width: 100%;
         height: 100%;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         img {
             transform: scale(1.3);
         }
     }
 }
+
 .case-studies-desc {
     margin-top: 20px;
 
@@ -5438,9 +6276,11 @@ Case Studies Details CSS
         font: {
             size: 24px;
         }
+
         margin-bottom: 20px;
     }
 }
+
 .case-studies-information {
     margin-top: 20px;
 
@@ -5448,8 +6288,10 @@ Case Studies Details CSS
         font: {
             size: 24px;
         }
+
         margin-bottom: 20px;
     }
+
     ul {
         padding: 0;
         list-style-type: none;
@@ -5465,10 +6307,12 @@ Case Studies Details CSS
                     weight: 700;
                     family: $heading-font-family;
                 }
+
                 color: $black-color;
                 display: inline-block;
                 margin-right: 4px;
             }
+
             a {
                 display: inline-block;
                 color: $paragraph-color;
@@ -5491,6 +6335,7 @@ Portfolio Details CSS
     img {
         transition: $transition;
     }
+
     .popup-btn {
         position: absolute;
         top: 0;
@@ -5499,46 +6344,64 @@ Portfolio Details CSS
         height: 100%;
         cursor: all-scroll;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         img {
             transform: scale(1.3);
         }
     }
 }
+
 .portfolio-desc {
     margin-top: 50px;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-bottom: 15px;
     }
+
     h1 {
         font-size: 35px;
     }
+
     h2 {
         font-size: 32px;
     }
+
     h3 {
         font-size: 29px;
     }
+
     h4 {
         font-size: 26px;
     }
+
     h5 {
         font-size: 23px;
     }
+
     h6 {
         font-size: 20px;
     }
-    ul, ol {
+
+    ul,
+    ol {
         li {
             line-height: 1.4;
             margin-bottom: 5px;
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
 }
+
 .portfolio-information {
     margin-top: 50px;
 
@@ -5546,8 +6409,10 @@ Portfolio Details CSS
         font: {
             size: 24px;
         }
+
         margin-bottom: 20px;
     }
+
     ul {
         padding: 0;
         list-style-type: none;
@@ -5563,10 +6428,12 @@ Portfolio Details CSS
                     weight: 700;
                     family: $heading-font-family;
                 }
+
                 color: $black-color;
                 display: inline-block;
                 margin-right: 4px;
             }
+
             a {
                 display: inline-block;
                 color: $paragraph-color;
@@ -5578,6 +6445,7 @@ Portfolio Details CSS
         }
     }
 }
+
 .service-details-info {
     display: -ms-flexbox;
     display: flex;
@@ -5587,34 +6455,42 @@ Portfolio Details CSS
     background: #f4f5fe;
     padding: 30px 20px 10px;
     border-radius: 10px;
+
     .single-info-box {
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
         margin-bottom: 20px;
+
         padding: {
             left: 15px;
             right: 15px;
         }
+
         h4 {
             margin-bottom: 10px;
+
             font: {
                 size: 18px;
                 weight: 600;
             }
         }
+
         span {
             display: block;
             color: $paragraph-color;
             font-size: 15px;
         }
+
         .social {
             padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
+
             li {
                 display: inline-block;
                 margin-right: 5px;
+
                 a {
                     background-color: #ffffff;
                     color: $paragraph-color;
@@ -5634,6 +6510,7 @@ Portfolio Details CSS
                 }
             }
         }
+
         .default-btn {
             display: inline-block;
             padding: 12px 30px;
@@ -5646,6 +6523,7 @@ Portfolio Details CSS
             border-radius: 30px;
             font-size: 14px;
             font-weight: 500;
+
             &:hover {
                 background-color: $white-color;
                 color: $main-color;
@@ -5656,20 +6534,24 @@ Portfolio Details CSS
             text-align: center;
         }
     }
-} 
+}
 
 .pd-preview-img {
     position: relative;
+
     img {
         border-radius: 10px;
     }
+
     .video-box {
         .video-btn {
             background-color: #f9004d;
             color: #fff;
             width: 90px;
             height: 90px;
-            &:before, &:after {
+
+            &:before,
+            &:after {
                 border: 1px solid #f9004d;
             }
         }
@@ -5694,6 +6576,7 @@ FAQ CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             .accordion__button {
                 display: block;
                 padding: 12px 45px 12px 15px;
@@ -5701,21 +6584,27 @@ FAQ CSS
                 position: relative;
                 background: #f5f9ff;
                 color: $black-color;
+
                 font: {
                     size: 18px;
                     weight: 700;
                     family: $heading-font-family;
                 }
-                &:hover, &.active, &:focus {
+
+                &:hover,
+                &.active,
+                &:focus {
                     background: $main-color;
                     color: $white-color;
                     outline: 0;
                 }
+
                 &::before {
                     position: relative;
                     top: -2px;
                 }
             }
+
             .accordion-content {
                 display: none;
                 position: relative;
@@ -5732,9 +6621,10 @@ FAQ CSS
         .accordion__panel {
             padding: 20px;
             border: 1px solid #eee;
-        } 
+        }
     }
 }
+
 .faq-contact {
     margin-top: 45px;
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
@@ -5745,11 +6635,13 @@ FAQ CSS
 
     h3 {
         margin-bottom: 35px;
+
         font: {
             size: 24px;
             family: $heading-font-family;
         }
     }
+
     form {
         .btn {
             margin-top: 10px;
@@ -5766,15 +6658,18 @@ Footer CSS
     position: relative;
     z-index: 1;
 }
+
 .single-footer-widget {
     .logo {
         margin-bottom: 20px;
+
         a {
             font-size: 24px;
             font-weight: bold;
             color: $black-color;
         }
     }
+
     .social-links {
         padding: 0;
         margin: 20px 0 0;
@@ -5812,27 +6707,33 @@ Footer CSS
                     border-radius: 50%;
                     transition: $transition;
                 }
-                &:hover, &:focus {
+
+                &:hover,
+                &:focus {
                     &::before {
                         width: 100%;
                         height: 100%;
                     }
                 }
             }
+
             &:last-child {
                 margin: 0;
             }
         }
     }
+
     h3 {
         position: relative;
         margin-bottom: 25px;
         padding-bottom: 10px;
         border-bottom: 1px solid #eee;
+
         font: {
             size: 24px;
             weight: 600;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -5842,6 +6743,7 @@ Footer CSS
             height: 3px;
             background: $gradient-color;
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -5852,6 +6754,7 @@ Footer CSS
             width: 5px;
         }
     }
+
     ul {
         &.list {
             margin: 0;
@@ -5860,6 +6763,7 @@ Footer CSS
 
             li {
                 margin-bottom: 12px;
+
                 a {
                     position: relative;
                     color: $paragraph-color;
@@ -5877,7 +6781,9 @@ Footer CSS
                         visibility: hidden;
                         transition: $transition;
                     }
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                         padding-left: 15px;
 
@@ -5887,11 +6793,13 @@ Footer CSS
                         }
                     }
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
+
         &.get-in-touch {
             padding: 0;
             margin: 0;
@@ -5905,6 +6813,7 @@ Footer CSS
                 &:first-child {
                     margin-bottom: 15px;
                 }
+
                 i {
                     width: 35px;
                     height: 35px;
@@ -5917,14 +6826,17 @@ Footer CSS
                     left: 0;
                     top: 0;
                 }
+
                 a {
                     display: inline-block;
                     color: $paragraph-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                     }
                 }
+
                 &:last-child {
                     margin-bottom: 0 !important;
                 }
@@ -5932,37 +6844,46 @@ Footer CSS
         }
     }
 }
+
 .copyright-area {
     background-color: #000000;
     text-align: center;
     margin-top: 95px;
+
     padding: {
         top: 30px;
         bottom: 30px;
     }
+
     p {
         color: $white-color;
         font-size: 15px;
+
         a {
             display: inline-block;
             color: $main-color;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 text-decoration: underline;
             }
         }
     }
 }
+
 .footer-dark {
     background-color: #000 !important;
+
     p {
         color: #fff;
-    } 
+    }
+
     .single-footer-widget {
         h3 {
             color: #fff;
             border-bottom: 1px solid #2e2e2e;
         }
+
         ul.list {
             li {
                 a {
@@ -5970,15 +6891,18 @@ Footer CSS
                 }
             }
         }
+
         ul.get-in-touch {
             li {
                 color: #c9c9c9;
+
                 a {
                     color: #c9c9c9;
                 }
             }
         }
     }
+
     .copyright-area {
         background-color: #040404;
         border-top: 1px solid #12141a;
@@ -5988,8 +6912,8 @@ Footer CSS
 /*================================================
 Go Top CSS
 =================================================*/
-.scroll-to-top  {
-	i {
+.scroll-to-top {
+    i {
         position: fixed;
         cursor: pointer;
         bottom: 20px;
@@ -6004,7 +6928,7 @@ Go Top CSS
         line-height: 40px;
         border-radius: 50%;
         transition: $transition;
-        
+
         &:hover {
             color: $white-color;
             background: $main-color;
@@ -6017,17 +6941,20 @@ Go Top CSS
     top: 100px;
     right: 0;
     z-index: 999999;
+
     a {
         background-color: #000;
         color: #fff;
         display: block;
         padding: 5px 9px;
         font-size: 14px;
+
         &:last-child {
             background-color: #483e3e;
         }
     }
 }
+
 span.new {
     position: absolute;
     background: #f9004d;
@@ -6042,109 +6969,129 @@ span.new {
 
 /* Coming Soon Area CSS */
 .coming-soon-area {
-	height: 100vh;
-	background: {
-		image: url(/images/coming-soon.jpg);
-		position: center center;
-		repeat: no-repeat;
-		size: cover;
-	}
+    height: 100vh;
+
+    background: {
+        image: url(/images/coming-soon.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
 }
+
 .coming-soon-content {
-	background-color: #fff;
-	border-radius: 10px;
-	max-width: 650px;
-	padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 650px;
+    padding: 40px;
 
-	.logo {
-		display: inline-block;
-	}
-	h2 {
-		font-size: 40px;
-		margin: {
-			top: 30px;
-			bottom: 0;
-		}
-	}
-	.coming-soon-countdown {
-		list-style-type: none;
-		padding-left: 0;
-		margin: {
-			top: 30px;
-			bottom: 0;
-		}
-		li {
-			border-radius: 5px;
-			font: {
-				size: 15px;
-				weight: 500;
-			}
-			margin: {
-				left: 20px;
-				right: 20px;
-			}
-			span {
-				color: $main-color;;
-				font: {
-					size: 40px;
-					weight: 700;
-				}
-			}
-			&:first-child {
-				margin-left: 0;
-			}
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-	form {
-		position: relative;
-		margin-top: 40px;
+    .logo {
+        display: inline-block;
+    }
 
-		.input-newsletter {
-			width: 100%;
-			height: 60px;
-			border: none;
-			display: block;
-			border-radius: 4px;
-			padding: 0 0 0 20px;
-			color: #000;
-			font-size: 15px;
-			transition: $transition;
-			background-color: transparent;
-			border: 1px solid rgba(0, 0, 0, 0.08);
+    h2 {
+        font-size: 40px;
 
-			&::placeholder {
-				color: $paragraph-color;
-				transition: $transition;
-			}
-			&:focus {
-				border-color: $main-color;
+        margin: {
+            top: 30px;
+            bottom: 0;
+        }
+    }
 
-				&::placeholder {
-					color: transparent;
-				}
-			}
-		}
-		.default-btn-two {
+    .coming-soon-countdown {
+        list-style-type: none;
+        padding-left: 0;
+
+        margin: {
+            top: 30px;
+            bottom: 0;
+        }
+
+        li {
+            border-radius: 5px;
+
+            font: {
+                size: 15px;
+                weight: 500;
+            }
+
+            margin: {
+                left: 20px;
+                right: 20px;
+            }
+
+            span {
+                color: $main-color;
+                ;
+
+                font: {
+                    size: 40px;
+                    weight: 700;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    form {
+        position: relative;
+        margin-top: 40px;
+
+        .input-newsletter {
+            width: 100%;
+            height: 60px;
+            border: none;
+            display: block;
+            border-radius: 4px;
+            padding: 0 0 0 20px;
+            color: #000;
+            font-size: 15px;
+            transition: $transition;
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+
+            &::placeholder {
+                color: $paragraph-color;
+                transition: $transition;
+            }
+
+            &:focus {
+                border-color: $main-color;
+
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
+        .default-btn-two {
             top: 5px;
-			right: 5px;
-			bottom: 5px;
-			position: absolute;
-		}
-	}
+            right: 5px;
+            bottom: 5px;
+            position: absolute;
+        }
+    }
 }
+
 .quotes-slides {
     .swiper-pagination {
         position: relative;
         margin-top: 20px;
+
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             background: #D6D6D6;
             border: 1px solid #b7b7b7;
             opacity: 1;
+
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
                 border: 1px solid #ff2c9c;
@@ -6152,11 +7099,14 @@ span.new {
         }
     }
 }
-.curve-shape, .oval-shape {
+
+.curve-shape,
+.oval-shape {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+
     img {
         width: 100%;
     }
@@ -6165,16 +7115,20 @@ span.new {
 .partner-slides {
     .swiper-button-prev {
         left: -6px;
+
         &:after {
             color: $main-color;
             font-size: 26px;
         }
     }
+
     .swiper-button-next {
         right: -6px;
+
         &:after {
             color: $main-color;
             font-size: 26px;
         }
     }
 }
+

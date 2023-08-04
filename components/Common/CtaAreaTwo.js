@@ -5,7 +5,7 @@ const CtaAreaTwo = () => {
   
   return (
     <>
-      <div className="cta-area-two ptb-100">
+      <div className="cta-area-two ptb-100" style={{backgroundColor:"#1F4462"}}>
         <div className="container">
           <div className="cta-content">
             <span
@@ -15,7 +15,7 @@ const CtaAreaTwo = () => {
               // style={containerStyles}
 
             >
-              Contact Us
+              <h6>Contact Us</h6>
             </span>
             <h5 style={{color:'white',fontSize:30}}
               data-aos="fade-in"

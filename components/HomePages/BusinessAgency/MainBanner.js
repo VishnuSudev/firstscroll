@@ -3,9 +3,10 @@ import Link from "next/link";
 import Popup from "reactjs-popup";
 import ContactForm from "../../Contact/ContactForm";
 
+
 const MainBanner = () => {
   const [showModal, setShowModal] = useState(false);
-  const slidingText = [ "SEO", "Social Media", "Paid Search"];
+  const slidingText = ["SEO", "Social Media", "Paid Search"];
   const [slidingName, setSlidingName] = useState(slidingText[0]);
 
   const changeName = () => {
@@ -35,15 +36,25 @@ const MainBanner = () => {
                   <span className="sub-title">Performance First</span>
                   <h1>
                     We're here to grow your business through
-                    <span
-                      style={{
-                        fontsize: "40px",
-                        transitionDelay: "2.5s",
-                      }}
-                    >
-                      {" "}
-                      {slidingName}
-                    </span>
+                    <div class="scroller">
+                      <span>
+                        SEO<br />
+                        Paid Ads<br />
+                        Social Media
+                      </span>
+                    </div>
+                    {/* <div class="scrolling-words-container">
+                      <div class="scrolling-words-box">
+                        <ul>
+                          <li style="color: #ea4335">Code</li>
+                          <li style="color: #4285f4">Build</li>
+                          <li style="color: #34a853">Create</li>
+                          <li style="color: #fbbc04">Design</li>
+                          <li style="color: #ea4335">Code</li>
+                        </ul>
+                      </div>
+                     
+                    </div> */}
                   </h1>
                   {/* <p>
                   We excel in impactful campaigns for Health & Beauty, Food & Beverage, and FMCG sectors, E-commerce, and others. From global brand activations to local challenger brands, our focus remains on thoughtful, performance-led social executions.</p> */}
@@ -53,7 +64,7 @@ const MainBanner = () => {
                     }}
                     className="app-banner-btn"
                   >
-                    Let's talk
+                    Contact Us &nbsp;
                     <i className="fa-solid fa-arrow-right-long"></i>
                   </p>
                 </div>
@@ -69,22 +80,7 @@ const MainBanner = () => {
               </div>
             </div>
 
-            {/* Shape Images */}
-            <div className="app-banner-shape1">
-              <img src="/images/app/shape1.png" alt="image" />
-            </div>
-            <div className="app-banner-shape2">
-              <img src="/images/app/shape2.png" alt="image" />
-            </div>
-            <div className="app-banner-shape3">
-              <img src="/images/app/shape2.png" alt="image" />
-            </div>
-            <div className="app-banner-shape4">
-              <img src="/images/app/shape3.png" alt="image" />
-            </div>
-            <div className="app-banner-shape5">
-              <img src="/images/app/shape4.png" alt="image" />
-            </div>
+
           </div>
           <Popup
             open={showModal}

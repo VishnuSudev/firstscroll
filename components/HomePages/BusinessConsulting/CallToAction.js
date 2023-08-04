@@ -15,6 +15,7 @@ const CallToAction = () => {
                 data-aos-duration="1200"
                 data-aos-delay="100"
               >
+                <h6>Our Blogs</h6>
                 <h2>
                 Industry Insights
                 </h2>

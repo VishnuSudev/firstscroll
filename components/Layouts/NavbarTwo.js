@@ -645,7 +645,7 @@ const NavbarTwo = () => {
                  onClick={() => {
                   setShowModal(true)
                 }}
-                href="#" className="btn btn-primary">
+                href="#" className="btn btn-warning" style={{color:"black"}}>
                   Let's talk
                 </Link>
               </div>

@@ -7,10 +7,10 @@ const AboutUsContent = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <div className="pb-50 overflow-hidden" id="aboutus">
-        <div className="container">
+      <div className="overflow-hidden" id="aboutus">
+        <div className="container"    style={{paddingTop:30, paddingBottom:50}}>
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12"   style={{paddingTop:50, paddingBottom:50}}>
+            <div className="col-lg-6 col-md-12">
               <div
                 className="app-about-img"
                 data-aos="fade-left"
@@ -20,9 +20,9 @@ const AboutUsContent = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12"   style={{paddingTop:100, paddingBottom:50}}>
+            <div className="col-lg-6 col-md-12">
               <div className="app-about-content">
-                <span className="app-sub-title">Who We Are</span>
+                <h6>Who We Are</h6>
                 <h2>Providing Marketing services for growing brands</h2>
                 <p>
                 Where mischief meets marketing magic! Our oddball wizards concoct ROI-driven spells, mesmerizing audiences with quirky campaigns and data-driven delights. For 10+ years, our digitally obsessed team delivers exceptional client service and ensures success in the ever-evolving marketing landscape.

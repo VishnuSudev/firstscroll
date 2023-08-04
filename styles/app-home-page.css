@@ -4,7 +4,7 @@
   --mainColor: #1F4462;
   --whiteColor: #ffffff;
   --blackColor: #262A37;
-  --gradientColor: linear-gradient(44.44deg, #1F4462 7.79%, #1F4462 94.18%);
+  --gradientColor: linear-gradient(44.44deg, #1F4462, #1F4462);
 }
 
 p, ul, ol {

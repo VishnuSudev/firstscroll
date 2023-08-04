@@ -15,24 +15,19 @@ const funfactsData = [
     number: "10+",
     title: "Years in Business",
     aosDelay: "300",
-  },
-  {
-    number: "100%",
-    title: "Success Rate",
-    aosDelay: "400",
-  },
+  }
 ];
 
 const Funfacts = () => {
   return (
     <>
-      <div className="bc-funfacts-area bg-image pt-100 pb-70">
+      <div className="bc-funfacts-area bg-image" style={{paddingTop:30}}>
         <div className="container">
           <div className="row justify-content-center">
             {funfactsData &&
-              funfactsData.slice(0, 4).map((value, i) => (
+              funfactsData.slice(0, 3).map((value, i) => (
                 <div 
-                  className="col-lg-3 col-sm-6 col-md-3 col-6" 
+                  className="col-lg-4 col-sm-6 col-md-4 col-6" 
                   key={i}
                   data-aos="fade-in"
                   data-aos-duration="1200"
