@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css"; 
+import "reactjs-popup/dist/index.css";
 
 const featuredServicesData = [
   {
@@ -74,11 +74,13 @@ const featuredServicesData = [
 ];
 
 const FeaturedServices = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [data, setData] = useState("");
   return (
     <>
       <section className="featured-services-area ptb-100">
         <div className="container">
-          <div className="row" style={{paddingRight:30, paddingLeft:30}}>
+          <div className="row" style={{ paddingRight: 30, paddingLeft: 30 }}>
             <Swiper
               spaceBetween={30}
               navigation={true}
@@ -106,29 +108,87 @@ const FeaturedServices = () => {
                         <div className="icon">
                           <i className={value.iconName}></i>
                         </div>
-                        
+
                         <h3>
                           <Link href={value.viewDetails}>{value.title}</Link>
                         </h3>
 
                         <p>{value.shortText}</p>
 
-                        <Link
-                          href={value.viewDetails}
+                        <div
+                          style={{ cursor: "pointer" }}
+                          onClick={() => {
+                            setShowModal(true);
+                            setData(value);
+                          }}
+                          // href={""}
                           className="read-more-btn"
                         >
                           Read More
-                        </Link>
-
-                        <div className="back-text">
-                          {value.bgText}
                         </div>
+
+                        <div className="back-text">{value.bgText}</div>
                       </div>
                     </div>
                   </SwiperSlide>
                 ))}
             </Swiper>
           </div>
+          <Popup
+            open={showModal}
+            onClose={() => {
+              setShowModal(false);
+            }}
+            contentStyle={{
+              borderRadius: "10px",
+              minHeight: "25%",
+              minWidth: "75%",
+              padding: "20px",
+            }}
+            position="right center"
+          >
+            <div
+              style={{
+                padding: "20px",
+                borderRadius: 10,
+              }}
+            >
+              <div
+                onClick={() => {
+                  setShowModal(false);
+                }}
+                style={{
+                  position: "absolute",
+                  right: "10px",
+                  top: "10px",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                }}
+              >
+                &#10006;
+              </div>
+              <div>
+                <p
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    fontcolor: "black",
+                    textAlign: "center",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  {data.title}
+                </p>
+              </div>
+              <div
+                style={{
+                  paddingTop: "15px",
+                }}
+              >
+                {data.shortText}
+              </div>
+            </div>
+          </Popup>
         </div>
       </section>
     </>
