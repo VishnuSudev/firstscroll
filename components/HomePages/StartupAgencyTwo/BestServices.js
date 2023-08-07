@@ -5,7 +5,7 @@ import FeaturedServices from "../StartupAgencyTwo/FeaturedServices";
 const BestServices = () => {
   return (
     <>
-      <section id="services" className="services-area">
+      <section id="services" className="services-area" style={{paddingTop:50}}>
         <div className="container">
           <div className="row m-0">
           <div className="col-lg-4 ptb-100">
@@ -15,9 +15,7 @@ const BestServices = () => {
                   <h2>We help you solve your problem through our service.</h2>
                   <div className="bar"></div>
                   <p>
-                  We are a brand strategy and digital marketing agency who understand the customer life-cycle like no one else.
-
-                  </p>
+                  We are a brand strategy and digital marketing agency who understand the customer life-cycle like no one else.                 </p>
                   {/* <div class="btn-box"><a class="app-default-btn" href="/#aboutus/">Our Happy Clients</a></div> */}
                  
                 </div>

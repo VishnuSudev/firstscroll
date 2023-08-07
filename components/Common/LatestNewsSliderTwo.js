@@ -6,39 +6,39 @@ import { Autoplay, Pagination } from "swiper";
 const latestNewsData = [
   {
     image: "/images/blog/blog7.jpg",
-    title: "Blog 1",
-    date: "Feb 15, 2023",
-    category: "Technology",
-    shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    readMoreLink: "/blog-details",
+    // title: "Blog 1",
+    // date: "Feb 15, 2023",
+    // category: "Technology",
+    // shortText:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
+    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/blog/blog8.jpg",
-    title: "Blog 2",
-    date: "Feb 16, 2023",
-    category: "Agency",
-    shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    readMoreLink: "/blog-details",
+    // title: "Blog 2",
+    // date: "Feb 16, 2023",
+    // category: "Agency",
+    // shortText:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
+    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/blog/blog9.jpg",
-    title: "Blog 3",
-    date: "Feb 17, 2023",
-    category: "IT Agency",
-    shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    readMoreLink: "/blog-details",
+    // title: "Blog 3",
+    // date: "Feb 17, 2023",
+    // category: "IT Agency",
+    // shortText:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
+    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/blog/blog10.jpg",
     title: "Blog 4",
     date: "Feb 18, 2023",
     category: "Development",
-    shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    readMoreLink: "/blog-details",
+    // shortText:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
+    // readMoreLink: "/blog-details",
   },
 ];
 
@@ -84,12 +84,12 @@ const LatestNewsSliderTwo = () => {
                         <img src={value.image} alt="image" />
                       </Link>
 
-                      <div className="post-tag">
+                      {/* <div className="post-tag">
                         <Link href="#">{value.category}</Link>
-                      </div>
+                      </div> */}
                     </div>
 
-                    <div className="blog-post-content">
+                    {/* <div className="blog-post-content">
                       <span className="date">{value.date}</span>
                       <h3>
                         <Link href="#">{value.title}</Link>
@@ -100,7 +100,7 @@ const LatestNewsSliderTwo = () => {
                         Read More
                         <i className="fa-solid fa-angles-right"></i>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </SwiperSlide>
               ))}

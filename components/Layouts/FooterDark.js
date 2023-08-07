@@ -69,7 +69,7 @@ const FooterDark = () => {
       <footer style={footerStyle} className="footer-dark">
         <div style={containerStyle} className="container">
           <div style={logoStyle} className="footer-content">
-            <img src="/Scroll_White.png" width="140" alt="Logo" onClick={handleHomeClick} />
+            <img src="/White_Scroll.gif" width="140" alt="Logo" onClick={handleHomeClick} />
           </div>
           <div style={linksStyle} className="footer-content">
             <p>
@@ -82,18 +82,17 @@ const FooterDark = () => {
                     {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
               </span>{" "}
-              |{" "}
-              <span style={linkStyle} onClick={handleAboutClick}>
-                About
-              </span>{" "}
+             
               |{" "}
               <span style={linkStyle} onClick={handleServicesClick}>
                 Services
               </span>{" "}
               |{" "}
-              <span style={linkStyle} onClick={handleContactClick}>
-                Contact
-              </span>
+              <span style={linkStyle} onClick={handleAboutClick}>
+                Who we are
+              </span>{" "}
+              |{" "}
+              <span  style={linkStyle}><Link href="/blog/" style={{color:'white'}}> Blog</Link></span>
             </p>
           </div>
       

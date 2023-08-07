@@ -11,16 +11,6 @@ const AboutUsContent = () => {
         <div className="container"    style={{paddingTop:30, paddingBottom:50}}>
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
-              <div
-                className="app-about-img"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-              >
-                <img src="/images/app/about-app.png" alt="about" />
-              </div>
-            </div>
-
-            <div className="col-lg-6 col-md-12">
               <div className="app-about-content">
                 <h6>Who We Are</h6>
                 <h2>Providing Marketing services for growing brands</h2>
@@ -28,18 +18,22 @@ const AboutUsContent = () => {
                 Where mischief meets marketing magic! Our oddball wizards concoct ROI-driven spells, mesmerizing audiences with quirky campaigns and data-driven delights. For 10+ years, our digitally obsessed team delivers exceptional client service and ensures success in the ever-evolving marketing landscape.
 
                 </p>
-
-                
-
-                
-
-                <div className="btn-box">
-                  <Link href="#" className="app-default-btn" onClick={() => {
+              <div className="">
+                  <Link href="#" className="yellow-btn" onClick={() => {
                   setShowModal(true)
                 }}>
                     Contact Us
                   </Link>
                 </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12">
+              <div
+                className="app-about-img"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <img src="/images/app/about-app.png" alt="about" />
               </div>
             </div>
           </div>

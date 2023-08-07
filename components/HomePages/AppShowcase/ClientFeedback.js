@@ -9,25 +9,7 @@ const clientFeedbackData = [
     designation: "Yoga Cult",
     feedbackText:
       "During our collaboration with First Scroll, we were introduced to innovative and promising marketing strategies for our company. As a result, we now leverage statistics and precise data to navigate the digital space effectively.",
-    category: " Promising Marketing",
-
-    rating: [
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-    ],
+   
   },
   {
     image: "/images/testimonials/01.jpg",
@@ -35,25 +17,7 @@ const clientFeedbackData = [
     designation: "Massaggi",
     feedbackText:
       "First Scroll for brand strategy consulting has been a transformative experience for our company. Their expertise has provided us with fresh perspectives on building and refining our brand identity. ",
-    category: "Brand Strategy",
-
-    rating: [
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-    ],
+   
   },
   {
     image: "/images/testimonials/03.jpg",
@@ -61,25 +25,7 @@ const clientFeedbackData = [
     designation: "Cam Craft",
     feedbackText:
       "By leveraging cutting-edge digital strategies, we have tapped into a plethora of potential leads and sales. Armed with data-driven insights and statistics, we now have the tools to maximize our online presence and convert prospects into satisfied customers.",
-    category: "Digital Strategies",
-
-    rating: [
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-    ],
+    
   },
   {
     image: "/images/testimonials/02.jpg",
@@ -87,25 +33,9 @@ const clientFeedbackData = [
     designation: "CHIC by Sisters",
     feedbackText:
       "First Scroll has revolutionized our e-commerce sales approach. Embracing data-driven strategies and analytics, we now possess valuable insights into consumer behavior and preferences. As a result, we've harnessed the power of the digital landscape",
-    category: "Data-driven Strategies",
+   
 
-    rating: [
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-      {
-        iconName: "fa-solid fa-star",
-      },
-    ],
+    
   },
 ];
 
@@ -114,9 +44,10 @@ const ClientFeedback = () => {
     <>
       <div style={{paddingBottom:50, paddingTop:50}}>
         <div className="container">
-          <div className="section-title">
-            <span className="app-sub-title">CLIENT REVIEWS</span>
-            <h2>Some of Our Happy Customer Reviews About Our Products</h2>
+          <div className="">
+            {/* <span className="app-sub-title">CLIENT REVIEWS</span> */}
+            {/* <blockquote class="wp-block-quote"><h1>Beloved by so many <br />people worldwide</h1></blockquote> */}
+            <div class="quotes-content"><p>Beloved by so many <br />people worldwide</p></div>
           </div>
 
           <Swiper
@@ -146,7 +77,7 @@ const ClientFeedback = () => {
             {clientFeedbackData &&
               clientFeedbackData.map((value, i) => (
                 <SwiperSlide key={i}>
-                  <div className="app-feedback-box">
+                  <div className="app-feedback-box" style={{backgroundColor:'white'}}>
                     <div className="client-info">
                       <div className="d-flex align-items-center">
                         <img src={value.image} alt="user" />
@@ -161,12 +92,12 @@ const ClientFeedback = () => {
                       <q>{value.feedbackText}</q>
                     </p>
                     <div className="rating d-flex align-items-center justify-content-between">
-                      <h5>{value.category}</h5>
+                      {/* <h5>{value.category}</h5>
                       <div>
                         {value.rating.map((value, i) => (
                           <i className={value.iconName} key={i}></i>
                         ))}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </SwiperSlide>

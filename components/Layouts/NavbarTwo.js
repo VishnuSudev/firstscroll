@@ -39,18 +39,19 @@ const NavbarTwo = () => {
 
   return (
     <>
-      <div id="navbar" className="navbar-area navbar-style-2">
+      <div id="navbar" className="navbar-area navbar-style-2" style={{backgroundColor:'#1f4462', boxShadow:'none'}}>
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
             <Link href="/" className="navbar-brand">
               <div>
-              <img src="/logo1.png" className="black-logo " width='120' height='20' alt="logo" />
+              <img src="/Scroll_White.png" className="black-logo " width='120' height='20' alt="logo" />
               </div>
               <img
-                src="/images/logow.png" width='120' height='20' 
+                src="/Scroll_White.png" width='120' height='20' 
                 className="white-logo"
                 alt="logo"
               />
+              <p style={{fontSize:10, color:'white', fontWeight:500}}>Performance First</p>
             </Link>
 
             {/* Toggle navigation */}
@@ -377,7 +378,7 @@ const NavbarTwo = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link
+                  <Link style={{textTransform:'initial'}}
                     href="/about/"
                     className={`nav-link ${
                       currentPath == "/about/" && "active"
@@ -645,7 +646,7 @@ const NavbarTwo = () => {
                  onClick={() => {
                   setShowModal(true)
                 }}
-                href="#" className="btn btn-warning" style={{color:"black"}}>
+                href="#" className="btn"  style={{color:"white", backgroundColor:'transparent',border:'1px solid white', AnimationEffect:'none'}}>
                   Let's talk
                 </Link>
               </div>

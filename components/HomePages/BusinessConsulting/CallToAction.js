@@ -5,7 +5,7 @@ import LatestNewsSliderTwo from "../../Common/LatestNewsSliderTwo";
 const CallToAction = () => {
   return (
     <>
-      <div className="call-to-action-area bg-image ptb-100" style={{height:600,marginBottom:250}}>
+      <div className="call-to-action-area bg-image ptb-100" style={{height:400,marginBottom:250}}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
@@ -15,9 +15,9 @@ const CallToAction = () => {
                 data-aos-duration="1200"
                 data-aos-delay="100"
               >
-                <h6>Our Blogs</h6>
+                <h6>Our Works</h6>
                 <h2>
-                Industry Insights
+                Our latest projects
                 </h2>
               </div>
             </div>
@@ -31,7 +31,7 @@ const CallToAction = () => {
                 data-aos-delay="100"
               >
                 <p style={{color:'white'}}>
-                Learn from First Scroll and stay updated on industry insights and trends
+                We build products close to our heart. We made your idea to reality and make your dream successful with awesome experience
 
                 </p>
               </div>

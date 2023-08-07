@@ -27,7 +27,7 @@ const Funfacts = () => {
             {funfactsData &&
               funfactsData.slice(0, 3).map((value, i) => (
                 <div 
-                  className="col-lg-4 col-sm-6 col-md-4 col-6" 
+                  className="col-lg-4 col-sm-12 col-md-4" 
                   key={i}
                   data-aos="fade-in"
                   data-aos-duration="1200"

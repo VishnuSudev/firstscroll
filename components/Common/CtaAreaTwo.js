@@ -15,7 +15,7 @@ const CtaAreaTwo = () => {
               // style={containerStyles}
 
             >
-              <h6>Contact Us</h6>
+              <h6 style={{textTransform:'none'}}>Contact Us</h6>
             </span>
             <h5 style={{color:'white',fontSize:30}}
               data-aos="fade-in"
@@ -32,7 +32,7 @@ const CtaAreaTwo = () => {
             data-aos-duration="1200"
             data-aos-delay="300"
           >
-             <a style={{ textTransform: 'lowercase' }} href="mailto:hello@firstscroll.com" className="custom-btn"> <i class="fa-solid fa-envelope-circle-check" style={{marginRight:15}}></i>hello@firstscroll.com</a>
+             <a style={{ textTransform: 'lowercase' }} href="mailto:hello@firstscroll.com" className="green-btn"> <i class="fa-solid fa-envelope-circle-check" style={{marginRight:15}}></i>hello@firstscroll.com</a>
           </div>
         </div>
       </div>

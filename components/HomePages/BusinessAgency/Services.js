@@ -8,7 +8,7 @@ const servicesData = [
     iconName: "pe-7s-rocket bg-13c4a1",
     title: "Digital Advertising Campaigns",
     shortText:
-      "Developing and managing data-driven digital advertising campaigns across various platforms, such as Google Ads, Facebook, and other display networks, to drive targeted traffic and conversions.",
+      "Amplify your brand's reach with our dynamic digital advertising campaigns across Google, Meta & YouTube, and more.",
     viewDetails: "/service-details",
     aosDelay: "100",
   },
@@ -16,7 +16,7 @@ const servicesData = [
     iconName: "pe-7s-filter bg-6610f2",
     title: "Conversion Rate Optimization",
     shortText:
-      "Analyzing user behavior, optimizing landing pages, and implementing A/B testing to increase the percentage of website visitors who take desired actions, resulting in improved ROI",
+      "Supercharge your online success with data-driven Conversion Rate Optimization strategies tailored to your business",
     viewDetails: "/service-details",
     aosDelay: "200",
   },

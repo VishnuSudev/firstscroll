@@ -3,73 +3,73 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+// import "reactjs-popup/dist/index.css";
 
 const featuredServicesData = [
   {
-    iconName: "pe-7s-graph3",
+    iconName: "pe-7s-graph3 bg-13c4a1",
     title: "Digital Advertising Campaigns",
-    bgText: "DA",
+    // bgText: "DA",
     shortText:
-      "Developing and managing data-driven digital advertising campaigns across various platforms...",
-    viewDetails: "/service-details",
+      "Amplify your brand's reach with our dynamic digital advertising campaigns across Google, Meta & YouTube, and more.",
+    // viewDetails: "",
   },
   {
-    iconName: "pe-7s-graph1",
+    iconName: "pe-7s-graph1 bg-13c4a1",
     title: "Conversion Rate Optimization",
-    bgText: "CR",
+    // bgText: "CR",
     shortText:
-      "Analyzing user behavior, optimizing landing pages, and implementing A/B testing to increase... ",
-    viewDetails: "/service-details",
+      "Supercharge your online success with data-driven Conversion Rate Optimization strategies tailored to your business",
+    // viewDetails: "",
   },
   {
-    iconName: "pe-7s-display1",
-    title: "E-commerce Strategy",
-    bgText: "ES",
+    iconName: "pe-7s-display1 bg-13c4a1",
+    title: "E-commerce Strategy " ,
+    // bgText: "ES",
     shortText:
-      "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    viewDetails: "/service-details",
+      "Maximize sales and growth with our tailored E-commerce Strategy for your online business",
+    // viewDetails: "/service-details",
   },
   {
-    iconName: "pe-7s-rocket",
+    iconName: "pe-7s-rocket bg-13c4a1",
     title: "Brand Strategy",
-    bgText: "BS",
+    // bgText: "BS",
     shortText:
-      "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    viewDetails: "/service-details",
+      "Unleash the power of your brand with our strategic expertise and creative vision",
+    // viewDetails: "/service-details",
   },
   {
-    iconName: "pe-7s-search",
+    iconName: "pe-7s-search bg-13c4a1",
     title: "Search Engine Optimization",
-    bgText: "SEO",
+    // bgText: "SEO",
     shortText:
-      "Implementing strategic SEO techniques to improve organic search rankings, increase website... ",
-    viewDetails: "/service-details",
+      "Drive organic growth and boost visibility with our expert SEO services.",
+    // viewDetails: "/service-details",
   },
   {
-    iconName: "pe-7s-box2",
+    iconName: "pe-7s-box2 bg-13c4a1",
     title: "Product Marketing & Strategy",
-    bgText: "PM",
+    // bgText: "PM",
     shortText:
-      "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    viewDetails: "/service-details",
+      "Elevate your product's success with our dynamic marketing strategies and effective product positioning",
+    // viewDetails: "/service-details",
   },
   {
-    iconName: "pe-7s-light",
+    iconName: "pe-7s-light bg-13c4a1",
     title: "Social Media Marketing",
-    bgText: "SM",
+    // bgText: "SM",
     shortText:
-      "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    viewDetails: "/service-details",
+      "Dominate social media with our strategic marketing on Facebook, Instagram, Twitter, and more",
+    // viewDetails: "/service-details",
   },
   ,
   {
-    iconName: "pe-7s-monitor",
+    iconName: "pe-7s-monitor bg-13c4a1",
     title: "Web & App development",
-    bgText: "WAD",
+    // bgText: "WAD",
     shortText:
-      "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    viewDetails: "/service-details",
+      "Seamless web and app development – transforming your vision into remarkable digital realities.",
+    // viewDetails: "/service-details",
   },
 ];
 
@@ -78,7 +78,7 @@ const FeaturedServices = () => {
   const [data, setData] = useState("");
   return (
     <>
-      <section className="featured-services-area ptb-100">
+      <section className="featured-services-area ptb-100" height="345">
         <div className="container">
           <div className="row" style={{ paddingRight: 30, paddingLeft: 30 }}>
             <Swiper
@@ -104,30 +104,27 @@ const FeaturedServices = () => {
                 featuredServicesData.map((value, i) => (
                   <SwiperSlide key={i}>
                     <div className="col-lg-12">
-                      <div className="featured-services-box">
+                      <div className="featured-services-box service-card-one" style={{paddingTop:20}}>
                         <div className="icon">
                           <i className={value.iconName}></i>
                         </div>
 
                         <h3>
-                          <Link href={value.viewDetails}>{value.title}</Link>
+                          {value.title}
                         </h3>
 
                         <p>{value.shortText}</p>
 
-                        <div
-                          style={{ cursor: "pointer" }}
-                          onClick={() => {
-                            setShowModal(true);
-                            setData(value);
-                          }}
-                          // href={""}
+                        {/* <Link
+                          href={value.viewDetails}
                           className="read-more-btn"
                         >
                           Read More
-                        </div>
+                        </Link> */}
 
-                        <div className="back-text">{value.bgText}</div>
+                        {/* <div className="back-text">
+                          {value.bgText}
+                        </div> */}
                       </div>
                     </div>
                   </SwiperSlide>

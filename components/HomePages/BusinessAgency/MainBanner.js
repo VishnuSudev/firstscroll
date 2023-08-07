@@ -29,19 +29,21 @@ const MainBanner = () => {
     <>
       <div className="app-main-banner">
         <div className="container">
-          <div className="app-main-banner-inner" style={{ paddingTop: 80 }}>
+          <div className="app-main-banner-inner" style={{ paddingTop: 100 }}>
             <div className="row">
               <div className="col-lg-6 col-md-12">
                 <div className="content">
-                  <span className="sub-title">Performance First</span>
+                  {/* <span className="sub-title">Performance First</span> */}
                   <h1>
                     We're here to grow your business through
                     <div class="scroller">
-                      <span>
+                        <span>
                         SEO<br />
                         Paid Ads<br />
                         Social Media
-                      </span>
+                        </span>
+                       
+                      
                     </div>
                     {/* <div class="scrolling-words-container">
                       <div class="scrolling-words-box">
@@ -56,13 +58,13 @@ const MainBanner = () => {
                      
                     </div> */}
                   </h1>
-                  {/* <p>
-                  We excel in impactful campaigns for Health & Beauty, Food & Beverage, and FMCG sectors, E-commerce, and others. From global brand activations to local challenger brands, our focus remains on thoughtful, performance-led social executions.</p> */}
+                  <p style={{color:'white'}}>
+                  we’ll get your business noticed in no time with our effective solutions.</p>
                   <p
                     onClick={() => {
                       setShowModal(true);
                     }}
-                    className="app-banner-btn"
+                    className="app-banner-btn" style={{borderRadius:50, width:200}}
                   >
                     Contact Us &nbsp;
                     <i className="fa-solid fa-arrow-right-long"></i>

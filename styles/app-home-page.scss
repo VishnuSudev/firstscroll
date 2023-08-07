@@ -8,7 +8,7 @@
 }
 
 p, ul, ol {
-    font-family: 'Inter', sans-serif;
+    font-family:  "Montserrat", sans-serif;
 }
  
 .app-sub-title {
@@ -25,6 +25,7 @@ p, ul, ol {
 .app-default-btn {
     z-index: 1;
     border: none;
+    border-radius: 50px;
     position: relative; 
     padding: 15px 35px;
     border-radius: 5px;
@@ -102,7 +103,7 @@ p, ul, ol {
             color: var(--whiteColor);
             background-color: var(--blackColor);
             padding: 12px 30px;
-            border-radius: 5px;
+            border-radius: 50px;
             border: none;
             display: inline-block;
             font-weight: 600;
@@ -658,7 +659,7 @@ p, ul, ol {
         }
         .app-default-btn {
             position: absolute;
-            border-radius: 5px;
+            border-radius: 50px;
             height: 60px;
             right: 5px;
             top: 5px;
@@ -860,19 +861,7 @@ p, ul, ol {
             padding: 0 !important;
         }
     }
-    .app-main-banner-inner {
-        padding-top: 130px;
-        .content {
-            position: initial;
-            padding-right: 0;
-            h1 {
-                font-size: 30px;
-            }
-        }
-        .image {
-            margin-top: 30px;
-        }
-    }
+    
     .app-banner-shape1, .app-banner-shape5 {
         display: none;
     }
@@ -953,6 +942,7 @@ p, ul, ol {
         }
         .app-default-btn {
             padding: 12px 25px;
+            border-radius: 50px;
             font-size: 14px;
         }
         .features-list {
@@ -973,6 +963,7 @@ p, ul, ol {
             }
             .app-default-btn {
                 height: 45px;
+                border-radius: 50px;
                 padding: 5px 20px;
                 font-size: 14px;
             }
@@ -985,6 +976,7 @@ p, ul, ol {
         form {
             .app-default-btn {
                 position: inherit;
+                border-radius: 50px;
                 margin-top: 15px;
             }
         }
