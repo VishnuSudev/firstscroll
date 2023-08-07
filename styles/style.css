@@ -6511,7 +6511,7 @@ h6 {
   font-weight: bold;
 
 }
-
+/* 
 @keyframes slide {
   10% {
     top: 0;
@@ -6524,7 +6524,7 @@ h6 {
   85% {
     top: -2.4em;
   }
-}
+} */
 .yellow-btn{
   background-color: #f4ae28;
   padding: 10px 30px;
