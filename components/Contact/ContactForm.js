@@ -4,7 +4,8 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
-
+const sendGridApiKey =
+  "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";
 const alertContent = () => {
   MySwal.fire({
     title: "Congratulations!",
@@ -21,8 +22,9 @@ const INITIAL_STATE = {
   name: "",
   email: "",
   number: "",
-  subject: "",
+  phone: "",
   text: "",
+  company:""
 };
 
 const ContactForm = () => {
@@ -35,10 +37,38 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `${baseUrl}/api/contact`;
-      const { name, email, number, subject, text } = contact;
-      const payload = { name, email, number, subject, text };
-      const response = await axios.post(url, payload);
+      const url = `https://api.sendgrid.com/v3/mail/send`;
+      const { name, email, phone, text ,company} = contact;
+      const payload = {
+        // Update here your email
+        html: `
+                <b>From:</b> ${name} <br /> 
+                <b>Email:</b> ${email} <br />
+                <b>phone:</b> ${phone} <br /> 
+                <b>Message:</b> ${text} <br />
+                <b>Company:</b> ${company} <br />
+            `,
+      };
+      const data = {
+        personalizations: [
+          {
+            to: [{ email: "hello@firstscroll.com"}],
+            subject: "Firstscroll Contact Form",
+          },
+        ],
+        from: { email: "hello@firstscroll.com" },
+        content: [
+          {
+            type: 'text/html',
+            value: payload.html,
+          },
+        ],
+      };
+      const response = await axios.post(url, data, {
+        headers: {
+          Authorization: `Bearer ${sendGridApiKey}`,
+        },
+      });
       console.log(response);
       setContact(INITIAL_STATE);
       alertContent();
@@ -53,7 +83,8 @@ const ContactForm = () => {
         <div className="contact-title">
           <h2>Get In Touch</h2>
           <p>
-            Excited to explore what the future holds? Connect with us to collaborate on your next project
+            Excited to explore what the future holds? Connect with us to
+            collaborate on your next project
           </p>
         </div>
 
@@ -78,8 +109,21 @@ const ContactForm = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="email"
+                      name="company"
                       placeholder="Company"
+                      className="form-control"
+                      value={contact.company}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="Email Id"
                       className="form-control"
                       value={contact.email}
                       onChange={handleChange}
@@ -91,23 +135,10 @@ const ContactForm = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="number"
-                      placeholder="Email Id"
-                      className="form-control"
-                      value={contact.number}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="subject"
+                      name="phone"
                       placeholder="Phone"
                       className="form-control"
-                      value={contact.subject}
+                      value={contact.phone}
                       onChange={handleChange}
                       required
                     />
