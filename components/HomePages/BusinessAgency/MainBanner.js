@@ -28,56 +28,53 @@ const MainBanner = () => {
   return (
     <>
       <div className="app-main-banner">
-      <div className="container">
-      <div className="app-main-banner-inner" style={{ paddingTop: 100 }}>
-        <div className="row">
-          <div className="col-lg-6 col-md-12">
-            <div className="content">
-              <h1>
-                We're here to grow your business through
-                <div className="scroller">
-                  <style>
-                    {`
-                      @keyframes scrollText {
-                        0% {
-                          transform: translateY(0%);
-                        }
-                        100% {
-                          transform: translateY(-66.666%);
-                        }
-                      }
-                    `}
-                  </style>
-                  <span style={{ animation: 'scrollText 6s linear infinite' }}>
-                    SEO<br />
-                    Paid Ads<br />
-                    Social Media<br/>
-                    SEO
-                  </span>
+        <div className="container">
+          <div className="app-main-banner-inner" style={{ paddingTop: 100 }}>
+            <div className="row">
+              <div className="col-lg-6 col-md-12">
+                <div className="content"> 
+                  {/* <span className="sub-title">Performance First</span> */}
+                  <h1>
+                    We're here to grow your business through
+
+                    <div className="scrolling-words-container">
+                      <div className="scrolling-words-box">
+                        <ul>
+                          <li>SEO</li>
+                          <li>Social Media</li>
+                          <li>Paid Ads</li>
+                          <li>Brand Strategy</li>
+                          <li>SEO</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </h1>
+                  <p style={{ color: 'white' }}>
+                    we’ll get your business noticed in no time with our effective solutions.</p>
+                  <p
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                    className="app-banner-btn" style={{ borderRadius: 50, width: 200 }}
+                  >
+                    Contact Us &nbsp;
+                    <i className="fa-solid fa-arrow-right-long"></i>
+                  </p>
                 </div>
-              </h1>
-              <p style={{ color: 'white' }}>
-                We’ll get your business noticed in no time with our effective solutions.
-              </p>
-              <p
-                onClick={() => {
-                  setShowModal(true);
-                }}
-                className="app-banner-btn"
-                style={{ borderRadius: 50, width: 200 }}
-              >
-                Contact Us &nbsp;
-                <i className="fa-solid fa-arrow-right-long"></i>
-              </p>
+              </div>
+              <div className="col-lg-6 col-md-12">
+                <div
+                  className="image"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <img src="/images/app/mobile-app.png" alt="banner-img" />
+                </div>
+              </div>
             </div>
+
+
           </div>
-          <div className="col-lg-6 col-md-12">
-            <div className="image" data-aos="fade-up" data-aos-duration="1200">
-              <img src="/images/app/mobile-app.png" alt="banner-img" />
-            </div>
-          </div>
-        </div>
-      </div>
           <Popup
             open={showModal}
             onClose={() => {
@@ -87,8 +84,8 @@ const MainBanner = () => {
               borderRadius: "10px",
               minHeight: "55%",
               minWidth: "90%",
-              overflow:"scroll",
-              maxHeight:"95%"
+              overflow: "scroll",
+              maxHeight: "95%"
             }}
             position="right center"
           >

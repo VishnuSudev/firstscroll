@@ -90,7 +90,7 @@ p, ul, ol {
             color: var(--whiteColor);
             margin-bottom: 20px;
             line-height: 1.4;
-            font-size: 48px;
+            font-size: 2.4rem;
         }
         p {
             color: var(--whiteColor);
@@ -542,8 +542,9 @@ p, ul, ol {
     background: #F7F7FF;
     margin-bottom: 30px;
     padding: 30px;
-    border: 1px solid #efefef;
+    border: 1px solid #ffffff;
     border-radius: 15px;
+    height: 370px;
 
     .client-info {
         margin-bottom: 20px;

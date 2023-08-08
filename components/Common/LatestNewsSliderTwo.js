@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from "swiper";
 
 const latestNewsData = [
   {
-    image: "/images/blog/blog7.jpg",
+    image: "/images/projects/firstscroll_project_01.jpg",
     // title: "Blog 1",
     // date: "Feb 15, 2023",
     // category: "Technology",
@@ -14,7 +14,7 @@ const latestNewsData = [
     // readMoreLink: "/blog-details",
   },
   {
-    image: "/images/blog/blog8.jpg",
+    image: "/images/projects/firstscroll_project_02.jpg",
     // title: "Blog 2",
     // date: "Feb 16, 2023",
     // category: "Agency",
@@ -23,7 +23,7 @@ const latestNewsData = [
     // readMoreLink: "/blog-details",
   },
   {
-    image: "/images/blog/blog9.jpg",
+    image: "/images/projects/firstscroll_project_03.jpg",
     // title: "Blog 3",
     // date: "Feb 17, 2023",
     // category: "IT Agency",
@@ -32,7 +32,7 @@ const latestNewsData = [
     // readMoreLink: "/blog-details",
   },
   {
-    image: "/images/blog/blog10.jpg",
+    image: "/images/projects/firstscroll_project_04.jpg",
     title: "Blog 4",
     date: "Feb 18, 2023",
     category: "Development",

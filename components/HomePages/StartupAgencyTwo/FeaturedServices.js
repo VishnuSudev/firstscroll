@@ -78,7 +78,7 @@ const FeaturedServices = () => {
   const [data, setData] = useState("");
   return (
     <>
-      <section className="featured-services-area ptb-100" height="345">
+      <section className="featured-services-area" style={{paddingTop:50}}  height="345">
         <div className="container">
           <div className="row" style={{ paddingRight: 30, paddingLeft: 30 }}>
             <Swiper

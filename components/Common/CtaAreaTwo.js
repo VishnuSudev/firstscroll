@@ -22,7 +22,7 @@ const CtaAreaTwo = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              Have a question or an idea?  Please let me know
+              Let’s get started and together we can grow your business online
             </h5>
           </div>
 

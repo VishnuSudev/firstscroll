@@ -10,7 +10,7 @@ const AboutUsContent = () => {
       <div className="overflow-hidden" id="aboutus">
         <div className="container"    style={{paddingTop:30, paddingBottom:50}}>
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12" style={{paddingBottom:50}}>
               <div className="app-about-content">
                 <h6>Who We Are</h6>
                 <h2>Providing Marketing services for growing brands</h2>
@@ -19,7 +19,7 @@ const AboutUsContent = () => {
 
                 </p>
               <div className="">
-                  <Link href="#" className="yellow-btn" onClick={() => {
+                  <Link href="#" className="green-btn" onClick={() => {
                   setShowModal(true)
                 }}>
                     Contact Us
