@@ -5,10 +5,10 @@ import FeaturedServices from "../StartupAgencyTwo/FeaturedServices";
 const BestServices = () => {
   return (
     <>
-      <section id="services" className="services-area" style={{paddingTop:50}}>
+      <section id="services" className="services-area">
         <div className="container">
-          <div className="row m-0">
-          <div className="col-lg-4 ptb-100">
+          <div className="row m-0 ptb-100">
+          <div className="col-lg-4" style={{paddingTop:50}}>
               <div className="">
                 <div className="services-section-title">
                   <h6>Our Services</h6>

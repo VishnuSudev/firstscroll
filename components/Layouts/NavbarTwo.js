@@ -578,7 +578,7 @@ const NavbarTwo = () => {
                         .scrollIntoView({ behavior: "smooth" });
                     }}
                   >
-                    Blog
+                    Work
                     {/* <i className="fa-solid fa-angle-down"></i> */}
                   </Link>
 

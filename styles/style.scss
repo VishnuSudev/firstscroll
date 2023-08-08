@@ -7136,36 +7136,37 @@ span.new {
     display: flex;
     align-items: center;
     font-size: 2rem;
-    font-weight: 600; 
-  }
-  
-  .scrolling-words-box {
+    font-weight: 600;
+}
+.scrolling-words-box {
     height: 3rem;
     margin: auto;
     overflow: hidden;
-    
-    ul {
-      margin: 0 0.625rem;
-      padding: 0;
-      animation: scrollUp 4s infinite;
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 3rem;
-        list-style: none; 
-      }
-    }
-  }
-  
-  // Variables
-  $item-count: 5;
-  
-  @keyframes scrollUp {
-    @for $i from 1 through ($item-count - 1) {
-      #{($i * 25) - 10%}, #{$i * 25%} {
-        transform: translateY((-100% / $item-count) * $i);
-      }
-    }
-  }
+}
+.scrolling-words-box ul {
+    margin: 0 0.625rem;
+    padding: 0;
+    animation: scrollUp 4s infinite;
+}
+.scrolling-words-box ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    list-style: none;
+}
+@keyframes scrollUp {
+    15%, 25% {
+        transform: translateY(-20%);
+   }
+    40%, 50% {
+        transform: translateY(-40%);
+   }
+    65%, 75% {
+        transform: translateY(-60%);
+   }
+    90%, 100% {
+        transform: translateY(-80%);
+   }
+}
 

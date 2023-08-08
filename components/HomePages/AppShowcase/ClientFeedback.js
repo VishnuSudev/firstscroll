@@ -16,7 +16,7 @@ const clientFeedbackData = [
     name: "Ben",
     designation: "Massaggi",
     feedbackText:
-      "First Scroll for brand strategy consulting has been a transformative experience for our company. Their expertise has provided us with fresh perspectives on building and refining our brand identity. ",
+      "First Scroll for brand strategy consulting has been a transformative experience for our company. Their expertise has provided us with fresh perspectives on building and refining our brand identity."  ,
    
   },
   {
@@ -47,7 +47,7 @@ const ClientFeedback = () => {
           <div className="">
             {/* <span className="app-sub-title">CLIENT REVIEWS</span> */}
             {/* <blockquote class="wp-block-quote"><h1>Beloved by so many <br />people worldwide</h1></blockquote> */}
-            <div class="quotes-content"><p>Beloved by so many <br />people worldwide</p></div>
+            <div class="quotes-content"><p>Beloved by so many people worldwide</p></div>
           </div>
 
           <Swiper
