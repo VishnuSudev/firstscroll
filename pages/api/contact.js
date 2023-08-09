@@ -4,7 +4,7 @@ import sgTransport from "nodemailer-sendgrid-transport";
 const transporter = {
   auth: {
     // Update here your SendGrid API key 
-    api_key: "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",
+    api_key: "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",
   },
 };
 
@@ -12,19 +12,32 @@ const mailer = nodemailer.createTransport(sgTransport(transporter));
 
 export default async (req, res) => {
   // console.log(req.body)
-  const { name, email, number, subject, text } = req.body;
+  const { name, email, phone, company, text } = req.body;
 
   const data = {
     // Update here your email
-    to: "hello@firstscroll.com",
-    from: email,
-    subject: "Hi there",
-    text: text,
-    html: `
-            <b>From:</b> ${name} <br /> 
-            <b>Number:</b> ${number} <br /> 
-            <b>Subject:</b> ${subject} <br /> 
-            <b>Message:</b> ${text} 
+    to: email,
+    from: "FirstScroll<hello@firstscroll.com>",
+    subject: "Firstscroll Contact Form",
+    html: `<h3>Dear Admin,</h3>
+
+    <p>New Enquiry from FirstScroll Contact Form.
+    Find the below details and get back to the 
+    customer as soon as possible.</p><br/>
+
+            <p>Name :  ${name} </p>
+            <p>Company :  ${company}</p> 
+            <p>Email ID :  ${email}</p> 
+            <p>Phone Number :  ${phone}</p> 
+            <p>Comment :  ${text} </p>
+    <br/>
+    <br/>
+    Website Link : <a href="https://firstscrolldemo2.vercel.app">FirstScroll.com</a> <br/>
+    <br/>
+    <a href="https://firstscrolldemo2.vercel.app"><img 
+    style="width: 200px; height: 30px;"
+    src="https://i.postimg.cc/1RYh5qJD/firstscrolllogo.gif" alt="companyLogo" /></a>
+
         `,
   };
   try {
