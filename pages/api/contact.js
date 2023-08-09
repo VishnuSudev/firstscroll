@@ -16,7 +16,7 @@ export default async (req, res) => {
 
   const data = {
     // Update here your email
-    to: email,
+    to: "hello.firstscroll@gmail.com",
     from: "FirstScroll<hello@firstscroll.com>",
     subject: "Firstscroll Contact Form",
     html: `<h3>Dear Admin,</h3>
