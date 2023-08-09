@@ -5,7 +5,8 @@ import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
 const sendGridApiKey =
-  "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";
+  "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 ";
+
 const alertContent = () => {
   MySwal.fire({
     title: "Congratulations!",
@@ -24,7 +25,7 @@ const INITIAL_STATE = {
   number: "",
   phone: "",
   text: "",
-  company:""
+  company: "",
 };
 
 const ContactForm = () => {
@@ -38,28 +39,44 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const url = `https://api.sendgrid.com/v3/mail/send`;
-      const { name, email, phone, text ,company} = contact;
+      const { name, email, phone, text, company } = contact;
       const payload = {
         // Update here your email
         html: `
-                <b>From:</b> ${name} <br /> 
-                <b>Email:</b> ${email} <br />
-                <b>phone:</b> ${phone} <br /> 
-                <b>Message:</b> ${text} <br />
-                <b>Company:</b> ${company} <br />
+
+
+        <h3>Dear Admin,</h3>
+
+        <p>New Enquiry from FirstScroll Contact Form.
+        Find the below details and get back to the 
+        customer as soon as possible.</p><br/>
+
+                <p>Name :  ${name} </p>
+                <p>Company :  ${company}</p> 
+                <p>Email ID :  ${email}</p> 
+                <p>Phone Number :  ${phone}</p> 
+                <p>Comment :  ${text} </p>
+        <br/>
+        <br/>
+        Website Link : <a href="https://firstscrolldemo2.vercel.app">FirstScroll.com</a> <br/>
+        <br/>
+        <a href="https://firstscrolldemo2.vercel.app"><img 
+        style="width: 200px; height: 50px;"
+        src="https://i.postimg.cc/1RYh5qJD/firstscrolllogo.gif" alt="companyLogo" /></a>
+
             `,
       };
       const data = {
         personalizations: [
           {
-            to: [{ email: "hello@firstscroll.com"}],
+            to: [{ email: "hello.firstscroll@gmail.com" }],
             subject: "Firstscroll Contact Form",
           },
         ],
-        from: { email: "hello@firstscroll.com" },
+        from: { email: "hello@firstscroll.com", name: "FirstScroll" },
         content: [
           {
-            type: 'text/html',
+            type: "text/html",
             value: payload.html,
           },
         ],
