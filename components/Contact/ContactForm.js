@@ -61,7 +61,7 @@ const ContactForm = () => {
         Website Link : <a href="https://firstscrolldemo2.vercel.app">FirstScroll.com</a> <br/>
         <br/>
         <a href="https://firstscrolldemo2.vercel.app"><img 
-        style="width: 200px; height: 50px;"
+        style="width: 200px; height: 30px;"
         src="https://i.postimg.cc/1RYh5qJD/firstscrolllogo.gif" alt="companyLogo" /></a>
 
             `,
