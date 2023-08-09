@@ -5,7 +5,7 @@ import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
 const sendGridApiKey =
-  "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 ";
+  "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";
 
 const alertContent = () => {
   MySwal.fire({
@@ -38,7 +38,8 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `https://api.sendgrid.com/v3/mail/send`;
+      // const url = `https://api.sendgrid.com/v3/mail/send`;
+      const url = `${baseUrl}/api/contact`
       const { name, email, phone, text, company } = contact;
       const payload = {
         // Update here your email
@@ -81,11 +82,12 @@ const ContactForm = () => {
           },
         ],
       };
-      const response = await axios.post(url, data, {
-        headers: {
-          Authorization: `Bearer ${sendGridApiKey}`,
-        },
-      });
+      // const response = await axios.post(url, data, {
+      //   headers: {
+      //     Authorization: `Bearer ${sendGridApiKey}`,
+      //   },
+      // });
+      const response = await axios.post(url,{name,email,phone,company,text})
       console.log(response);
       setContact(INITIAL_STATE);
       alertContent();
