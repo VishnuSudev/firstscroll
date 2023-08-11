@@ -42,11 +42,7 @@ const ContactForm = () => {
   const [contact, setContact] = useState(INITIAL_STATE);
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === "phone") {
-      if (value.length > 10) {
-        return;
-      }
-    }
+    
     setContact((prevState) => ({ ...prevState, [name]: value }));
     // console.log(contact)
   };
@@ -102,6 +98,10 @@ const ContactForm = () => {
       //     Authorization: `Bearer ${sendGridApiKey}`,
       //   },
       // });
+      if(phone.length>0 && phone.length!=10){
+        alert('please provide valid phone number')
+        return;
+      }
       const response = await axios.post(url, {
         name,
         email,
@@ -176,7 +176,7 @@ const ContactForm = () => {
                 <div className="col-lg-6">
                   <div className="form-group">
                     <input
-                      type="text"
+                      type="number"
                       name="phone"
                       placeholder="Phone"
                       className="form-control"
