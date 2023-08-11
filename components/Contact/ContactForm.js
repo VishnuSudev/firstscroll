@@ -17,6 +17,16 @@ const alertContent = () => {
     showConfirmButton: false,
   });
 };
+const alertErrorContent = () => {
+  MySwal.fire({
+    title: "Sorry!",
+    text: "Your message was Not send",
+    icon: "Error",
+    timer: 2000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+  });
+};
 
 // Form initial state
 const INITIAL_STATE = {
@@ -32,6 +42,11 @@ const ContactForm = () => {
   const [contact, setContact] = useState(INITIAL_STATE);
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === "phone") {
+      if (value.length > 10) {
+        return;
+      }
+    }
     setContact((prevState) => ({ ...prevState, [name]: value }));
     // console.log(contact)
   };
@@ -39,7 +54,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       // const url = `https://api.sendgrid.com/v3/mail/send`;
-      const url = `${baseUrl}/api/contact`
+      const url = `${baseUrl}/api/contact`;
       const { name, email, phone, text, company } = contact;
       const payload = {
         // Update here your email
@@ -87,12 +102,20 @@ const ContactForm = () => {
       //     Authorization: `Bearer ${sendGridApiKey}`,
       //   },
       // });
-      const response = await axios.post(url,{name,email,phone,company,text})
+      const response = await axios.post(url, {
+        name,
+        email,
+        phone,
+        company,
+        text,
+      });
       console.log(response);
       setContact(INITIAL_STATE);
       alertContent();
     } catch (error) {
       console.log(error);
+      alert(JSON.stringify(error));
+      alertErrorContent();
     }
   };
 
@@ -116,8 +139,8 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Name"
-                      className="form-control"
+                      placeholder="Name *"
+                      className="form-control placeholder"
                       value={contact.name}
                       onChange={handleChange}
                       required
@@ -129,8 +152,8 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="company"
-                      placeholder="Company"
-                      className="form-control"
+                      placeholder="Company *"
+                      className="form-control placeholder"
                       value={contact.company}
                       onChange={handleChange}
                       required
@@ -142,8 +165,8 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="email"
-                      placeholder="Email Id"
-                      className="form-control"
+                      placeholder="Email Id *"
+                      className="form-control placeholder"
                       value={contact.email}
                       onChange={handleChange}
                       required
@@ -159,7 +182,6 @@ const ContactForm = () => {
                       className="form-control"
                       value={contact.phone}
                       onChange={handleChange}
-                      required
                     />
                   </div>
                 </div>
@@ -170,7 +192,7 @@ const ContactForm = () => {
                       cols="30"
                       rows="6"
                       placeholder="Write your message..."
-                      className="form-control"
+                      className="form-control placeholder"
                       value={contact.text}
                       onChange={handleChange}
                       required
