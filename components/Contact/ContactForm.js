@@ -51,10 +51,16 @@ const ContactForm = ({ setShowModal }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    const { name, email, phone, text, company } = contact;
+    if (phone.length > 0 && phone.length != 10) {
+      alert("please provide valid phone number");
+      setLoading(false);
+      return;
+    }
     try {
       // const url = `https://api.sendgrid.com/v3/mail/send`;
       const url = `${baseUrl}/api/contact`;
-      const { name, email, phone, text, company } = contact;
+      
       const payload = {
         // Update here your email
         html: `
@@ -101,11 +107,7 @@ const ContactForm = ({ setShowModal }) => {
       //     Authorization: `Bearer ${sendGridApiKey}`,
       //   },
       // });
-      if (phone.length > 0 && phone.length != 10) {
-        alert("please provide valid phone number");
-        setLoading(false);
-        return;
-      }
+     
       const response = await axios.post(url, {
         name,
         email,
