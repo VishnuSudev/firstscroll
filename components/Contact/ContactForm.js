@@ -9,8 +9,8 @@ const sendGridApiKey =
 
 const alertContent = () => {
   MySwal.fire({
-    title: "Congratulations!",
-    text: "Your message was successfully send and will back to you soon",
+    title: "Thank you!",
+    text: "Your form is off to our sorcery specialists.",
     icon: "success",
     timer: 2000,
     timerProgressBar: true,
@@ -125,8 +125,8 @@ const ContactForm = () => {
         <div className="contact-title">
           <h2>Get In Touch</h2>
           <p>
-            Excited to explore what the future holds? Connect with us to
-            collaborate on your next project
+          Don't hesitate to get in touch. We're excited to
+engage and lead you with reliable insight.
           </p>
         </div>
 
