@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import ContactForm from "../Contact/ContactForm";
 
-
 const FooterDark = () => {
   const [showModal, setShowModal] = useState(false);
   const currentYear = new Date().getFullYear();
@@ -13,17 +12,11 @@ const FooterDark = () => {
   };
 
   const handleAboutClick = () => {
-    document
-    .getElementById("aboutus")
-    .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" });
   };
 
   const handleServicesClick = () => {
-   
-      document
-        .getElementById("services")
-        .scrollIntoView({ behavior: "smooth" });
-  
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
   };
 
   const handleContactClick = () => {
@@ -58,8 +51,6 @@ const FooterDark = () => {
     cursor: "pointer", // Add cursor pointer to indicate links are clickable
   };
 
- 
-
   const copyrightStyle = {
     marginLeft: "auto",
   };
@@ -69,20 +60,25 @@ const FooterDark = () => {
       <footer style={footerStyle} className="footer-dark">
         <div style={containerStyle} className="container">
           <div style={logoStyle} className="footer-content">
-            <img src="/White_Scroll.gif" width="140" alt="Logo" onClick={handleHomeClick} />
+            <img
+              src="/White_Scroll.gif"
+              width="140"
+              alt="Logo"
+              onClick={handleHomeClick}
+            />
           </div>
           <div style={linksStyle} className="footer-content">
             <p>
               <span style={linkStyle} onClick={handleHomeClick}>
-              <Link style={{color:"white"}}
-                    href="/"
-                    // className={`nav-link ${currentPath == "/" && "active"}`}
-                  >
-                    Home
-                    {/* <i className="fa-solid fa-angle-down"></i> */}
-                  </Link>
+                <Link
+                  style={{ color: "white" }}
+                  href="/"
+                  // className={`nav-link ${currentPath == "/" && "active"}`}
+                >
+                  Home
+                  {/* <i className="fa-solid fa-angle-down"></i> */}
+                </Link>
               </span>{" "}
-             
               |{" "}
               <span style={linkStyle} onClick={handleServicesClick}>
                 Services
@@ -92,10 +88,26 @@ const FooterDark = () => {
                 Who we are
               </span>{" "}
               |{" "}
-              <span  style={linkStyle}><Link href="/blog/" style={{color:'white'}}> Blog</Link></span>
+              {/* <span style={linkStyle}>
+                <Link href="/blog/" style={{ color: "white" }}>
+                  {" "}
+                  Blog
+                </Link>
+              </span> */}
+              <span
+                onClick={() => {
+                  document
+                    .getElementById("blogs")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+                style={linkStyle}
+              >
+                {" "}
+                Blog
+              </span>
             </p>
           </div>
-      
+
           <div style={copyrightStyle} className="footer-content">
             <p>© {currentYear} FirstScroll.</p>
           </div>
@@ -108,8 +120,8 @@ const FooterDark = () => {
               borderRadius: "10px",
               minHeight: "55%",
               minWidth: "90%",
-              overflow:"scroll",
-              maxHeight:"95%"
+              overflow: "scroll",
+              maxHeight: "95%",
             }}
             position="right center"
           >
@@ -120,27 +132,27 @@ const FooterDark = () => {
                 borderRadius: 10,
               }}
             >
-              <div 
-              onClick={()=>{
-                setShowModal(false);
-              }}
-              style={{
-                position:"absolute",
-                right:"10px",
-                top:"10px",
-                fontSize:"20px",
-                cursor:"pointer"
-              }}>
-               &#10006;
+              <div
+                onClick={() => {
+                  setShowModal(false);
+                }}
+                style={{
+                  position: "absolute",
+                  right: "10px",
+                  top: "10px",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                }}
+              >
+                &#10006;
               </div>
-              
-              <div style={{
-            
-              }}><ContactForm/></div>
+
+              <div style={{}}>
+                <ContactForm />
+              </div>
             </div>
           </Popup>
         </div>
-        
       </footer>
     </>
   );

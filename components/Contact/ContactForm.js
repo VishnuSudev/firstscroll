@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
+import { set } from "immutable";
 const sendGridApiKey =
   "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";
 
@@ -38,16 +39,18 @@ const INITIAL_STATE = {
   company: "",
 };
 
-const ContactForm = () => {
+const ContactForm = ({ setShowModal }) => {
   const [contact, setContact] = useState(INITIAL_STATE);
+  const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
+
     setContact((prevState) => ({ ...prevState, [name]: value }));
     // console.log(contact)
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       // const url = `https://api.sendgrid.com/v3/mail/send`;
       const url = `${baseUrl}/api/contact`;
@@ -98,8 +101,9 @@ const ContactForm = () => {
       //     Authorization: `Bearer ${sendGridApiKey}`,
       //   },
       // });
-      if(phone.length>0 && phone.length!=10){
-        alert('please provide valid phone number')
+      if (phone.length > 0 && phone.length != 10) {
+        alert("please provide valid phone number");
+        setLoading(false);
         return;
       }
       const response = await axios.post(url, {
@@ -116,6 +120,9 @@ const ContactForm = () => {
       console.log(error);
       alert(JSON.stringify(error));
       alertErrorContent();
+    } finally {
+      setShowModal(false);
+      setLoading(false);
     }
   };
 
@@ -125,8 +132,8 @@ const ContactForm = () => {
         <div className="contact-title">
           <h2>Get In Touch</h2>
           <p>
-          Don't hesitate to get in touch. We're excited to
-engage and lead you with reliable insight.
+            Don't hesitate to get in touch. We're excited to engage and lead you
+            with reliable insight.
           </p>
         </div>
 
@@ -140,7 +147,7 @@ engage and lead you with reliable insight.
                       type="text"
                       name="name"
                       placeholder="Name *"
-                      className="form-control placeholder"
+                      className="form-control placeholder1"
                       value={contact.name}
                       onChange={handleChange}
                       required
@@ -153,7 +160,7 @@ engage and lead you with reliable insight.
                       type="text"
                       name="company"
                       placeholder="Company *"
-                      className="form-control placeholder"
+                      className="form-control placeholder1"
                       value={contact.company}
                       onChange={handleChange}
                       required
@@ -166,7 +173,7 @@ engage and lead you with reliable insight.
                       type="text"
                       name="email"
                       placeholder="Email Id *"
-                      className="form-control placeholder"
+                      className="form-control placeholder1"
                       value={contact.email}
                       onChange={handleChange}
                       required
@@ -192,7 +199,7 @@ engage and lead you with reliable insight.
                       cols="30"
                       rows="6"
                       placeholder="Write your message..."
-                      className="form-control placeholder"
+                      className="form-control placeholder1"
                       value={contact.text}
                       onChange={handleChange}
                       required
@@ -200,7 +207,11 @@ engage and lead you with reliable insight.
                   </div>
                 </div>
                 <div className="col-lg-12 col-sm-12">
-                  <button type="submit" className="green-btn">
+                  <button
+                    disabled={loading}
+                    type="submit"
+                    className="green-btn"
+                  >
                     Send Message
                   </button>
                 </div>

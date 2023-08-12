@@ -410,8 +410,8 @@ label {
   transition: all 0.5s ease;
 }
 
-.placeholder::placeholder {
-  color: rgb(241, 12, 12);
+.placeholder1::placeholder {
+  color: rgb(248, 71, 71);
 }
 
 .form-control:focus {
@@ -5541,9 +5541,16 @@ Contact CSS
   text-align: center;
 }
 
-.contact-form .contact-form-box {
-  padding: 30px;
-  border: 1px solid #eee;
+/* .contact-form .contact-form-box {
+  /* padding: 30px; */
+/* border: 1px solid #eee; */
+/* } */
+
+@media screen and (min-width: 768px) {
+  .contact-form .contact-form-box {
+    padding: 30px;
+    border: 1px solid #eee;
+  }
 }
 
 .contact-form .contact-title {
@@ -6866,28 +6873,31 @@ h6 {
     font-size: 18px !important;
     letter-spacing: 0px !important;
   }
-  
+
   .call-to-action-content,
   .call-to-action-content p {
     text-align: left !important;
   }
-  .navbar-area.navbar-style-2 nav .navbar-nav .nav-item a{
+  .navbar-area.navbar-style-2 nav .navbar-nav .nav-item a {
     color: #ffffff !important;
   }
- 
-  .app-about-content{
+
+  .app-about-content {
     padding-top: 30px !important;
   }
-  h2{
+  h2 {
     font-size: 18px !important;
   }
-  h6::before, .app-sub-title::before{
+  h6::before,
+  .app-sub-title::before {
     width: 2rem;
   }
-  h6{
+  h6 {
     font-size: 14px;
   }
-  .navbar-area nav .navbar-nav .nav-item a:hover::before, .navbar-area nav .navbar-nav .nav-item a:focus::before, .navbar-area nav .navbar-nav .nav-item a.active::before{
+  .navbar-area nav .navbar-nav .nav-item a:hover::before,
+  .navbar-area nav .navbar-nav .nav-item a:focus::before,
+  .navbar-area nav .navbar-nav .nav-item a.active::before {
     width: 2rem;
   }
 }

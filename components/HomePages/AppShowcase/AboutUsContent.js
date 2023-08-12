@@ -45,16 +45,20 @@ const AboutUsContent = () => {
             contentStyle={{
               borderRadius: "10px",
               minHeight: "55%",
-              minWidth: "90%",
-              overflow:"scroll",
-              maxHeight:"95%"
+              minWidth: "50%",
+              overflow: "auto",
+              maxWidth:"85%",
+              maxHeight: "90%",
+              backgroundColor:"#fff",
             }}
-            position="right center"
+            position="center center"
           >
             <div
               style={{
-                paddingTop: "30px",
-                paddingBottom: "30px",
+                paddingTop: "20px",
+                paddingBottom: "20px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
                 borderRadius: 10,
               }}
             >
@@ -74,7 +78,9 @@ const AboutUsContent = () => {
               
               <div style={{
             
-              }}><ContactForm/></div>
+              }}><ContactForm
+              setShowModal={setShowModal}
+              /></div>
             </div>
           </Popup>
         </div>

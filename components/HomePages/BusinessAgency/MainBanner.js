@@ -83,16 +83,20 @@ const MainBanner = () => {
             contentStyle={{
               borderRadius: "10px",
               minHeight: "55%",
-              minWidth: "90%",
-              overflow: "scroll",
-              maxHeight: "95%"
+              minWidth: "50%",
+              overflow: "auto",
+              maxWidth:"85%",
+              maxHeight: "90%",
+              backgroundColor:"#fff",
             }}
-            position="right center"
+            position="center center"
           >
             <div
               style={{
                 paddingTop: "20px",
                 paddingBottom: "20px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
                 borderRadius: 10,
               }}
             >
@@ -112,7 +116,9 @@ const MainBanner = () => {
               </div>
 
               <div style={{}}>
-                <ContactForm />
+                <ContactForm 
+                setShowModal={setShowModal}
+                />
               </div>
             </div>
           </Popup>

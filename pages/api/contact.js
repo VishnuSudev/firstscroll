@@ -3,8 +3,9 @@ import sgTransport from "nodemailer-sendgrid-transport";
 
 const transporter = {
   auth: {
-    // Update here your SendGrid API key 
-    api_key: "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",
+    // Update here your SendGrid API key
+    api_key:
+      "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",
   },
 };
 
@@ -16,7 +17,7 @@ export default async (req, res) => {
 
   const data = {
     // Update here your email
-    to: "hello.firstscroll@gmail.com",
+    to: email,
     from: "FirstScroll<hello@firstscroll.com>",
     subject: "Firstscroll Contact Form",
     html: `<h3>Dear Admin,</h3>
@@ -28,7 +29,7 @@ export default async (req, res) => {
             <p>Name :  ${name} </p>
             <p>Company :  ${company}</p> 
             <p>Email ID :  ${email}</p> 
-            <p>Phone Number :  ${phone}</p> 
+            <p>Phone Number :  ${phone ? phone : " - "}</p> 
             <p>Comment :  ${text} </p>
     <br/>
     <br/>
