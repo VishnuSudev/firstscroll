@@ -200,7 +200,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 <div className="col-lg-12 col-sm-12">
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="green-btn">
                     Send Message
                   </button>
                 </div>

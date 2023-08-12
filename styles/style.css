@@ -813,7 +813,7 @@ Navbar CSS
 .navbar-toggler .icon-bar {
   width: 28px;
   transition: all 0.3s;
-  background: #118f8b;
+  background: #ffffff;
   height: 2px;
   display: block;
 }
@@ -822,7 +822,7 @@ Navbar CSS
   transform: rotate(45deg);
   transform-origin: 10% 10%;
   left: 4px;
-  width: 32px;
+  width: 28px;
   position: relative;
 }
 
@@ -836,22 +836,25 @@ Navbar CSS
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
   left: 4px;
-  width: 24px;
+  width: 28px;
   position: relative;
 }
 
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
   left: 0;
+  width: 28px;
 }
 
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
+  width: 24px;
 }
 
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
   left: 0;
+  width: 20px;
 }
 
 /*================================================
@@ -2424,7 +2427,7 @@ Quotes CSS
   max-width: 950px;
   line-height: 45px;
   position: relative;
-  font-size: 42px;
+  font-size: 37px;
   letter-spacing: 2px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -6809,6 +6812,7 @@ h6 {
 
 .green-btn {
   background-color: #118f8b;
+  border: 1px solid #118f8b;
   padding: 10px 30px;
   letter-spacing: 2px;
   border-radius: 50px;
@@ -6859,10 +6863,32 @@ h6 {
 
   .quotes-content p {
     padding-left: 55px !important;
+    font-size: 18px !important;
+    letter-spacing: 0px !important;
   }
+  
   .call-to-action-content,
   .call-to-action-content p {
     text-align: left !important;
+  }
+  .navbar-area.navbar-style-2 nav .navbar-nav .nav-item a{
+    color: #ffffff !important;
+  }
+ 
+  .app-about-content{
+    padding-top: 30px !important;
+  }
+  h2{
+    font-size: 18px !important;
+  }
+  h6::before, .app-sub-title::before{
+    width: 2rem;
+  }
+  h6{
+    font-size: 14px;
+  }
+  .navbar-area nav .navbar-nav .nav-item a:hover::before, .navbar-area nav .navbar-nav .nav-item a:focus::before, .navbar-area nav .navbar-nav .nav-item a.active::before{
+    width: 2rem;
   }
 }
 

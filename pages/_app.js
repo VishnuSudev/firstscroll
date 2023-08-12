@@ -9,6 +9,7 @@ import "../styles/pe-icon-7-stroke.css";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "swiper/css";
 import "swiper/css/bundle";
+import '../node_modules/@fontsource/montserrat/index.css';
 
 // Software Startup Home Style
 import "../styles/software-home-page.css";

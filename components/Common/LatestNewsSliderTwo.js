@@ -6,50 +6,26 @@ import { Autoplay, Pagination } from "swiper";
 const latestNewsData = [
   {
     image: "/images/projects/firstscroll_project_01.jpg",
-    // title: "Blog 1",
-    // date: "Feb 15, 2023",
-    // category: "Technology",
-    // shortText:
-    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/projects/firstscroll_project_02.jpg",
-    // title: "Blog 2",
-    // date: "Feb 16, 2023",
-    // category: "Agency",
-    // shortText:
-    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/projects/firstscroll_project_03.jpg",
-    // title: "Blog 3",
-    // date: "Feb 17, 2023",
-    // category: "IT Agency",
-    // shortText:
-    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    // readMoreLink: "/blog-details",
   },
   {
     image: "/images/projects/firstscroll_project_04.jpg",
-    title: "Blog 4",
-    date: "Feb 18, 2023",
-    category: "Development",
-    // shortText:
-    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.",
-    // readMoreLink: "/blog-details",
   },
 ];
 
 const LatestNewsSliderTwo = () => {
   return (
     <>
-      <div 
-      id="blogs"
-      className="blog-area">
+      <div
+        id="blogs"
+        className="blog-area">
         <div className="container">
-          
+
 
           <Swiper
             pagination={{
@@ -83,24 +59,7 @@ const LatestNewsSliderTwo = () => {
                       <Link href="#">
                         <img src={value.image} alt="image" />
                       </Link>
-
-                      {/* <div className="post-tag">
-                        <Link href="#">{value.category}</Link>
-                      </div> */}
                     </div>
-
-                    {/* <div className="blog-post-content">
-                      <span className="date">{value.date}</span>
-                      <h3>
-                        <Link href="#">{value.title}</Link>
-                      </h3>
-
-                      <p>{value.shortText}</p>
-                      <Link href="#" className="read-more-btn">
-                        Read More
-                        <i className="fa-solid fa-angles-right"></i>
-                      </Link>
-                    </div> */}
                   </div>
                 </SwiperSlide>
               ))}

@@ -8,7 +8,7 @@ const BestServices = () => {
       <section id="services" className="services-area">
         <div className="container">
           <div className="row m-0 ptb-100">
-          <div className="col-lg-4" style={{paddingTop:50}}>
+          <div className="col-lg-4" style={{paddingTop:30}}>
               <div className="">
                 <div className="services-section-title">
                   <h6>Our Services</h6>

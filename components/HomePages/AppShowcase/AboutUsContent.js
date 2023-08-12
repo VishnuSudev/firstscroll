@@ -8,9 +8,9 @@ const AboutUsContent = () => {
   return (
     <>
       <div className="overflow-hidden" id="aboutus">
-        <div className="container"    style={{paddingTop:30, paddingBottom:50}}>
+        <div className="container ptb-100">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12" style={{paddingBottom:50}}>
+            <div className="col-lg-6 col-md-12">
               <div className="app-about-content">
                 <h6>Who We Are</h6>
                 <h2>Providing Marketing services for growing brands</h2>
@@ -53,8 +53,8 @@ const AboutUsContent = () => {
           >
             <div
               style={{
-                paddingTop: "20px",
-                paddingBottom: "20px",
+                paddingTop: "30px",
+                paddingBottom: "30px",
                 borderRadius: 10,
               }}
             >

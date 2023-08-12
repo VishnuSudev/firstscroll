@@ -17,13 +17,13 @@ const CtaAreaTwo = () => {
             >
               <h6 style={{textTransform:'none'}}>Contact Us</h6>
             </span>
-            <h5 style={{color:'white',fontSize:30}}
+            <h4 style={{color:'white'}}
               data-aos="fade-in"
               data-aos-duration="1200"
               data-aos-delay="200"
             >
               Let’s get started and together we can grow your business online
-            </h5>
+            </h4>
           </div>
 
           <div
