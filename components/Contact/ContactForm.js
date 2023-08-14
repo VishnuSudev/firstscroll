@@ -58,9 +58,8 @@ const ContactForm = ({ setShowModal }) => {
       return;
     }
     try {
-      // const url = `https://api.sendgrid.com/v3/mail/send`;
-      const url = `${baseUrl}/api/contact`;
-      
+      const url = `https://api.sendgrid.com/v3/mail/send`;
+      // const url = `${baseUrl}/api/contact`;
       const payload = {
         // Update here your email
         html: `
@@ -102,19 +101,19 @@ const ContactForm = ({ setShowModal }) => {
           },
         ],
       };
-      // const response = await axios.post(url, data, {
-      //   headers: {
-      //     Authorization: `Bearer ${sendGridApiKey}`,
-      //   },
-      // });
-     
-      const response = await axios.post(url, {
-        name,
-        email,
-        phone,
-        company,
-        text,
+      const response = await axios.post(url, data, {
+        headers: {
+          Authorization: `Bearer ${sendGridApiKey}`,
+        },
       });
+
+      // const response = await axios.post(url, {
+      //   name,
+      //   email,
+      //   phone,
+      //   company,
+      //   text,
+      // });
       console.log(response);
       setContact(INITIAL_STATE);
       alertContent();
